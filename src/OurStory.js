@@ -22,5 +22,9 @@ export default () => (
       </div>
       <span id="readMore">READ MORE <i className="fa fa-chevron-down" /></span>
     </div>
+    <div id="audreyBox">
+      <h1 className="audreyName">AUDREY SANCHEZ</h1>
+      <h2 className="audreyTitle">EXECUTIVE DIRECTOR</h2>
+    </div>
   </div>
 );
