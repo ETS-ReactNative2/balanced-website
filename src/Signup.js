@@ -8,8 +8,8 @@ const style = {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    paddingTop: 140,
-    paddingBottom: 140,
+    paddingTop: 120,
+    paddingBottom: 108,
     backgroundColor: THEME_GREEN,
   },
   header: {
@@ -24,6 +24,7 @@ const style = {
   subheader: {
     maxWidth: 716,
     color: WHITE,
+    fontFamily: 'Roboto',
     textAlign: 'center',
     fontWeight: 'bold',
     fontSize: 15,

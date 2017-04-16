@@ -1,0 +1,28 @@
+#OurStory_outerContainer {
+  background-image: url("./our_story_background.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#OurStory_innerContainer {
+  width: 1024px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#textContainer {
+  width: 522px;
+}
+
+#readMore {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 35px;
+}

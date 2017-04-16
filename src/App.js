@@ -5,6 +5,7 @@ import Intro from './Intro';
 import Signup from './Signup';
 import WhatWereAskingFor from './WhatWereAskingFor';
 import Support from './Support';
+import OurStory from './OurStory';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
         <Signup />
         <WhatWereAskingFor />
         <Support />
+        <OurStory />
       </div>
     );
   }

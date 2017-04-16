@@ -7,7 +7,10 @@ export default () => (
   <div id="outerContainer">
     <div id="innerContainer">
       <div id="textContainer">
-        <SectionHeader>WHAT WE'RE ASKING FOR IS SIMPLE</SectionHeader>
+        <SectionHeader>
+          WHAT WE'RE ASKING
+          FOR IS SIMPLE
+        </SectionHeader>
         <BodyText>
           All they have to do is sell food that reflects federal dietary
           guidelines and the best nutrition evidence. That means
