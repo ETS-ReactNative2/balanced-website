@@ -5,15 +5,16 @@
   justify-content: center;
   color: #fff;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 73px;
 }
 
 #OurStory_innerContainer {
-  width: 783px;
+  width: 890px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  margin-left: 319px
 }
 
 #textContainer {
@@ -28,6 +29,7 @@
 }
 
 .audreyName {
+  width: 331px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   letter-spacing: 0.1em;
@@ -47,6 +49,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 400px;
-  margin-left: -143px;
+  margin-bottom: 45px;
+  margin-right: 99px;
 }

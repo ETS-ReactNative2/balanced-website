@@ -6,6 +6,7 @@ import Signup from './Signup';
 import WhatWereAskingFor from './WhatWereAskingFor';
 import Support from './Support';
 import OurStory from './OurStory';
+import OurStoryDropdown from './OurStoryDropdown';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
         <WhatWereAskingFor />
         <Support />
         <OurStory />
+        <OurStoryDropdown />
       </div>
     );
   }

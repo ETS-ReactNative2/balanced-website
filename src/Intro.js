@@ -8,6 +8,7 @@ const style = {
     display: 'flex',
     flex: 1,
     justifyContent: 'center',
+    color: '#2b2b2b',
   },
   header: {
     fontFamily: 'Open Sans, sans-serif',
