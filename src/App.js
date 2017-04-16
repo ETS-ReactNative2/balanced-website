@@ -3,6 +3,7 @@ import NavBar from './NavBar';
 import Hero from './Hero';
 import Intro from './Intro';
 import Signup from './Signup';
+import WhatWereAskingFor from './WhatWereAskingFor';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <Hero />
         <Intro />
         <Signup />
+        <WhatWereAskingFor />
       </div>
     );
   }

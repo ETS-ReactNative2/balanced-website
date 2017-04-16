@@ -1,0 +1,40 @@
+#outerContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#innerContainer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: flex-end;
+  width: 1024px;
+  background-image: url('./food_bowl.jpg');
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 436px 381px;
+}
+
+#textContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 598px;
+}
+
+#whatWereAskingFor_header {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 40px;
+  letter-spacing: 0.1em;
+  width: 455px;
+}
+
+#whatWereAskingFor_subheader {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  line-height: 35px;
+}
