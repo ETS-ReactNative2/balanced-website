@@ -2,8 +2,7 @@ import React from 'react';
 import heroPhoto from './hero_photo.jpg';
 
 import {WHITE} from './colours';
-const width = window.innerWidth;
-const isMobile = width <= 736;
+import * as STYLES from './styles';
 
 const style = {
   heroContainer: {
@@ -16,11 +15,6 @@ const style = {
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     justifyContent: 'flex-end',
-  },
-  innerContainer: {
-    width: !isMobile && 1024,
-    marginBottom: 88,
-    alignItems: 'flex-start',
   },
   header: {
     maxWidth: 736,
@@ -44,7 +38,7 @@ const style = {
 
 export default () => (
   <div style={style.heroContainer}>
-    <div style={style.innerContainer}>
+    <div style={STYLES.innerContainer}>
       <h1 style={style.header}>HEALTHY FOOD IS A RIGHT</h1>
       <h2 style={style.subheader}>AND WE'RE GOING TO FIGHT FOR IT</h2>
     </div>
