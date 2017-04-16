@@ -1,0 +1,9 @@
+.SectionHeader {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 40px;
+  letter-spacing: 0.1em;
+  padding: 0px 67px;
+}

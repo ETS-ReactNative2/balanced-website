@@ -21,20 +21,3 @@
   flex-direction: column;
   width: 598px;
 }
-
-#whatWereAskingFor_header {
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-  font-size: 40px;
-  letter-spacing: 0.1em;
-  width: 455px;
-}
-
-#whatWereAskingFor_subheader {
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  line-height: 35px;
-}
