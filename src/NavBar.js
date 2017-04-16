@@ -7,7 +7,7 @@ const styles = {
     height: 79,
     display: 'flex',
     justifyContent: 'space-between',
-    marginButtom: 1,
+    marginBottom: 1,
   },
   innerContainer: {
     display: 'flex',
