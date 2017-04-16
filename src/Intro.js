@@ -4,6 +4,7 @@ import {THEME_GREEN} from './colours';
 
 const style = {
   outerContainer: {
+    marginTop: '110px',
     display: 'flex',
     flex: 1,
     justifyContent: 'center',
