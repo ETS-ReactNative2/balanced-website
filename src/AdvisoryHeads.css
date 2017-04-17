@@ -34,3 +34,28 @@
   line-height: 23.48px;
   text-align: center;
 }
+
+.AdvisoryHeads_ImageContainer {
+  width: 210px;
+  height: 210px;
+}
+
+.AdvisoryHeads_ImageContainer img {
+  width: 210px;
+  height: 210px;
+}
+
+.AdvisoryHeads_ImageContainer {
+  margin-bottom: 24px;
+}
+
+.AdvisoryHeads_Overlay {
+  position: relative;
+  top: -213px;
+  border-radius: 105px;
+  left: 0;
+  width: 210px;
+  height: 210px;
+  display: block;
+  background-color: rgba(75, 153, 31, 0.61);
+}
