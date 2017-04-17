@@ -1,0 +1,36 @@
+#Footer_Container {
+  height: 127px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2b2b;
+  color: #5f605f;
+}
+
+#Footer_InnerContainer {
+  width: 1024px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+
+.Footer_SectionContainer {
+  width: 328px;
+  display: flex;
+  align-items: center;
+}
+
+.Footer_LeftIcon {
+  margin-right: 10px;
+}
+
+.Footer_Text {
+  margin-right: 30px;
+}
+
+.Footer_RightIcon {
+  font-size: 33.85px;
+  margin-right: 24px;
+}

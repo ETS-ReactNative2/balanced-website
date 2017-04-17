@@ -10,6 +10,7 @@ import OurStoryDropdown from './OurStoryDropdown';
 import AdvisoryBoard from './AdvisoryBoard';
 import Donate from './Donate';
 import OurTeam from './OurTeam';
+import Footer from './Footer';
 
 class App extends Component {
   render() {
@@ -26,6 +27,7 @@ class App extends Component {
         <AdvisoryBoard />
         <Donate />
         <OurTeam />
+        <Footer />
       </div>
     );
   }
