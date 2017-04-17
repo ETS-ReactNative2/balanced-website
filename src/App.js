@@ -9,6 +9,7 @@ import OurStory from './OurStory';
 import OurStoryDropdown from './OurStoryDropdown';
 import AdvisoryBoard from './AdvisoryBoard';
 import Donate from './Donate';
+import OurTeam from './OurTeam';
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
         <OurStoryDropdown />
         <AdvisoryBoard />
         <Donate />
+        <OurTeam />
       </div>
     );
   }

@@ -1,0 +1,12 @@
+#OurTeam_Container {
+  height: 176px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#OurTeam_Button {
+  color: #2b2b2b;
+  border-color: #2b2b2b;
+}
