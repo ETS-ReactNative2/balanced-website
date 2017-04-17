@@ -1,0 +1,11 @@
+#AdvisoryBio_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 890px;
+  text-align: left;
+}
+
+.AdvisoryBio_EmailIcon {
+  color: rgb(75, 153, 31);
+}

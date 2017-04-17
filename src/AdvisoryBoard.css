@@ -6,8 +6,6 @@
   flex-direction: column;
   color: #2b2b2b;
   align-items: center;
-}
-
-#AdvisoryBoard_InnerContainer {
+  justify-content: center;
   width: 1024;
 }
