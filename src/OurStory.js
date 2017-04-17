@@ -1,6 +1,7 @@
 import React from 'react';
 import BodyText from './BodyText';
 import SectionHeader from './SectionHeader';
+import ReadMore from './ReadMore';
 import './OurStory.css';
 
 export default () => (
@@ -20,7 +21,7 @@ export default () => (
           available is so bad for us.
         </BodyText>
       </div>
-      <span id="readMore">READ MORE <i className="fa fa-chevron-down" /></span>
+      <ReadMore />
     </div>
     <div id="audreyBox">
       <h1 className="audreyName">AUDREY SANCHEZ</h1>

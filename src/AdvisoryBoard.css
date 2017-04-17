@@ -1,0 +1,13 @@
+#AdvisoryBoard_OuterContainer {
+  padding-top: 80px;
+  padding-top: 80px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  color: #2b2b2b;
+  align-items: center;
+}
+
+#AdvisoryBoard_InnerContainer {
+  width: 1024;
+}
