@@ -37,7 +37,7 @@ export default ({name}) => (
       {PROFILES[name]
         .split('\n')
         .slice(0, 2)
-        .map(line => <BodyText textAlign="left">{line}</BodyText>)}
+        .map((line, i) => <BodyText key={i} textAlign="left">{line}</BodyText>)}
       <ReadMore />
     </div>
   </div>

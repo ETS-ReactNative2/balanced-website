@@ -8,6 +8,7 @@ import Support from './Support';
 import OurStory from './OurStory';
 import OurStoryDropdown from './OurStoryDropdown';
 import AdvisoryBoard from './AdvisoryBoard';
+import Donate from './Donate';
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
         <OurStory />
         <OurStoryDropdown />
         <AdvisoryBoard />
+        <Donate />
       </div>
     );
   }

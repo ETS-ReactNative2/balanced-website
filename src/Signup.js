@@ -42,12 +42,18 @@ export default () => (
     </h2>
     <form className="Signup_formContainer">
       <input
+        className="Signup_Input"
         style={style.input}
         placeholder="FIRST + LAST NAME"
         type="text"
         name="firstAndLastName"
       />
-      <input placeholder="EMAIL ADDRESS" type="text" name="email" />
+      <input
+        className="Signup_Input"
+        placeholder="EMAIL ADDRESS"
+        type="text"
+        name="email"
+      />
     </form>
 
     <button type="button">TAKE ACTION</button>

@@ -1,4 +1,4 @@
-input[type="text"] {
+.Signup_Input {
   display: inline;
   margin: 0;
   width: 348px;
@@ -34,7 +34,7 @@ button {
   padding: 18px 45px;
 }
 
-::placeholder {
+.Signup_Input::placeholder {
   color: #fff;
   text-align: center;
   font-size: 16px;
