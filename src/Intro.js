@@ -32,7 +32,7 @@ const style = {
 };
 
 export default () => (
-  <div style={style.outerContainer}>
+  <div id="About_Container" style={style.outerContainer}>
     <div style={styles.innerContainer}>
       <h1 style={style.header}>
         For too long, too many major food corporations have prioritized their profits over our health.

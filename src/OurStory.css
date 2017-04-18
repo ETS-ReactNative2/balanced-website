@@ -24,7 +24,7 @@
 
 .audreyName {
   width: 331px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   letter-spacing: 0.1em;
   margin: 0;
@@ -32,7 +32,7 @@
 }
 
 .audreyTitle {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   letter-spacing: 0.1em;
   font-size: 22px;

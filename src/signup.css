@@ -13,7 +13,7 @@
   background-color: transparent;
   border: solid 2px #fff;
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.1em;
   font-weight: bold;
   color: #fff;
@@ -33,7 +33,7 @@
   color: #fff;
   text-align: center;
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.1em;
   font-weight: bold;
   appearance: none;
@@ -52,7 +52,7 @@
   color: #fff;
   text-align: center;
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.1em;
   font-weight: bold;
 }

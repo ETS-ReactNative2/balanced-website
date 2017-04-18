@@ -23,7 +23,7 @@ class OurStory extends React.Component {
   render() {
     const {showOurStory} = this.state;
     return (
-      <div>
+      <div id="OurStory_Container">
         <div id="OurStory_outerContainer">
           <div id="OurStory_innerContainer">
             <SectionHeader>OUR STORY</SectionHeader>

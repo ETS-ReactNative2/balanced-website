@@ -4,7 +4,7 @@ import SectionHeader from './SectionHeader';
 import BodyText from './BodyText';
 
 export default () => (
-  <div id="Donate_OuterContainer">
+  <div id="Donate_Container">
     <div id="Donate_InnerContainer">
       <SectionHeader>DONATE</SectionHeader>
       <BodyText>
@@ -19,7 +19,7 @@ export default () => (
           </div>
           <div id="Donate_ButtonGroup">
             <button type="button" className="Donate_Button">MONTHLY</button>
-            <button type="button" className="Donate_Button">MONTHLY</button>
+            <button type="button" className="Donate_Button">ONCE</button>
           </div>
         </form>
 

@@ -22,7 +22,7 @@ export default class extends React.Component {
   render() {
     const {selectedName} = this.state;
     return (
-      <div id="AdvisoryBoard_OuterContainer">
+      <div id="AdvisoryBoard_Container">
         <SectionHeader>ADVISORY BOARD</SectionHeader>
         <AdvisoryProfile />
         <AdvisoryHeads

@@ -34,7 +34,7 @@ const style = {
 };
 
 export default () => (
-  <div style={style.container}>
+  <div id="Signup_Container" style={style.container}>
     <h1 style={style.header}>ENOUGH IS ENOUGH</h1>
     <h2 style={style.subheader}>
       TOGETHER, WE WILL HOLD MAJOR FOOD CORPORATIONS ACCOUNTABLE
