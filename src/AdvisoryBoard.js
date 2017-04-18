@@ -3,6 +3,7 @@ import SectionHeader from './SectionHeader';
 import AdvisoryProfile from './AdvisoryProfile';
 import AdvisoryHeads from './AdvisoryHeads';
 import AdvisoryBio from './AdvisoryBio';
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import './AdvisoryBoard.css';
 
 export default class extends React.Component {
@@ -29,7 +30,13 @@ export default class extends React.Component {
           selectedName={selectedName}
           onClick={this.selectName.bind(this)}
         />
-        <AdvisoryBio selectedName={selectedName} />
+        <CSSTransitionGroup
+          transitionName="AdvisoryBio_Transition"
+          transitionEnterTimeout={300}
+          transitionLeaveTimeout={300}
+        >
+          <AdvisoryBio key={selectedName} selectedName={selectedName} />
+        </CSSTransitionGroup>
       </div>
     );
   }
