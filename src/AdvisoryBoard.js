@@ -32,7 +32,7 @@ export default class extends React.Component {
         />
         <CSSTransitionGroup
           transitionName="AdvisoryBio_Transition"
-          transitionEnterTimeout={300}
+          transitionEnterTimeout={600}
           transitionLeaveTimeout={300}
         >
           <AdvisoryBio key={selectedName} selectedName={selectedName} />
