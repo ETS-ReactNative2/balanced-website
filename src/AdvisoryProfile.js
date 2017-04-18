@@ -13,18 +13,45 @@ Nearing my fifties, I decided to make a change. I started eating more grains, be
 
 We all deserve to feel that good. We all deserve a life free of diet-related disease. But too often, it feels like major food corporations want to give us the opposite. That’s why I'm a part of Balanced:  I believe that together, we can hold corporations accountable and persuade them to put our health above their pockets. Because that’s the way it ought to be.`;
 
-export default () => (
-  <div id="AdvisoryProfile_Container">
-    <div id="AdvisoryProfile_ImageContainer">
-      <img className="AdvisoryProfile_Image" src={robert} />
-      <h1 id="AdvisoryProfile_Header">CAPTAIN ROBERT ATCHESON</h1>
-      <h2 id="AdvisoryProfile_Subheader">BOARD OF ADVISORS</h2>
-    </div>
-    <div id="AdvisoryProfile_TextContainer">
-      {PROFILE_TEXT.split('\n')
-        .slice(0, 2)
-        .map((line, i) => <BodyText key={i} textAlign="left">{line}</BodyText>)}
-      <ReadMore />
-    </div>
-  </div>
-);
+class AdvisoryProfile extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showFullProfile: false,
+    };
+  }
+
+  toggleShowOurStory() {
+    const {showFullProfile} = this.state;
+    this.setState({
+      showFullProfile: !showFullProfile,
+    });
+  }
+
+  render() {
+    const {showFullProfile} = this.state;
+    const endOfSlice = showFullProfile ? PROFILE_TEXT.length : 2;
+    return (
+      <div id="AdvisoryProfile_Container">
+        <div id="AdvisoryProfile_ImageContainer">
+          <img className="AdvisoryProfile_Image" src={robert} />
+          <h1 id="AdvisoryProfile_Header">CAPTAIN ROBERT ATCHESON</h1>
+          <h2 id="AdvisoryProfile_Subheader">BOARD OF ADVISORS</h2>
+        </div>
+        <div id="AdvisoryProfile_TextContainer">
+          {PROFILE_TEXT.split('\n')
+            .slice(0, endOfSlice)
+            .map((line, i) => (
+              <BodyText key={i} textAlign="left">{line}</BodyText>
+            ))}
+          <ReadMore
+            onClick={this.toggleShowOurStory.bind(this)}
+            toggled={showFullProfile}
+          />
+        </div>
+      </div>
+    );
+  }
+}
+
+export default AdvisoryProfile;

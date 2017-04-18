@@ -1,7 +1,11 @@
 import React from 'react';
 import './ReadMore.css';
-export default ({onClick}) => (
+
+const getIcon = toggled => (toggled ? 'fa-chevron-up' : 'fa-chevron-down');
+const getText = toggled => (toggled ? 'HIDE' : 'READ MORE');
+
+export default ({onClick, toggled}) => (
   <span onClick={onClick} className="ReadMore">
-    READ MORE <i className="fa fa-chevron-down" />
+    {getText(toggled)} <i className={`fa ${getIcon(toggled)}`} />
   </span>
 );

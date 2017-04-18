@@ -40,7 +40,10 @@ class OurStory extends React.Component {
                 available is so bad for us.
               </BodyText>
             </div>
-            <ReadMore onClick={this.toggleShowOurStory.bind(this)} />
+            <ReadMore
+              toggled={showOurStory}
+              onClick={this.toggleShowOurStory.bind(this)}
+            />
           </div>
           <div id="audreyBox">
             <h1 className="audreyName">AUDREY SANCHEZ</h1>
