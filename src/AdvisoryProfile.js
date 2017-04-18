@@ -1,4 +1,5 @@
 import React from 'react';
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import BodyText from './BodyText';
 import ReadMore from './ReadMore';
 import robert from './robert.jpg';
@@ -39,11 +40,17 @@ class AdvisoryProfile extends React.Component {
           <h2 id="AdvisoryProfile_Subheader">BOARD OF ADVISORS</h2>
         </div>
         <div id="AdvisoryProfile_TextContainer">
-          {PROFILE_TEXT.split('\n')
-            .slice(0, endOfSlice)
-            .map((line, i) => (
-              <BodyText key={i} textAlign="left">{line}</BodyText>
-            ))}
+          <CSSTransitionGroup
+            transitionName="AdvisoryProfileDropdown_Transition"
+            transitionEnterTimeout={500}
+            transitionLeaveTimeout={300}
+          >
+            {PROFILE_TEXT.split('\n')
+              .slice(0, endOfSlice)
+              .map((line, i) => (
+                <BodyText key={i} textAlign="left">{line}</BodyText>
+              ))}
+          </CSSTransitionGroup>
           <ReadMore
             onClick={this.toggleShowOurStory.bind(this)}
             toggled={showFullProfile}

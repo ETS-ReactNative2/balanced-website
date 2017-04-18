@@ -2,7 +2,7 @@
   display: flex;
   width: 1024px;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 #AdvisoryProfile_ImageContainer {
@@ -13,6 +13,7 @@
 }
 
 #AdvisoryProfile_TextContainer {
+  padding-top: 46px;
   width: 522px;
 }
 
@@ -37,4 +38,22 @@
   letter-spacing: 0.1em;
   font-weight: bold;
   text-align: center;
+}
+
+.AdvisoryProfileDropdown_Transition-enter {
+  opacity: 0.01;
+}
+
+.AdvisoryProfileDropdown_Transition-enter.AdvisoryProfileDropdown_Transition-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in,
+}
+
+.AdvisoryProfileDropdown_Transition-leave {
+  opacity: 1;
+}
+
+.AdvisoryProfileDropdown_Transition-leave.AdvisoryProfileDropdown_Transition-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }
