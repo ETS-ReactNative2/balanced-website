@@ -1,17 +1,17 @@
-#NavBar_NavMenu {
-  background-color: transparent;
-  position: absolute;
-  top: 107px;
-  right: 38px;
-  color: #FFF;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  line-height: 27px;
-  font-size: 15px;
-  float: right;
+.NavBar_Transition-enter {
+  opacity: 0.01;
 }
 
-#NavBar_NavMenu ul {
-  list-style-type: none;
+.NavBar_Transition-enter.NavBar_Transition-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.NavBar_Transition-leave {
+  opacity: 1;
+}
+
+.NavBar_Transition-leave.NavBar_Transition-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }

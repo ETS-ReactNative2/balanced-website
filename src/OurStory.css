@@ -46,3 +46,21 @@
   margin-bottom: 45px;
   margin-left: -99px;
 }
+
+.OurStoryDropdown_Transition-enter {
+  opacity: 0.01;
+}
+
+.OurStoryDropdown_Transition-enter.OurStoryDropdown_Transition-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in,
+}
+
+.OurStoryDropdown_Transition-leave {
+  opacity: 1;
+}
+
+.OurStoryDropdown_Transition-leave.OurStoryDropdown_Transition-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}

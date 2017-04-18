@@ -1,0 +1,17 @@
+#NavBar_NavMenu {
+  background-color: transparent;
+  position: absolute;
+  top: 107px;
+  right: 38px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 27px;
+  font-size: 15px;
+  float: right;
+}
+
+#NavBar_NavMenu ul {
+  list-style-type: none;
+}

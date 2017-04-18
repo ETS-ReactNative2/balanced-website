@@ -3,6 +3,7 @@ import BodyText from './BodyText';
 import SectionHeader from './SectionHeader';
 import ReadMore from './ReadMore';
 import OurStoryDropdown from './OurStoryDropdown';
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import './OurStory.css';
 
 class OurStory extends React.Component {
@@ -50,7 +51,15 @@ class OurStory extends React.Component {
             <h2 className="audreyTitle">EXECUTIVE DIRECTOR</h2>
           </div>
         </div>
-        {showOurStory && <OurStoryDropdown />}
+        {
+          <CSSTransitionGroup
+            transitionName="OurStoryDropdown_Transition"
+            transitionEnterTimeout={500}
+            transitionLeaveTimeout={300}
+          >
+            {showOurStory && <OurStoryDropdown />}
+          </CSSTransitionGroup>
+        }
       </div>
     );
   }

@@ -1,6 +1,8 @@
 import React from 'react';
 import {THEME_GREY, WHITE, LIGHT_GREY} from './colours';
 import './NavBar.css';
+import NavMenu from './NavMenu';
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 
 const styles = {
   navBar: {
@@ -36,30 +38,6 @@ const styles = {
 
 import logo from './logo.png';
 
-const navigateTo = (anchorName, toggleShowOurStory) => {
-  toggleShowOurStory();
-  const element = document.getElementById(anchorName + '_Container');
-  element.scrollIntoView({
-    behavior: 'smooth',
-  });
-};
-
-const NavMenu = ({onClick}) => (
-  <div id="NavBar_NavMenu">
-    <ul>
-      <li onClick={() => navigateTo('About', onClick)}>ABOUT</li>
-      <li onClick={() => navigateTo('Signup', onClick)}>JOIN</li>
-      <li onClick={() => navigateTo('OurStory', onClick)}>OUR STORY</li>
-      <li onClick={() => navigateTo('AdvisoryBoard', onClick)}>
-        ADVISORY BOARD
-      </li>
-      <li onClick={() => navigateTo('Donate', onClick)}>
-        DONATE
-      </li>
-    </ul>
-  </div>
-);
-
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
@@ -94,7 +72,13 @@ class NavBar extends React.Component {
             <i style={styles.inactiveIcon} className="fa fa-twitter" />
           </div>
         </div>
-        {showNavMenu && <NavMenu onClick={() => this.toggleShowOurStory()} />}
+        <CSSTransitionGroup
+          transitionName="NavBar_Transition"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={300}
+        >
+          {showNavMenu && <NavMenu onClick={() => this.toggleShowOurStory()} />}
+        </CSSTransitionGroup>
       </div>
     );
   }
