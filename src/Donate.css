@@ -73,6 +73,8 @@
   font-family: "Open Sans", sans-serif;
   padding: 30px 0px;
   width: 212px;
+  font-size: 20px;
+  color: #fff;
 }
 
 #Donate_Input::placeholder {

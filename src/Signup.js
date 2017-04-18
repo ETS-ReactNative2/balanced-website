@@ -40,23 +40,47 @@ export default () => (
       TOGETHER, WE WILL HOLD MAJOR FOOD CORPORATIONS ACCOUNTABLE
       FOR BRINGING BALANCE TO CAFETERIAS, MENUS AND STORE SHELVES
     </h2>
-    <form className="Signup_formContainer">
-      <input
-        className="Signup_Input"
-        style={style.input}
-        placeholder="FIRST + LAST NAME"
-        type="text"
-        name="firstAndLastName"
-      />
-      <input
-        className="Signup_Input"
-        placeholder="EMAIL ADDRESS"
-        type="text"
-        name="email"
-      />
+    <form
+      action="//balanced.us15.list-manage.com/subscribe/post?u=50ab50482b578b0fd8a221a3b&amp;id=10e3f4718d"
+      method="post"
+      id="mc-embedded-subscribe-form"
+      name="mc-embedded-subscribe-form"
+      target="_blank"
+      noValidate
+      className="Signup_FormContainer"
+    >
+      <div className="Signup_InputGroup">
+        <input
+          className="Signup_Input"
+          style={style.input}
+          placeholder="FIRST NAME"
+          type="text"
+          name="FNAME"
+        />
+        <input
+          className="Signup_Input"
+          style={style.input}
+          placeholder="LAST NAME"
+          type="text"
+          name="LNAME"
+        />
+        <input
+          className="Signup_Input"
+          placeholder="EMAIL ADDRESS"
+          type="text"
+          name="EMAIL"
+        />
+      </div>
+      <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
+        <input
+          type="text"
+          name="b_50ab50482b578b0fd8a221a3b_10e3f4718d"
+          tabIndex="-1"
+          value=""
+        />
+      </div>
+      <input className="Signup_Button" type="submit" value="TAKE ACTION" />
     </form>
-
-    <button type="button">TAKE ACTION</button>
 
   </div>
 );
