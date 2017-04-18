@@ -59,3 +59,21 @@
   display: block;
   background-color: rgba(75, 153, 31, 0.61);
 }
+
+.AdvisoryHeads_Overlay_Transition-enter {
+  opacity: 0.01;
+}
+
+.AdvisoryHeads_Overlay_Transition-enter.AdvisoryHeads_Overlay_Transition-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in,
+}
+
+.AdvisoryHeads_Overlay_Transition-leave {
+  opacity: 1;
+}
+
+.AdvisoryHeads_Overlay_Transition-leave.AdvisoryHeads_Overlay_Transition-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}

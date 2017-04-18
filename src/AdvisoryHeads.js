@@ -1,7 +1,7 @@
 import React from 'react';
 import './AdvisoryHeads.css';
-
 import audrey_advisory_head from './audrey_advisory_head.jpg';
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 
 const NAMES = {
   greger: 'Dr. Michael Greger',
@@ -21,7 +21,13 @@ const AdvisoryHead = ({name, showOverlay, onClick}) => (
   <div onClick={() => onClick(name)} className="AdvisoryHeads_InnerContainer">
     <div className="AdvisoryHeads_ImageContainer">
       <img src={IMAGES[name]} />
-      {showOverlay && <div className="AdvisoryHeads_Overlay" />}
+      <CSSTransitionGroup
+        transitionName="AdvisoryHeads_Overlay_Transition"
+        transitionEnterTimeout={500}
+        transitionLeaveTimeout={300}
+      >
+        {showOverlay && <div className="AdvisoryHeads_Overlay" />}
+      </CSSTransitionGroup>
     </div>
     <h1 className="AdvisoryHeads_Name">{NAMES[name]}</h1>
     <h2 className="AdvisoryHeads_Title">Board of Advisors</h2>
