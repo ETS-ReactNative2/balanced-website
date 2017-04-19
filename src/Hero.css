@@ -1,0 +1,37 @@
+#Hero_Container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('./hero_photo.jpg');
+  height: 755px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+}
+
+#Hero_InnerContainer {
+  padding-bottom: 88px;
+  width: 1024px;
+  justify-content: flex-start;
+}
+
+#Hero_Header {
+  max-width: 736px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: WHITE;
+  letter-spacing: 0.1em;
+  font-size: 80.43px;
+  margin-bottom: 42px;
+  line-height: 1em;
+}
+
+#Hero_Subheader {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: WHITE;
+  letter-spacing: 0.1em;
+  font-size: 33.62px;
+  margin: 0px;
+}
