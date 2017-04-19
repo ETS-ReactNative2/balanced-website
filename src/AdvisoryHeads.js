@@ -38,23 +38,23 @@ export default ({selectedName, onClick}) => (
   <div id="AdvisoryHeads_Container">
     <AdvisoryHead
       onClick={onClick}
-      name="michelle"
-      showOverlay={selectedName === 'michelle'}
-    />
-    <AdvisoryHead
-      onClick={onClick}
       name="greger"
       showOverlay={selectedName === 'greger'}
     />
     <AdvisoryHead
       onClick={onClick}
-      name="asha"
-      showOverlay={selectedName === 'asha'}
+      name="michelle"
+      showOverlay={selectedName === 'michelle'}
     />
     <AdvisoryHead
       onClick={onClick}
       name="matt"
       showOverlay={selectedName === 'matt'}
+    />
+    <AdvisoryHead
+      onClick={onClick}
+      name="asha"
+      showOverlay={selectedName === 'asha'}
     />
   </div>
 );
