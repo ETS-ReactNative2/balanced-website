@@ -10,7 +10,9 @@ export default () => (
         className="Footer_SectionContainer"
       >
         <i className="fa fa-envelope Footer_LeftIcon" />
-        <span className="Footer_Text">info@balanced.org</span>
+        <a href="mailto:info@balanced.org">
+          <span className="Footer_Text">info@balanced.org</span>
+        </a>
         <i className="fa fa-phone Footer_LeftIcon" />
         <span>816.945.4037</span>
       </div>

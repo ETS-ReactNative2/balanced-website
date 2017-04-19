@@ -24,10 +24,16 @@
 
 .Footer_LeftIcon {
   margin-right: 10px;
+  font-style: normal;
 }
 
 .Footer_Text {
   margin-right: 30px;
+  color: #5f605f;
+}
+
+#Footer_Container a {
+  text-decoration: none !important;
 }
 
 .Footer_RightIcon {
