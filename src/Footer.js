@@ -24,8 +24,12 @@ export default () => (
         className="Footer_SectionContainer"
         style={{justifyContent: 'flex-end'}}
       >
-        <i className="fa fa-facebook Footer_RightIcon" />
-        <i className="fa fa-twitter Footer_RightIcon" />
+        <a href="https://www.facebook.com/GetBalancedNow/" target="_blank">
+          <i className="fa fa-facebook Footer_RightIcon" />
+        </a>
+        <a href="https://twitter.com/getbalanced_now" target="_blank">
+          <i className="fa fa-twitter Footer_RightIcon" />
+        </a>
       </div>
     </div>
   </div>

@@ -68,8 +68,12 @@ class NavBar extends React.Component {
               style={styles.activeIcon}
               className="fa fa-bars"
             />
-            <i style={styles.inactiveIcon} className="fa fa-facebook" />
-            <i style={styles.inactiveIcon} className="fa fa-twitter" />
+            <a href="https://www.facebook.com/GetBalancedNow/" target="_blank">
+              <i style={styles.inactiveIcon} className="fa fa-facebook" />
+            </a>
+            <a href="https://twitter.com/getbalanced_now" target="_blank">
+              <i style={styles.inactiveIcon} className="fa fa-twitter" />
+            </a>
           </div>
         </div>
         <CSSTransitionGroup
