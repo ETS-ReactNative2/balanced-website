@@ -9,6 +9,7 @@ const IMAGES = {
   asha: require('./asha_head.jpg'),
   michelle: require('./michelle_head.jpg'),
   matt: require('./matt_head.jpg'),
+  julieanna: require('./julieanna_head.jpg'),
 };
 
 const NAMES = {
@@ -17,6 +18,7 @@ const NAMES = {
   asha: 'Dr. Asha Subramanian',
   michelle: 'Dr. Michelle McMacken',
   matt: 'Matt Ruscigno',
+  julieanna: 'Julieanna Hever',
 };
 
 const ROBERT_PROFILE_TEXT = `I’m the last person you’d expect to be an advocate for healthy eating. I grew up on a farm in Iowa and, as a teenager, worked at my family’s restaurant serving up burgers and fried chicken. I spent four years in the Marines and over two decades in the Washington, D.C. police force before retiring as Captain.
@@ -37,9 +39,18 @@ Dr. Subramanian also completed a fellowship in community health at Georgetown Un
 In 2014, she received a two-year fellowship grant to develop an evidence-based nutrition curriculum for her faculty physician colleagues. Dr. McMacken has received the faculty ‘Teacher of the Year’ award three times and has been featured in several documentary films, in national academic nutrition conferences, and on popular nutrition-related websites and podcasts. She is a council member for the True Health Initiative, a coalition of health experts from around the world committed to educating on evidence-based, proven principles of lifestyle as medicine.`,
   matt: `Matt Ruscigno, MPH, RD is a Registered Dietitian with a nutritional science degree from Penn State University and a graduate degree in public health nutrition from Loma Linda University.
 Matt is the co-author of No Meat Athlete with Matt Frazier and Appetite for Reduction with Isa Moskowitz and is the past-Chair of the Vegetarian Group of the Academy of Nutrition and Dietetics. He lives in Los Angeles, CA where he operates Nutrinic, a plant-based nutrition center focused on CVD prevention.`,
+  julieanna: `Julieanna Hever, M.S., R.D., C.P.T. is a Registered Dietitian who has been in private practice in Los Angeles since 2005, specializing in weight management, disease prevention and management, and sports nutrition. Julieanna authored  A Physician’s Guide to Plant-Based Diets, in the Permanente Medical Journal, The Vegiterranean Diet, and The Complete Idiot’s Guide to Plant-Based Nutrition.
+She is the co-author of the cookbook, The Complete Idiot's Guide to Gluten-Free Vegan Cooking and is the nutrition columnist for VegNews Magazine. She is the host of the wellness talk show series What Would Julieanna Do? on Z Living Network, has given a TEDx talk, and was recently featured on The Dr. Oz Show, The Steve Harvey Show, Reluctantly Healthy, The Marie Osmond Show, and Issues with Jane Velez-Mitchell.`,
 };
 
-const BOARD_MEMBERS_KEYS = ['robert', 'greger', 'michelle', 'matt', 'asha'];
+const BOARD_MEMBERS_KEYS = [
+  'robert',
+  'greger',
+  'michelle',
+  'matt',
+  'julieanna',
+  'asha',
+];
 
 const BOARD_MEMBERS = BOARD_MEMBERS_KEYS.map(key => ({
   name: NAMES[key],

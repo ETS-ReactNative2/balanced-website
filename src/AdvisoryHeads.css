@@ -3,7 +3,6 @@
   padding-bottom: 67px;
   display: flex;
   color: #2b2b2b;
-  width: 1024px;
   justify-content: space-between;
 }
 
@@ -38,6 +37,7 @@
 .AdvisoryHeads_ImageContainer {
   width: 210px;
   height: 210px;
+  margin: 0px 33px;
 }
 
 .AdvisoryHeads_ImageContainer img {

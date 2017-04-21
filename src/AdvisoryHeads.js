@@ -8,6 +8,7 @@ const NAMES = {
   asha: 'Dr. Asha Subramanian',
   michelle: 'Dr. Michelle McMacken',
   matt: 'Matt Ruscigno',
+  julieanna: 'Julieanna Hever',
 };
 
 const IMAGES = {
@@ -15,6 +16,7 @@ const IMAGES = {
   asha: require('./asha_head.jpg'),
   michelle: require('./michelle_head.jpg'),
   matt: require('./matt_head.jpg'),
+  julieanna: require('./julieanna_head.jpg'),
 };
 
 const AdvisoryHead = ({name, showOverlay, onClick}) => (
@@ -50,6 +52,11 @@ export default ({selectedName, onClick}) => (
       onClick={onClick}
       name="matt"
       showOverlay={selectedName === 'matt'}
+    />
+    <AdvisoryHead
+      onClick={onClick}
+      name="julieanna"
+      showOverlay={selectedName === 'julieanna'}
     />
     <AdvisoryHead
       onClick={onClick}
