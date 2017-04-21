@@ -1,6 +1,17 @@
 .ReadMore {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: 25px;
-  line-height: 35px;
+}
+
+@media(min-width: 1024px) {
+  .ReadMore {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+@media(max-width: 1024px) {
+  .ReadMore {
+    font-size: 18px;
+  }
 }

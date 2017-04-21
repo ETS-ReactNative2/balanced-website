@@ -1,50 +1,77 @@
-#OurStory_outerContainer {
-  background-image: url("./our_story_background.jpg");
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  color: #fff;
-  padding-top: 50px;
-  padding-bottom: 73px;
+@media(min-width: 1024px) {
+  #OurStory_outerContainer {
+    background-image: url("./our_story_background.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 73px;
+  }
+
+  #OurStory_innerContainer {
+    width: 890px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 208px
+  }
+
+  #textContainer {
+    width: 522px;
+  }
+
+
+  .audreyName {
+    width: 331px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin: 0;
+    font-size: 33px;
+  }
+
+  .audreyTitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-size: 22px;
+  }
+
+  #audreyBox {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 45px;
+    margin-left: -99px;
+  }
 }
 
-#OurStory_innerContainer {
-  width: 890px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin-left: 208px
-}
+@media(max-width: 1024px) {
+  #OurStory_outerContainer {
+    height: 100vh;
+    background-image: url("./our_story_background_mobile.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+  }
 
-#textContainer {
-  width: 522px;
-}
+  #OurStory_innerContainer {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-
-.audreyName {
-  width: 331px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  margin: 0;
-  font-size: 33px;
-}
-
-.audreyTitle {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  font-size: 22px;
-}
-
-#audreyBox {
-  align-self: flex-end;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 45px;
-  margin-left: -99px;
+  #audreyBox {
+    display: none;
+  }
 }
 
 .OurStoryDropdown_Transition-enter {
