@@ -1,3 +1,76 @@
+#NavBar_Container {
+  background-color: #2b2b2b;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1px;
+}
+
+@media(max-width: 1024px) {
+  #NavBar_Container {
+    height: 59px;
+  }
+
+  .NavBar_Logo {
+    height: 33px;
+  }
+
+  .NavBar_InnerContainer {
+    padding: 8px;
+  }
+
+  .NavBar_ActiveIcon {
+    font-size: 23px;
+    margin-right: 10px;
+  }
+
+  .NavBar_InactiveIcon {
+    font-size: 23px;
+    margin-right: 10px;
+  }
+}
+
+@media(min-width: 1024px) {
+  .NavBar_Logo {
+    width: 223px;
+    height: 53px;
+  }
+  #NavBar_Container {
+    height: 79px;
+  }
+
+  .NavBar_InnerContainer {
+    height: 79px;
+    padding: 0px;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .NavBar_ActiveIcon {
+    font-size: 33.85px;
+    margin-right: 18px;
+  }
+
+  .NavBar_InactiveIcon {
+    font-size: 33.85px;
+    margin-right: 18px;
+  }
+}
+
+.NavBar_InnerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NavBar_ActiveIcon {
+  color: #fff;
+}
+
+.NavBar_InactiveIcon {
+  color: #5f605f;
+}
+
+
 .NavBar_Transition-enter {
   opacity: 0.01;
 }

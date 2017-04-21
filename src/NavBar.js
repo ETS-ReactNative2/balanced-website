@@ -4,38 +4,6 @@ import './NavBar.css';
 import NavMenu from './NavMenu';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 
-const styles = {
-  navBar: {
-    backgroundColor: THEME_GREY,
-    height: 79,
-    display: 'flex',
-    justifyContent: 'space-between',
-    marginBottom: 1,
-  },
-  innerContainer: {
-    display: 'flex',
-    height: 79,
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingLeft: 17,
-    paddingRight: 17,
-  },
-  activeIcon: {
-    fontSize: 33.85,
-    color: WHITE,
-    marginRight: 18,
-  },
-  inactiveIcon: {
-    fontSize: 33.85,
-    color: LIGHT_GREY,
-    marginRight: 18,
-  },
-  logo: {
-    width: 223,
-    height: 53,
-  },
-};
-
 import logo from './logo.png';
 
 class NavBar extends React.Component {
@@ -58,21 +26,20 @@ class NavBar extends React.Component {
 
     return (
       <div>
-        <div style={styles.navBar}>
-          <div style={styles.innerContainer}>
-            <img style={styles.logo} alt="Balanced Logo" src={logo} />
+        <div id="NavBar_Container">
+          <div className="NavBar_InnerContainer">
+            <img className="NavBar_Logo" alt="Balanced Logo" src={logo} />
           </div>
-          <div style={styles.innerContainer}>
+          <div className="NavBar_InnerContainer">
             <i
               onClick={() => this.toggleShowOurStory()}
-              style={styles.activeIcon}
-              className="fa fa-bars"
+              className="fa fa-bars NavBar_ActiveIcon"
             />
             <a href="https://www.facebook.com/GetBalancedNow/" target="_blank">
-              <i style={styles.inactiveIcon} className="fa fa-facebook" />
+              <i className="fa fa-facebook NavBar_InactiveIcon" />
             </a>
             <a href="https://twitter.com/getbalanced_now" target="_blank">
-              <i style={styles.inactiveIcon} className="fa fa-twitter" />
+              <i className="fa fa-twitter NavBar_InactiveIcon" />
             </a>
           </div>
         </div>

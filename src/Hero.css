@@ -3,18 +3,36 @@
   align-items: center;
   flex-direction: column;
   background-image: url('./hero_photo.jpg');
-  height: 755px;
-  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  justify-content: flex-end;
 }
 
 #Hero_InnerContainer {
-  padding-bottom: 88px;
-  width: 1024px;
   justify-content: flex-start;
 }
+
+@media(min-width: 1024px) {
+  #Hero_Container {
+    height: 755px;
+    justify-content: flex-end;
+  }
+
+  #Hero_InnerContainer {
+    padding-bottom: 88px;
+    width: 1024px;
+  }
+}
+
+@media(max-width: 1024px) {
+  #Hero_Container {
+    background-position: left -40px bottom;
+    height: 50vh;
+  }
+  #Hero_InnerContainer {
+    padding: 16px;
+  }
+}
+
 
 #Hero_Header {
   max-width: 736px;
