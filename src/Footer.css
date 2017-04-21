@@ -1,43 +1,94 @@
-#Footer_Container {
-  height: 127px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #2b2b2b;
-  color: #5f605f;
+@media(min-width: 1024px) {
+  #Footer_Container {
+    height: 127px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2b2b;
+    color: #5f605f;
+  }
+
+  .Footer_SectionContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  #Footer_InnerContainer {
+    width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+  }
+
+  .Footer_LeftIcon {
+    margin-right: 10px;
+    font-style: normal;
+  }
+
+  .Footer_Text {
+    margin-right: 30px;
+    color: #5f605f;
+  }
+
+  #Footer_Container a {
+    text-decoration: none !important;
+  }
+
+  .Footer_RightIcon {
+    font-size: 33.85px;
+    margin-right: 24px;
+    color: #5f605f;
+  }
 }
 
-#Footer_InnerContainer {
-  width: 1024px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
-}
+@media(max-width: 1024px) {
+  #Footer_Container {
+    height: 127px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2b2b;
+    color: #5f605f;
+    padding: 32px;
+  }
 
-.Footer_SectionContainer {
-  width: 328px;
-  display: flex;
-  align-items: center;
-}
+  #Footer_InnerContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+  }
 
-.Footer_LeftIcon {
-  margin-right: 10px;
-  font-style: normal;
-}
+  .Footer_SectionContainer {
+    display: flex;
+    align-items: center;
+  }
 
-.Footer_Text {
-  margin-right: 30px;
-  color: #5f605f;
-}
+  .Footer_SectionContainer img {
+    margin: 16px;
+  }
 
-#Footer_Container a {
-  text-decoration: none !important;
-}
+  .Footer_LeftIcon {
+    margin: 8px;
+    font-style: normal;
+  }
 
-.Footer_RightIcon {
-  font-size: 33.85px;
-  margin-right: 24px;
-  color: #5f605f;
+  .Footer_Text {
+    color: #5f605f;
+    margin: 8px;
+  }
+
+  #Footer_Container a {
+    text-decoration: none !important;
+  }
+
+  .Footer_RightIcon {
+    font-size: 33.85px;
+    color: #5f605f;
+    margin: 8px;
+  }
 }

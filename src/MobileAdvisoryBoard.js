@@ -49,7 +49,9 @@ const BOARD_MEMBERS = BOARD_MEMBERS_KEYS.map(key => ({
 
 export default () => (
   <div id="MobileAdvisoryBoard_Container">
-    <SectionHeader>ADVISORY BOARD</SectionHeader>
+    <div id="MobileAdvisoryBoard_Header">
+      <SectionHeader>ADVISORY BOARD</SectionHeader>
+    </div>
     {BOARD_MEMBERS.map(b => <BoardMember key={b.name} {...b} />)}
   </div>
 );
