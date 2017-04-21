@@ -1,0 +1,121 @@
+@media(min-width: 1024px) {
+  .Signup_FormContainer {
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 58px;
+  }
+
+  .Signup_Button {
+    width: 222px;
+    height: 53px;
+    background-color: transparent;
+    border: solid 2px #fff;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .Signup_InputGroup {
+    width: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 58px;
+  }
+
+  .Signup_Input {
+    margin: 0;
+    width: 229px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    padding: 10px;
+    border: none;
+    border-bottom: solid 2px #c9c9c9;
+    transition: border 0.3s;
+    background-color: transparent;
+    color: #fff;
+    border-bottom: solid 2px #fff;
+  }
+
+  .Signup_Input::placeholder {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+  }
+}
+
+@media(max-width: 1024px) {
+  .Signup_FormContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+  }
+
+  .Signup_Button {
+    width: 100%;
+    height: 53px;
+    background-color: transparent;
+    border: solid 2px #fff;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .Signup_InputGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+
+  .Signup_Input {
+    margin: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none !important;
+    padding: 10px;
+    border: none;
+    border-bottom: solid 2px #c9c9c9;
+    transition: border 0.3s;
+    background-color: transparent;
+    color: #fff;
+    border-bottom: solid 2px #fff;
+    margin-bottom: 32px;
+  }
+
+  .Signup_Input::placeholder {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+  }
+}

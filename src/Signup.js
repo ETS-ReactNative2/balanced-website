@@ -1,42 +1,11 @@
 import React from 'react';
-import {WHITE, THEME_GREEN} from './colours';
 import './signup.css';
-
-const style = {
-  container: {
-    alignItems: 'center',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    paddingTop: 120,
-    paddingBottom: 108,
-    backgroundColor: THEME_GREEN,
-  },
-  header: {
-    margin: 0,
-    color: WHITE,
-    fontFamily: 'Roboto',
-    fontWeight: 'bold',
-    fontSize: 40,
-    letterSpacing: '.13em',
-    textAlign: 'center',
-  },
-  subheader: {
-    maxWidth: 716,
-    color: WHITE,
-    fontFamily: 'Roboto',
-    textAlign: 'center',
-    fontWeight: 'bold',
-    fontSize: 15,
-    letterSpacing: '0.1em',
-    marginBottom: 56,
-  },
-};
+import './SignupForm.css';
 
 export default () => (
-  <div id="Signup_Container" style={style.container}>
-    <h1 style={style.header}>ENOUGH IS ENOUGH</h1>
-    <h2 style={style.subheader}>
+  <div id="Signup_Container">
+    <h1 id="Signup_Header">ENOUGH IS ENOUGH</h1>
+    <h2 id="Signup_Subheader">
       TOGETHER, WE WILL HOLD MAJOR FOOD CORPORATIONS ACCOUNTABLE
       FOR BRINGING BALANCE TO CAFETERIAS, MENUS AND STORE SHELVES
     </h2>
@@ -52,14 +21,12 @@ export default () => (
       <div className="Signup_InputGroup">
         <input
           className="Signup_Input"
-          style={style.input}
           placeholder="FIRST NAME"
           type="text"
           name="FNAME"
         />
         <input
           className="Signup_Input"
-          style={style.input}
           placeholder="LAST NAME"
           type="text"
           name="LNAME"
