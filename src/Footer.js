@@ -32,6 +32,9 @@ export default () => (
         <a href="https://twitter.com/getbalanced_now" target="_blank">
           <i className="fa fa-twitter Footer_RightIcon" />
         </a>
+        <a href="https://www.instagram.com/getbalancednow/" target="_blank">
+          <i className="fa fa-instagram Footer_RightIcon" />
+        </a>
       </div>
     </div>
   </div>
