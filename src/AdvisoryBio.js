@@ -12,6 +12,5 @@ const BIOS = {
 export default ({selectedName}) => (
   <div id="AdvisoryBio_Container">
     <BodyText>{BIOS[selectedName]}</BodyText>
-    <i className="fa fa-envelope AdvisoryBio_EmailIcon" />
   </div>
 );
