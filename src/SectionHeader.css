@@ -1,8 +1,19 @@
+@media(min-width: 1024px) {
+  .SectionHeader {
+    font-size: 40px;
+  }
+}
+
+@media(max-width: 1024px) {
+  .SectionHeader {
+    font-size: 30px;
+  }
+}
+
 .SectionHeader {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-style: italic;
-  font-size: 40px;
   letter-spacing: 0.1em;
 }

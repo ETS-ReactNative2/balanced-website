@@ -4,9 +4,9 @@ import BodyText from './BodyText';
 import './what_were_asking_for.css';
 
 export default () => (
-  <div id="outerContainer">
-    <div id="innerContainer">
-      <div id="textContainer">
+  <div id="WhatWereAskingFor_Container">
+    <div id="WhatWereAskingFor_InnerContainer">
+      <div id="WhatWereAskingFor_TextContainer">
         <SectionHeader>
           WHAT WE'RE ASKING
           FOR IS SIMPLE
