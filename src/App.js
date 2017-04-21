@@ -10,6 +10,9 @@ import AdvisoryBoard from './AdvisoryBoard';
 import Donate from './Donate';
 import OurTeam from './OurTeam';
 import Footer from './Footer';
+import MobileAdvisoryBoard from './MobileAdvisoryBoard';
+
+const isMobile = window.innerWidth <= 1024;
 
 class App extends Component {
   render() {
@@ -24,7 +27,7 @@ class App extends Component {
         <WhatWereAskingFor />
         <Support />
         <OurStory />
-        <AdvisoryBoard />
+        {isMobile ? <MobileAdvisoryBoard /> : <AdvisoryBoard />}
         <Donate />
         <OurTeam />
         <Footer />
