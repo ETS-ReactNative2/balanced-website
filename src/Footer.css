@@ -10,6 +10,7 @@
 
   .Footer_SectionContainer {
     display: flex;
+    flex: 1;
     align-items: center;
   }
 
