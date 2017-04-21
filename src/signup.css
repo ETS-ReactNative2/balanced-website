@@ -25,16 +25,18 @@
 @media(min-width: 1024px) {
   #Signup_Header {
     font-size: 40px;
+    margin: 0px;
+    margin-bottom: 14px;
   }
 
   #Signup_Container {
     justify-content: center;
-    padding: 67px;
+    padding: 100px 0px;
   }
 
   #Signup_Subheader {
     font-size: 15px;
-    margin-bottom: 67px;
+    margin-bottom: 30px;
   }
 }
 

@@ -53,6 +53,7 @@
   #Intro_Header {
     line-height: 50px;
     font-size: 30px;
+    margin: 0px;
     margin-bottom: 67px;
   }
 
@@ -62,5 +63,6 @@
     font-weight: 400;
     padding-left: 67px;
     padding-right: 67px;
+    margin: 0px;
   }
 }

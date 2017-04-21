@@ -5,8 +5,7 @@
     display: flex;
     justify-content: center;
     color: #fff;
-    padding-top: 50px;
-    padding-bottom: 73px;
+    padding: 110px 0px;
   }
 
   #OurStory_innerContainer {
@@ -45,7 +44,7 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 45px;
-    margin-left: -99px;
+    margin-left: -10px;
   }
 }
 

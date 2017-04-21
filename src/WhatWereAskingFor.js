@@ -8,11 +8,11 @@ export default () => (
     <div id="WhatWereAskingFor_InnerContainer">
       <div id="WhatWereAskingFor_TextContainer">
         <SectionHeader>
-          WHAT WE'RE ASKING
+          WHAT WE'RE ASKING<br />
           FOR IS SIMPLE
         </SectionHeader>
         <BodyText>
-          All they have to do is sell food that reflects federal dietary
+          Food companies should sell food that reflects federal dietary
           guidelines and the best nutrition evidence. That means
           more grains, beans, vegetables and fruits, and fewer
           servings of foods high in saturated fat, cholesterol and
