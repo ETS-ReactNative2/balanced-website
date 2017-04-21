@@ -19,9 +19,9 @@
   }
 
   #textContainer {
+    text-align: left !important;
     width: 522px;
   }
-
 
   .audreyName {
     width: 331px;
@@ -62,7 +62,7 @@
   }
 
   #OurStory_innerContainer {
-    padding: 16px;
+    padding: 32px 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -71,6 +71,13 @@
 
   #audreyBox {
     display: none;
+  }
+
+  #OurStory_mobileContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 

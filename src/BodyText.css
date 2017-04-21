@@ -4,24 +4,16 @@
     line-height: 35px;
     max-width: 1024px;
   }
-
-  .AlignLeft {
-    text-align: left;
-  }
 }
 
 @media(max-width: 1024px) {
   .BodyText {
     font-size: 18px;
     line-height: 28px;
+    text-align: center;
   }
 }
 
 .BodyText {
-  text-align: center;
   font-family: "Open Sans", sans-serif;
-}
-
-.AlignLeft {
-  text-align: left;
 }
