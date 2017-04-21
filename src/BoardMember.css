@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-startdd;
+  margin-bottom: 4px;
 }
 
 .BoardMemberBar_Picture {
@@ -17,6 +18,43 @@
 
 .BoardMemberBar_Name {
   color: #FFF;
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.BoardMemberProfile_Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+.BoardMemberProfile_Container p {
+  text-align: left;
+}
+
+.BoardMemberProfile_Picture {
+  width: 50vh;
+  height: 50vh;
+}
+
+.BoardMemberProfile_Name {
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 8px;
+  margin-top: 16px;
+}
+
+.BoardMemberProfile_Title {
+  margin: 0px;
+  color: #4B991F;
   font-family: Roboto, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;

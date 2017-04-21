@@ -1,0 +1,8 @@
+#MobileAdvisoryBoard_Container {
+  display: flex;
+  flex-direction: column;
+}
+
+#MobileAdvisoryBoard_Header {
+  margin: 64px 0px;
+}

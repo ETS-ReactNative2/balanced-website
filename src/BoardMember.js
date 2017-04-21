@@ -1,10 +1,11 @@
 import React from 'react';
-import './BoardMember.css';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import BodyText from './BodyText';
+import ReadMore from './ReadMore';
+import './BoardMember.css';
 
-const BoardMemberBar = ({name, picture}) => (
-  <div className="BoardMemberBar_Container">
+const BoardMemberBar = ({name, picture, onClick}) => (
+  <div className="BoardMemberBar_Container" onClick={onClick}>
     <img src={picture} className="BoardMemberBar_Picture" />
     <span className="BoardMemberBar_Name">{name}</span>
   </div>
@@ -39,6 +40,11 @@ class BoardMemberProfile extends React.Component {
               <BodyText key={i} textAlign="left">{line}</BodyText>
             ))}
         </CSSTransitionGroup>
+        {bio.split('\n').length > 1 &&
+          <ReadMore
+            toggled={expanded}
+            onClick={() => this.setState({expanded: !expanded})}
+          />}
       </div>
     );
   }
@@ -47,7 +53,7 @@ class BoardMemberProfile extends React.Component {
 export default class extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {expanded: props.name === 'CAPTAIN ROBERT ATCHESON'};
+    this.state = {expanded: props.name === 'Capt. Robert Atcheson'};
   }
 
   render() {
@@ -55,8 +61,19 @@ export default class extends React.Component {
     const {expanded} = this.state;
     return (
       <div>
-        <BoardMemberBar name={name} picture={picture} />
-        {expanded && <BoardMemberProfile {...this.props} />}
+        <BoardMemberBar
+          name={name}
+          picture={picture}
+          onClick={() => this.setState({expanded: !expanded})}
+        />
+        {expanded &&
+          <CSSTransitionGroup
+            transitionName="AdvisoryProfileDropdown_Transition"
+            transitionEnterTimeout={500}
+            transitionLeaveTimeout={300}
+          >
+            <BoardMemberProfile {...this.props} />
+          </CSSTransitionGroup>}
       </div>
     );
   }
