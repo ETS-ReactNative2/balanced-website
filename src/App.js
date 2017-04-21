@@ -15,8 +15,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <NavBar />
-        <Hero />
+        <div id="SuperContainer">
+          <NavBar />
+          <Hero />
+        </div>
         <Intro />
         <Signup />
         <WhatWereAskingFor />

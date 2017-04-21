@@ -1,8 +1,7 @@
+
 #Hero_Container {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  background-image: url('./hero_photo.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -11,37 +10,64 @@
   justify-content: flex-start;
 }
 
+@media(max-width: 1024px) {
+  #SuperContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  #Hero_Container {
+    background-image: url('./hero_photo_mobile.png');
+    background-position: center;
+    flex: 1;
+    justify-content: flex-end;;
+    align-items: flex-end;
+    padding-bottom: 10%;
+  }
+
+  #Hero_Header {
+    text-align: center;
+    font-size: 40px;
+    padding: 16px;
+  }
+
+  #Hero_Subheader {
+    padding: 16px;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
 @media(min-width: 1024px) {
   #Hero_Container {
+    background-image: url('./hero_photo.jpg');
     height: 755px;
     justify-content: flex-end;
+    align-items: center;
   }
 
   #Hero_InnerContainer {
     padding-bottom: 88px;
     width: 1024px;
   }
-}
 
-@media(max-width: 1024px) {
-  #Hero_Container {
-    background-position: left -40px bottom;
-    height: 50vh;
+  #Hero_Header {
+    max-width: 736px;
+    font-size: 80.43px;
+    margin-bottom: 42px;
   }
-  #Hero_InnerContainer {
-    padding: 16px;
+
+  #Hero_Subheader {
+    font-size: 33.62px;
   }
 }
-
 
 #Hero_Header {
-  max-width: 736px;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   color: WHITE;
   letter-spacing: 0.1em;
-  font-size: 80.43px;
-  margin-bottom: 42px;
   line-height: 1em;
 }
 
@@ -49,7 +75,6 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   color: WHITE;
-  letter-spacing: 0.1em;
-  font-size: 33.62px;
   margin: 0px;
+  letter-spacing: 0.1em;
 }
