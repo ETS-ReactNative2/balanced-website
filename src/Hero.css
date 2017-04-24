@@ -19,10 +19,10 @@
 
   #Hero_Container {
     background-image: url('./hero_photo_mobile.png');
-    background-position: center;
+    background-position: top;
     flex: 1;
     justify-content: flex-end;;
-    align-items: flex-end;
+    align-items: center;
     padding-bottom: 10%;
   }
 

@@ -1,5 +1,6 @@
 @media(min-width: 1024px) {
   #OurStory_outerContainer {
+    background-position: right;
     background-image: url("./our_story_background.jpg");
     background-size: cover;
     display: flex;
@@ -53,7 +54,7 @@
     height: 100vh;
     background-image: url("./our_story_background_mobile.png");
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;

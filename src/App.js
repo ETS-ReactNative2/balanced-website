@@ -12,10 +12,28 @@ import OurTeam from './OurTeam';
 import Footer from './Footer';
 import MobileAdvisoryBoard from './MobileAdvisoryBoard';
 
-const isMobile = window.innerWidth <= 1024;
-
 class App extends Component {
+  setIsMobile() {
+    console.log('Resize called');
+    this.setState({
+      isMobile: window.innerWidth <= 1024,
+    });
+  }
+
+  componentWillMount() {
+    this.setIsMobile();
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.setIsMobile.bind(this));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.setIsMobile);
+  }
+
   render() {
+    const {isMobile} = this.state;
     return (
       <div>
         <div id="SuperContainer">
