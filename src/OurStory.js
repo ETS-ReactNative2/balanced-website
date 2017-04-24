@@ -4,6 +4,8 @@ import SectionHeader from './SectionHeader';
 import ReadMore from './ReadMore';
 import OurStoryDropdown from './OurStoryDropdown';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
+import $ from 'jquery';
+import 'jquery.scrollto';
 import './OurStory.css';
 
 class OurStory extends React.Component {
@@ -16,9 +18,17 @@ class OurStory extends React.Component {
 
   toggleShowOurStory() {
     const {showOurStory} = this.state;
-    this.setState({
-      showOurStory: !showOurStory,
-    });
+    this.setState(
+      {
+        showOurStory: !showOurStory,
+      },
+      () => {
+        if (!this.state.showOurStory) return;
+        $(window).scrollTo($('#OurStoryDropdown_OuterContainer'), {
+          duration: 500,
+        });
+      },
+    );
   }
 
   render() {

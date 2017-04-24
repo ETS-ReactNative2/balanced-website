@@ -3,6 +3,8 @@ import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import BodyText from './BodyText';
 import ReadMore from './ReadMore';
 import robert from './robert.jpg';
+import $ from 'jquery';
+import 'jquery.scrollto';
 import './AdvisoryProfile.css';
 
 const PROFILE_TEXT = `I’m the last person you’d expect to be an advocate for healthy eating. I grew up on a farm in Iowa and, as a teenager, worked at my family’s restaurant serving up burgers and fried chicken. I spent four years in the Marines and over two decades in the Washington, D.C. police force before retiring as Captain.

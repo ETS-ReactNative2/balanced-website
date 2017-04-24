@@ -3,8 +3,8 @@ import './OurStoryDropdown.css';
 import BodyText from './BodyText';
 
 export default () => (
-  <div id="OuterContainer">
-    <div id="InnerContainer">
+  <div id="OurStoryDropdown_OuterContainer">
+    <div id="OurStoryDropdown_InnerContainer">
       <BodyText>
         It shouldn’t be this hard to feed our families well. We shouldn’t have to
         worry about nutrition when we send our kids to school or grab a bite in the

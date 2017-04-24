@@ -1,5 +1,5 @@
 @media(min-width: 1024px) {
-  #OuterContainer {
+  #OurStoryDropdown_OuterContainer {
     padding-top: 80px;
     padding-bottom: 80px;
     background-color: rgba(75, 153, 31, 0.1);
@@ -9,13 +9,13 @@
     align-items: center;
   }
 
-  #InnerContainer {
+  #OurStoryDropdown_InnerContainer {
     width: 890px;
   }
 }
 
 @media(max-width: 1024px) {
-  #OuterContainer {
+  #OurStoryDropdown_OuterContainer {
     padding: 16px;
     background-color: rgba(75, 153, 31, 0.1);
     display: flex;

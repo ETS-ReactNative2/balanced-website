@@ -1,12 +1,12 @@
 import React from 'react';
 import './NavMenu.css';
+import $ from 'jquery';
+import 'jquery.scrollto';
 
-const navigateTo = (anchorName, toggleShowOurStory) => {
-  toggleShowOurStory();
+const navigateTo = (anchorName, hideNavBar) => {
+  hideNavBar();
   const element = document.getElementById(anchorName + '_Container');
-  element.scrollIntoView({
-    behavior: 'smooth',
-  });
+  $(window).scrollTo(element, {duration: 500});
 };
 
 const NavMenu = ({onClick}) => (

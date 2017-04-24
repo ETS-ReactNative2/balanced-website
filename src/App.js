@@ -14,7 +14,6 @@ import MobileAdvisoryBoard from './MobileAdvisoryBoard';
 
 class App extends Component {
   setIsMobile() {
-    console.log('Resize called');
     this.setState({
       isMobile: window.innerWidth <= 1024,
     });
