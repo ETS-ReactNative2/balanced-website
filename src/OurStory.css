@@ -51,6 +51,7 @@
 
 @media(max-width: 1024px) {
   #OurStory_outerContainer {
+    height: 100vh;
     background-image: url("./our_story_background_mobile.png");
     background-size: cover;
     background-position: top center;
@@ -58,8 +59,7 @@
     display: flex;
     justify-content: center;
     color: #fff;
-    padding: 64px;
-    min-height: 50vh;
+    padding: 32px;
   }
 
   #OurStory_innerContainer {

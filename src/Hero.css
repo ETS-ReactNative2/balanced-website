@@ -14,7 +14,7 @@
   #SuperContainer {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 70vh;
   }
 
   #Hero_Container {
@@ -49,6 +49,7 @@
 
   #Hero_InnerContainer {
     padding-bottom: 88px;
+    padding-left: 67px;
     width: 1024px;
   }
 
