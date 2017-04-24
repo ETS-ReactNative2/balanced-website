@@ -4,11 +4,11 @@ import audrey_advisory_head from './audrey_advisory_head.jpg';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 
 const NAMES = {
-  greger: 'Dr. Michael Greger',
-  asha: 'Dr. Asha Subramanian',
-  michelle: 'Dr. Michelle McMacken',
-  matt: 'Matt Ruscigno',
-  julieanna: 'Julieanna Hever',
+  greger: 'Dr. Michael Greger, M.D. FACLM',
+  asha: 'Dr. Asha Subramanian, M.D.',
+  michelle: 'Dr. Michelle McMacken, M.D.',
+  matt: 'Matt Ruscigno, M.P.H. R.D.',
+  julieanna: 'Julieanna Hever, M.S. R.D. C.P.T.',
 };
 
 const IMAGES = {
@@ -37,31 +37,35 @@ const AdvisoryHead = ({name, showOverlay, onClick}) => (
 );
 
 export default ({selectedName, onClick}) => (
-  <div id="AdvisoryHeads_Container">
-    <AdvisoryHead
-      onClick={onClick}
-      name="greger"
-      showOverlay={selectedName === 'greger'}
-    />
-    <AdvisoryHead
-      onClick={onClick}
-      name="michelle"
-      showOverlay={selectedName === 'michelle'}
-    />
-    <AdvisoryHead
-      onClick={onClick}
-      name="matt"
-      showOverlay={selectedName === 'matt'}
-    />
-    <AdvisoryHead
-      onClick={onClick}
-      name="julieanna"
-      showOverlay={selectedName === 'julieanna'}
-    />
-    <AdvisoryHead
-      onClick={onClick}
-      name="asha"
-      showOverlay={selectedName === 'asha'}
-    />
+  <div id="AdvisoryHeads_OuterContainer">
+    <div className="AdvisoryHeads_Container">
+      <AdvisoryHead
+        onClick={onClick}
+        name="greger"
+        showOverlay={selectedName === 'greger'}
+      />
+      <AdvisoryHead
+        onClick={onClick}
+        name="michelle"
+        showOverlay={selectedName === 'michelle'}
+      />
+      <AdvisoryHead
+        onClick={onClick}
+        name="matt"
+        showOverlay={selectedName === 'matt'}
+      />
+    </div>
+    <div className="AdvisoryHeads_Container">
+      <AdvisoryHead
+        onClick={onClick}
+        name="julieanna"
+        showOverlay={selectedName === 'julieanna'}
+      />
+      <AdvisoryHead
+        onClick={onClick}
+        name="asha"
+        showOverlay={selectedName === 'asha'}
+      />
+    </div>
   </div>
 );

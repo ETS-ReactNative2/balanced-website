@@ -1,15 +1,18 @@
-#AdvisoryHeads_Container {
-  padding-top: 67px;
-  padding-bottom: 67px;
-  display: flex;
-  color: #2b2b2b;
-  justify-content: space-between;
+#AdvisoryHeads_OuterContainer {
+  flex-direction: column;
+  padding: 32px;
 }
 
-.AdvisoryHeadsInnerContainer {
+.AdvisoryHeads_Container {
+  display: flex;
+  color: #2b2b2b;
+}
+
+.AdvisoryHeads_InnerContainer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 16px;
 }
 
 .AdvisoryHeads_Name {
@@ -35,9 +38,10 @@
 }
 
 .AdvisoryHeads_ImageContainer {
-  width: 172px;
-  height: 172px;
-  margin: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .AdvisoryHeads_ImageContainer img {
@@ -50,8 +54,7 @@
 }
 
 .AdvisoryHeads_Overlay {
-  position: relative;
-  top: -176px;
+  margin-top: -172px;
   border-radius: 105px;
   left: 0;
   width: 172px;

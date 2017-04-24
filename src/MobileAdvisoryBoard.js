@@ -14,11 +14,11 @@ const IMAGES = {
 
 const NAMES = {
   robert: 'Capt. Robert Atcheson',
-  greger: 'Dr. Michael Greger',
-  asha: 'Dr. Asha Subramanian',
-  michelle: 'Dr. Michelle McMacken',
-  matt: 'Matt Ruscigno',
-  julieanna: 'Julieanna Hever',
+  greger: 'Dr. Michael Greger, M.D. FACLM',
+  asha: 'Dr. Asha Subramanian, M.D.',
+  michelle: 'Dr. Michelle McMacken, M.D.',
+  matt: 'Matt Ruscigno, M.P.H. R.D.',
+  julieanna: 'Julieanna Hever, M.S. R.D. C.P.T.',
 };
 
 const ROBERT_PROFILE_TEXT = `I’m the last person you’d expect to be an advocate for healthy eating. I grew up on a farm in Iowa and, as a teenager, worked at my family’s restaurant serving up burgers and fried chicken. I spent four years in the Marines and over two decades in the Washington, D.C. police force before retiring as Captain.
