@@ -14,7 +14,6 @@ export default () => (
       method="post"
       id="mc-embedded-subscribe-form"
       name="mc-embedded-subscribe-form"
-      target="_blank"
       noValidate
       className="Signup_FormContainer"
     >
