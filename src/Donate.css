@@ -78,14 +78,14 @@
 
 @media(max-width: 1024px) {
   #Donate_Container {
-    height: 100vh;
+    max-height: 50vh;
     color: #FFF;
     background-image: url('./donate_background.jpg');
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 32px 16px;
+    padding: 128px;
     background-size: cover;
     background-repeat: no-repeat;
   }

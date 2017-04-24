@@ -1,8 +1,7 @@
 @media(max-width: 1024px) {
   #Signup_Container {
     display: flex;
-    padding: 0px 32px;
-    height: 100vh;
+    padding: 64px;
     overflow: hidden;
     flex-direction: column;
     justify-content: center;

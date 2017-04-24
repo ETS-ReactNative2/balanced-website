@@ -66,14 +66,14 @@ export default class extends React.Component {
           picture={picture}
           onClick={() => this.setState({expanded: !expanded})}
         />
-        {expanded &&
-          <CSSTransitionGroup
-            transitionName="AdvisoryProfileDropdown_Transition"
-            transitionEnterTimeout={500}
-            transitionLeaveTimeout={300}
-          >
-            <BoardMemberProfile {...this.props} />
-          </CSSTransitionGroup>}
+        <CSSTransitionGroup
+          transitionName="AdvisoryBio_Transition"
+          transitionEnterTimeout={600}
+          transitionLeaveTimeout={300}
+          key={name}
+        >
+          {expanded && <BoardMemberProfile {...this.props} />}
+        </CSSTransitionGroup>
       </div>
     );
   }

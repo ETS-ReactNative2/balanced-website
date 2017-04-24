@@ -4,19 +4,23 @@ import audrey_advisory_head from './audrey_advisory_head.jpg';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 
 const NAMES = {
+  robert: 'Capt. Robert Atcheson',
   greger: 'Dr. Michael Greger, M.D. FACLM',
   asha: 'Dr. Asha Subramanian, M.D.',
   michelle: 'Dr. Michelle McMacken, M.D.',
   matt: 'Matt Ruscigno, M.P.H. R.D.',
   julieanna: 'Julieanna Hever, M.S. R.D. C.P.T.',
+  reshma: 'Dr. Reshma Shah, M.D.',
 };
 
 const IMAGES = {
+  robert: require('./robert.jpg'),
   greger: require('./greger_head.jpg'),
   asha: require('./asha_head.jpg'),
   michelle: require('./michelle_head.jpg'),
   matt: require('./matt_head.jpg'),
   julieanna: require('./julieanna_head.jpg'),
+  reshma: require('./reshma_head.jpg'),
 };
 
 const AdvisoryHead = ({name, showOverlay, onClick}) => (
@@ -51,15 +55,20 @@ export default ({selectedName, onClick}) => (
       />
       <AdvisoryHead
         onClick={onClick}
-        name="matt"
-        showOverlay={selectedName === 'matt'}
+        name="julieanna"
+        showOverlay={selectedName === 'julieanna'}
       />
     </div>
     <div className="AdvisoryHeads_Container">
       <AdvisoryHead
         onClick={onClick}
-        name="julieanna"
-        showOverlay={selectedName === 'julieanna'}
+        name="reshma"
+        showOverlay={selectedName === 'reshma'}
+      />
+      <AdvisoryHead
+        onClick={onClick}
+        name="matt"
+        showOverlay={selectedName === 'matt'}
       />
       <AdvisoryHead
         onClick={onClick}

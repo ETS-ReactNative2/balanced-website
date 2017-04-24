@@ -23,7 +23,6 @@
 @media(max-width: 1024px) {
   #Support_OuterContainer {
     display: flex;
-    height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -32,7 +31,7 @@
   }
 
   #Support_InnerContainer {
-    padding: 16px;
+    padding: 64px;
   }
 
   .Support_logos {
@@ -44,6 +43,6 @@
 
   .Support_logos img {
     height: 40px;
-    margin: 8px;
+    margin: 16px;
   }
 }
