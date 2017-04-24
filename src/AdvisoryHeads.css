@@ -35,14 +35,14 @@
 }
 
 .AdvisoryHeads_ImageContainer {
-  width: 210px;
-  height: 210px;
-  margin: 0px 33px;
+  width: 172px;
+  height: 172px;
+  margin: 16px;
 }
 
 .AdvisoryHeads_ImageContainer img {
-  width: 210px;
-  height: 210px;
+  width: 172px;
+  height: 172px;
 }
 
 .AdvisoryHeads_ImageContainer {
@@ -51,11 +51,11 @@
 
 .AdvisoryHeads_Overlay {
   position: relative;
-  top: -213px;
+  top: -176px;
   border-radius: 105px;
   left: 0;
-  width: 210px;
-  height: 210px;
+  width: 172px;
+  height: 172px;
   display: block;
   background-color: rgba(75, 153, 31, 0.61);
 }
