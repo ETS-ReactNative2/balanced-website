@@ -8,7 +8,7 @@ export default () => (
     <div id="Donate_InnerContainer">
       <SectionHeader>DONATE</SectionHeader>
       <BodyText>
-        You can help us make healther food more <br />
+        You can help us make healthier food more <br />
         accessible by donating today!
       </BodyText>
       <div id="Donate_DonationBox">
