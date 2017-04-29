@@ -57,5 +57,22 @@ export default ({selectedName, onClick}) => (
         showOverlay={selectedName === 'asha'}
       />
     </div>
+    <div className="AdvisoryHeads_Container">
+      <AdvisoryHead
+        onClick={onClick}
+        name="pamela"
+        showOverlay={selectedName === 'pamela'}
+      />
+      <AdvisoryHead
+        onClick={onClick}
+        name="jackson"
+        showOverlay={selectedName === 'jackson'}
+      />
+      <AdvisoryHead
+        onClick={onClick}
+        name="aaron"
+        showOverlay={selectedName === 'aaron'}
+      />
+    </div>
   </div>
 );

@@ -17,6 +17,12 @@ export const BIOS = {
   She currently cares for patients at Santa Clara Valley Medical Center and is an affiliate clinical instructor at Stanford University School of Medicine. She obtained her undergraduate degree and a Masters in Public Health from Johns Hopkins University and her medical degree from Drexel University College of Medicine.
   In addition to clinical practice, Dr. Shah has a strong interest in family health and wellness, with a focus on plant-based nutrition. She enjoys working with medical students and residents to spread the word about plant based nutrition.`,
   robert: ROBERT_PROFILE_TEXT,
+  pamela: `Pamela Fergusson, R.D. PhD, runs a private practice in Toronto, where she promotes health and healing through a plant-based diet. She has been a dietitian since 2001, earned her PhD at the University of Liverpool and her Master’s in International Health at Sweden’s Uppsala University, and has worked in the nutrition field in North America, Europe, Asia and Africa.
+  She has lectured in nutrition at the University of Chester (UK), Liverpool School of Tropical Medicine, and Ryerson University (Toronto). Dr. Fergusson has also worked for Food and Nutrition Technical Assistance (FANTA), providing training and support to USAID-funded nutrition projects in Africa and Asia. She is the author or co-author of nine nutrition-related papers in peer-reviewed journals, primarily dealing with the implications of nutritional status or malnutrition for care or survival of persons afflicted by human immunodeficiency virus. Dr. Fergusson is currently serving on the Dietitians of Canada Sustainable Diets Core Group.`,
+  aaron: `In 2013, Aaron graduated from Oregon Health & Science University in Portland with a bachelors degree in nursing and now works as a Registered Nurse specializing in cardiovascular disease. He is also the co-owner and founder of Thought For Food Lifestyle, a podcast and social media platform dedicated to helping people adopt a healthy and adventurous plant-based lifestyle through an evidence-based and entertaining lens.
+  In 2015, he graduated from the WellCoaches online program for Health and Wellness Coaches, a science-based program for professional Health Coaches. Aaron is a mountain endurance athlete, husband and father and has been passionate about nutrition science and plant-based lifestyles for over a decade.`,
+  jackson: `Jackson Long has a degree in Integrative Physiology and Public Health and is currently working on his graduate degree in Applied Nutrition through the University of New England. Jackson is the co-owner and founder of Thought For Food Lifestyle, a podcast and social media platform dedicated to helping people adopt a healthy and adventurous plant-based lifestyle through an evidence-based and entertaining lens.
+  He is also a plant-based endurance athlete and has raced as an elite category 1 cyclist at the national and international level.`,
 };
 
 export const NAMES = {
@@ -27,6 +33,9 @@ export const NAMES = {
   matt: 'Matt Ruscigno, M.P.H. R.D.',
   julieanna: 'Julieanna Hever, M.S. R.D. C.P.T.',
   reshma: 'Dr. Reshma Shah, M.D.',
+  pamela: 'Pamela Fergusson, R.D. PhD',
+  jackson: 'Jackson Long',
+  aaron: 'Aaron Stuber, R.N. B.S.N',
 };
 
 export const IMAGES = {
@@ -37,6 +46,9 @@ export const IMAGES = {
   matt: require('./matt_head.jpg'),
   julieanna: require('./julieanna_head.jpg'),
   reshma: require('./reshma_head.jpg'),
+  pamela: require('./pamela_head.png'),
+  aaron: require('./aaron_head.png'),
+  jackson: require('./jackson_head.png'),
 };
 
 export const BOARD_MEMBERS_KEYS = [
@@ -47,4 +59,7 @@ export const BOARD_MEMBERS_KEYS = [
   'reshma',
   'matt',
   'asha',
+  'pamela',
+  'jackson',
+  'aaron',
 ];
