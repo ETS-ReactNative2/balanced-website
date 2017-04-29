@@ -14,9 +14,8 @@ export default () => (
         <BodyText>
           Food companies should sell food that reflects federal dietary
           guidelines and the best nutrition evidence. That means
-          more grains, beans, vegetables and fruits, and fewer
-          servings of foods high in saturated fat, cholesterol and
-          carcinogens, such as meat and eggs.
+          more whole grains, beans, vegetables and fruits, and fewer
+          servings of foods high in saturated fat, carcinogens and sodium, such as processed meat.
         </BodyText>
       </div>
     </div>
