@@ -71,20 +71,42 @@
 }
 
 
-.NavBar_Transition-enter {
-  opacity: 0.01;
+@media(min-width: 1024px) {
+  .NavBar_Transition-enter {
+    opacity: 0.01;
+  }
+
+  .NavBar_Transition-enter.NavBar_Transition-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+
+  .NavBar_Transition-leave {
+    opacity: 1;
+  }
+
+  .NavBar_Transition-leave.NavBar_Transition-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+  }
 }
 
-.NavBar_Transition-enter.NavBar_Transition-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}
+@media(max-width: 1024px) {
+  .NavBar_Transition-enter {
+    height: 0px;
+  }
 
-.NavBar_Transition-leave {
-  opacity: 1;
-}
+  .NavBar_Transition-enter.NavBar_Transition-enter-active {
+    height: 165px;
+    transition: height 500ms ease-in;
+  }
 
-.NavBar_Transition-leave.NavBar_Transition-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
+  .NavBar_Transition-leave {
+    height: 165px;
+  }
+
+  .NavBar_Transition-leave.NavBar_Transition-leave-active {
+    height: 0px;
+    transition: all 300ms ease-in;
+  }
 }

@@ -1,15 +1,32 @@
-#NavBar_NavMenu {
-  background-color: transparent;
-  position: absolute;
-  top: 107px;
-  right: 38px;
-  color: #FFF;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  line-height: 27px;
-  font-size: 15px;
-  float: right;
+@media(min-width: 1024px) {
+  #NavBar_NavMenu {
+    background-color: transparent;
+    position: absolute;
+    top: 107px;
+    right: 38px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    line-height: 27px;
+    font-size: 15px;
+    float: right;
+  }
+}
+
+@media(max-width: 1024px) {
+  #NavBar_NavMenu {
+    display: flex;
+    background-color: #2b2b2b;
+    width: 100%;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    line-height: 27px;
+    font-size: 15px;
+    margin: 0;
+  }
 }
 
 #NavBar_NavMenu ul {
