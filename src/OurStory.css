@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 208px
+    margin-left: 36px;
   }
 
   #textContainer {
@@ -46,6 +46,17 @@
     align-items: center;
     margin-bottom: 45px;
     margin-left: -10px;
+    padding-right: 36px;
+  }
+}
+
+@media(min-width: 1300px) {
+  #OurStory_innerContainer {
+    margin-left: 208px;
+  }
+
+  #audreyBox {
+    padding: 0;
   }
 }
 
