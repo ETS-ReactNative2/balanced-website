@@ -1,5 +1,5 @@
 import React from 'react';
-import AdvisoryHead from './AdvisoryHeads';
+import AdvisoryHead from './AdvisoryHead';
 import AdvisoryBio from './AdvisoryBio';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 
@@ -10,8 +10,8 @@ const getSelectedName = (selectedName, names) =>
 
 export default ({ selectedName, onClick, names }) => (
   <div className="AdvisoryRow">
-    <div id="AdvisoryHeads_OuterContainer">
-      <div className="AdvisoryHeads_Container">
+    <div id="AdvisoryHead_OuterContainer">
+      <div className="AdvisoryHead_Container">
         {names.map(name => (
           <AdvisoryHead
             key={name}
