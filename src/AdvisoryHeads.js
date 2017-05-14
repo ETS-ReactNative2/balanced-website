@@ -2,9 +2,9 @@ import React from 'react';
 import './AdvisoryHeads.css';
 import audrey_advisory_head from './audrey_advisory_head.jpg';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
-import {NAMES, IMAGES} from './advisory_board_constants';
+import { NAMES, IMAGES } from './advisory_board_constants';
 
-const AdvisoryHead = ({name, showOverlay, onClick}) => (
+const AdvisoryHead = ({ name, showOverlay, onClick }) => (
   <div onClick={() => onClick(name)} className="AdvisoryHeads_InnerContainer">
     <div className="AdvisoryHeads_ImageContainer">
       <img src={IMAGES[name]} />
@@ -17,11 +17,10 @@ const AdvisoryHead = ({name, showOverlay, onClick}) => (
       </CSSTransitionGroup>
     </div>
     <h1 className="AdvisoryHeads_Name">{NAMES[name]}</h1>
-    <h2 className="AdvisoryHeads_Title">Board of Advisors</h2>
   </div>
 );
 
-export default ({selectedName, onClick}) => (
+export default ({ selectedName, onClick }) => (
   <div id="AdvisoryHeads_OuterContainer">
     <div className="AdvisoryHeads_Container">
       <AdvisoryHead
@@ -39,13 +38,13 @@ export default ({selectedName, onClick}) => (
         name="julieanna"
         showOverlay={selectedName === 'julieanna'}
       />
-    </div>
-    <div className="AdvisoryHeads_Container">
       <AdvisoryHead
         onClick={onClick}
         name="reshma"
         showOverlay={selectedName === 'reshma'}
       />
+    </div>
+    <div className="AdvisoryHeads_Container">
       <AdvisoryHead
         onClick={onClick}
         name="matt"
@@ -56,8 +55,6 @@ export default ({selectedName, onClick}) => (
         name="asha"
         showOverlay={selectedName === 'asha'}
       />
-    </div>
-    <div className="AdvisoryHeads_Container">
       <AdvisoryHead
         onClick={onClick}
         name="pamela"
@@ -68,6 +65,8 @@ export default ({selectedName, onClick}) => (
         name="jackson"
         showOverlay={selectedName === 'jackson'}
       />
+    </div>
+    <div className="AdvisoryHeads_Container">
       <AdvisoryHead
         onClick={onClick}
         name="aaron"

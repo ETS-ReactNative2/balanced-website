@@ -1,10 +1,10 @@
 import React from 'react';
 import SectionHeader from './SectionHeader';
 import AdvisoryProfile from './AdvisoryProfile';
-import AdvisoryHeads from './AdvisoryHeads';
-import AdvisoryBio from './AdvisoryBio';
-import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
+import AdvisoryRow from './AdvisoryRow';
 import './AdvisoryBoard.css';
+
+const ADVISORY_ROWS = [];
 
 export default class extends React.Component {
   constructor(props) {
@@ -21,22 +21,17 @@ export default class extends React.Component {
   }
 
   render() {
-    const {selectedName} = this.state;
+    const { selectedName } = this.state;
     return (
       <div id="AdvisoryBoard_Container">
         <SectionHeader>ADVISORY BOARD</SectionHeader>
         <AdvisoryProfile />
-        <AdvisoryHeads
-          selectedName={selectedName}
+        <AdvisoryRow
           onClick={this.selectName.bind(this)}
+          selectedName={selectedName}
+          names={ADVISORY_ROWS[0]}
+          showBio={true}
         />
-        <CSSTransitionGroup
-          transitionName="AdvisoryBio_Transition"
-          transitionEnterTimeout={600}
-          transitionLeaveTimeout={300}
-        >
-          <AdvisoryBio key={selectedName} selectedName={selectedName} />
-        </CSSTransitionGroup>
       </div>
     );
   }
