@@ -27,6 +27,8 @@ export const BIOS = {
   In 2015, he graduated from the WellCoaches online program for Health and Wellness Coaches, a science-based program for professional Health Coaches. Aaron is a mountain endurance athlete, husband and father and has been passionate about nutrition science and plant-based lifestyles for over a decade.`,
   jackson: `Jackson Long has a degree in Integrative Physiology and Public Health and is currently working on his graduate degree in Applied Nutrition through the University of New England. Jackson is the co-owner and founder of Thought For Food Lifestyle, a podcast and social media platform dedicated to helping people adopt a healthy and adventurous plant-based lifestyle through an evidence-based and entertaining lens.
   He is also a plant-based endurance athlete and has raced as an elite category 1 cyclist at the national and international level.`,
+  joel_kahn: `Dr. Joel Kahn is founder of the Kahn Center for Cardiac Longevity and is the owner of GreenSpace Cafe in Ferndale, Michigan. He is a Summa cum Laude graduate of the University of Michigan School of Medicine and serves as Clinical Professor of Medicine at Wayne State University School of Medicine.
+  He has published several books and "The Whole Heart Solution" is a national public TV special. He can be found at www.drjoelkahn.com`,
 };
 
 export const NAMES = {
@@ -40,6 +42,7 @@ export const NAMES = {
   pamela: 'Pamela Fergusson, R.D. PhD',
   jackson: 'Jackson Long',
   aaron: 'Aaron Stuber, R.N. B.S.N',
+  joel_kahn: `Dr. Joel Kahn`,
 };
 
 export const IMAGES = {
@@ -53,6 +56,7 @@ export const IMAGES = {
   pamela: require('./pamela_head.png'),
   aaron: require('./aaron_head.png'),
   jackson: require('./jackson_head.png'),
+  joel_kahn: require('./joel_kahn_head.png'),
 };
 
 export const BOARD_MEMBERS_KEYS = [
@@ -66,10 +70,11 @@ export const BOARD_MEMBERS_KEYS = [
   'pamela',
   'jackson',
   'aaron',
+  'joel_kahn',
 ];
 
 export const ADVISORY_ROWS = [
   ['greger', 'michelle', 'julieanna', 'reshma'],
   ['matt', 'asha', 'pamela', 'jackson'],
-  ['aaron'],
+  ['aaron', 'joel_kahn'],
 ];
