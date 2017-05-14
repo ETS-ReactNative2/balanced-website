@@ -5,7 +5,11 @@ import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import { NAMES, IMAGES } from './advisory_board_constants';
 
 export default ({ name, showOverlay, onClick }) => (
-  <div onClick={() => onClick(name)} className="AdvisoryHead_InnerContainer">
+  <div
+    id={`Head_${name}`}
+    onClick={() => onClick(name)}
+    className="AdvisoryHead_InnerContainer"
+  >
     <div className="AdvisoryHead_ImageContainer">
       <img src={IMAGES[name]} />
       <CSSTransitionGroup

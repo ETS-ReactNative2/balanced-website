@@ -1,4 +1,4 @@
-#AdvisoryHead_OuterContainer {
+.AdvisoryHead_OuterContainer {
   flex-direction: column;
   padding: 32px;
 }

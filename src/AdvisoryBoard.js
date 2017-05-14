@@ -2,7 +2,9 @@ import React from 'react';
 import SectionHeader from './SectionHeader';
 import AdvisoryProfile from './AdvisoryProfile';
 import AdvisoryRow from './AdvisoryRow';
+import $ from 'jquery';
 import './AdvisoryBoard.css';
+import 'jquery.scrollto';
 
 const ADVISORY_ROWS = [
   ['greger', 'michelle', 'julieanna', 'reshma'],
@@ -22,6 +24,8 @@ export default class extends React.Component {
     this.setState({
       selectedName,
     });
+    const element = document.getElementById(`Head_${selectedName}`);
+    setTimeout(() => $(window).scrollTo(element, { duration: 500 }), 500);
   }
 
   render() {

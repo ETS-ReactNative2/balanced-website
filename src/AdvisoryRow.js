@@ -5,12 +5,11 @@ import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 
 import './AdvisoryRow.css';
 
-const getSelectedName = (selectedName, names) =>
-  names.includes(selectedName) && selectedName;
+const showBio = (selectedName, names) => names.includes(selectedName);
 
 export default ({ selectedName, onClick, names }) => (
   <div className="AdvisoryRow">
-    <div id="AdvisoryHead_OuterContainer">
+    <div className="AdvisoryHead_OuterContainer">
       <div className="AdvisoryHead_Container">
         {names.map(name => (
           <AdvisoryHead
@@ -23,14 +22,13 @@ export default ({ selectedName, onClick, names }) => (
       </div>
     </div>
     <CSSTransitionGroup
+      key={`showRow ${showBio}`}
       transitionName="AdvisoryBio_Transition"
-      transitionEnterTimeout={600}
+      transitionEnterTimeout={500}
       transitionLeaveTimeout={300}
     >
-      <AdvisoryBio
-        key={selectedName}
-        selectedName={getSelectedName(selectedName, names)}
-      />
+      {showBio(selectedName, names) &&
+        <AdvisoryBio selectedName={selectedName} />}
     </CSSTransitionGroup>
   </div>
 );
