@@ -14,23 +14,19 @@
 }
 
 .AdvisoryBio_Transition-enter {
-  max-height: 0;
   opacity: 0.01;
 }
 
 .AdvisoryBio_Transition-enter.AdvisoryBio_Transition-enter-active {
-  max-height: 100%;
   opacity: 1;
   transition: all 500ms ease-in;
 }
 
 .AdvisoryBio_Transition-leave {
-  max-height: 100%;
   opacity: 1;
 }
 
 .AdvisoryBio_Transition-leave.AdvisoryBio_Transition-leave-active {
-  max-height: 0;
   opacity: 0.01;
   transition: all 300ms ease-in;
 }

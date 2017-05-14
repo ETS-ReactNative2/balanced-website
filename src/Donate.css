@@ -70,6 +70,10 @@
     color: #fff;
   }
 
+  .Donate_Button:hover {
+    cursor: pointer;
+  }
+
   #Donate_ButtonGroup {
     display: flex;
     justify-content: space-between;

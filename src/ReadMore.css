@@ -3,6 +3,10 @@
   font-weight: bold;
 }
 
+.ReadMore:hover {
+  cursor: pointer;
+}
+
 @media(min-width: 1024px) {
   .ReadMore {
     font-size: 25px;

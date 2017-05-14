@@ -19,6 +19,10 @@
     color: #fff;
   }
 
+  .Signup_Button:hover {
+    cursor: pointer;
+  }
+
   .Signup_InputGroup {
     width: 850px;
     display: flex;
