@@ -67,3 +67,9 @@ export const BOARD_MEMBERS_KEYS = [
   'jackson',
   'aaron',
 ];
+
+export const ADVISORY_ROWS = [
+  ['greger', 'michelle', 'julieanna', 'reshma'],
+  ['matt', 'asha', 'pamela', 'jackson'],
+  ['aaron'],
+];

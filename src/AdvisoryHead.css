@@ -3,6 +3,10 @@
   padding: 32px;
 }
 
+.AdvisoryHead_Container:hover {
+  cursor: pointer;
+}
+
 .AdvisoryHead_Container {
   width: 1024px;
   justify-content: space-between;
@@ -24,7 +28,7 @@
   text-align: center;
   color: rgb(75, 153, 31);
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
   letter-spacing: 0.1em;
   line-height: 18px;

@@ -2,15 +2,10 @@ import React from 'react';
 import SectionHeader from './SectionHeader';
 import AdvisoryProfile from './AdvisoryProfile';
 import AdvisoryRow from './AdvisoryRow';
+import { ADVISORY_ROWS } from './advisory_board_constants';
 import $ from 'jquery';
 import './AdvisoryBoard.css';
 import 'jquery.scrollto';
-
-const ADVISORY_ROWS = [
-  ['greger', 'michelle', 'julieanna', 'reshma'],
-  ['matt', 'asha', 'pamela', 'jackson'],
-  ['aaron'],
-];
 
 export default class extends React.Component {
   constructor(props) {
