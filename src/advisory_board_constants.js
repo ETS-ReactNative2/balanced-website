@@ -29,6 +29,14 @@ export const BIOS = {
   He is also a plant-based endurance athlete and has raced as an elite category 1 cyclist at the national and international level.`,
   joel_kahn: `Dr. Joel Kahn is founder of the Kahn Center for Cardiac Longevity and is the owner of GreenSpace Cafe in Ferndale, Michigan. He is a Summa cum Laude graduate of the University of Michigan School of Medicine and serves as Clinical Professor of Medicine at Wayne State University School of Medicine.
   He has published several books and "The Whole Heart Solution" is a national public TV special. He can be found at www.drjoelkahn.com`,
+  rick_weissinger: `Rick is the author of "What the Experts Say About Food and Cancer" and the co-author of three editions of "Nutrition Guide for Clinicians", an encyclopedic handbook for medical students on the roles for nutrition in preventing and treating the most common diseases.
+Rick has lectured to health professionals throughout the U.S. on cardiovascular disease, cancer prevention, obesity treatment and other topics. His recent work includes private practice, being co-owner of a weight management clinic, and health coaching for individuals with chronic pain and other health issues. Rick currently lives in Savannah, Georgia.`,
+  robert_ostfeld: `Robert Ostfeld, M.D., MSc., a cardiologist, is the founder and director of the Cardiac Wellness Program at Montefiore, an Associate Professor of Clinical Medicine at the Albert Einstein College of Medicine and the Associate Director of the Cardiology Fellowship at Montefiore-Einstein.
+Dr. Ostfeld earned his BA from the University of Pennsylvania, graduating Summa Cum Laude and Phi Beta Kappa; his MD from Yale University School of Medicine; and his Masters of Science in Epidemiology from the Harvard School of Public Health. Dr. Ostfeld completed his medical internship and residency at the Massachusetts General Hospital and his cardiology fellowship and research fellowship in Preventive Medicine at Brigham and Women's Hospital - both teaching hospitals of Harvard Medical School.
+His professional interests include cardiovascular disease prevention, medical education, and clinical research. He earned the Outstanding Full Time Attending of the Year award at Montefiore for excellence in teaching medical residents; the Program Director's Award for dedicated service on behalf of the Montefiore-Einstein Cardiology Fellowship; and was elected to the Leo M. Davidoff Society at Einstein for outstanding achievement in the teaching of medical students.`,
+  sabina_vyas: `Sabina Vyas is an independent Public Health Consultant focused on advancing chronic disease prevention through plant based nutrition. She is committed to improving population health by reducing barriers and increasing access and availability to health promoting foods, especially for vulnerable populations.
+She has worked extensively for leading public health agencies such as Kaiser Permanente, the Centers for Disease Control and Prevention (CDC), and ICF. Her roles have spanned over working directly with patients to providing training and technical assistance at the population level, addressing obesity prevention in schools, and chronic diseases prevention in communities through policy, systems, and environmental improvements.
+Some of her recent work includes consulting with the Plant Based Foods Association on improving access to the variety of plant based foods available to those in food service and retail. Sabina received her Master in Public Health degree from the University of Southern California and she is certified in Plant Based Nutrition by the T. Colin Campbell Center for Nutrition Studies & eCornell.`,
 };
 
 export const NAMES = {
@@ -41,8 +49,11 @@ export const NAMES = {
   reshma: 'Dr. Reshma Shah, M.D.',
   pamela: 'Pamela Fergusson, R.D. PhD',
   jackson: 'Jackson Long',
-  aaron: 'Aaron Stuber, R.N. B.S.N',
+  aaron: 'Aaron Stuber, R.N. B.S.N.',
   joel_kahn: `Dr. Joel Kahn`,
+  rick_weissinger: 'Rick Weissinger, M.S, R.D.',
+  robert_ostfeld: 'Robert Ostfeld, M.D., MSc.',
+  sabina_vyas: 'Sabina Vyas, M.P.H.',
 };
 
 export const IMAGES = {
@@ -57,6 +68,9 @@ export const IMAGES = {
   aaron: require('./aaron_head.png'),
   jackson: require('./jackson_head.png'),
   joel_kahn: require('./joel_kahn_head.png'),
+  rick_weissinger: require('./rick_weissinger_head.png'),
+  robert_ostfeld: require('./robert_ostfeld_head.png'),
+  sabina_vyas: require('./sabina_vyas_head.png'),
 };
 
 export const BOARD_MEMBERS_KEYS = [
@@ -71,10 +85,14 @@ export const BOARD_MEMBERS_KEYS = [
   'jackson',
   'aaron',
   'joel_kahn',
+  'rick_weissinger',
+  'robert_ostfeld',
+  'sabina_vyas',
 ];
 
 export const ADVISORY_ROWS = [
   ['greger', 'michelle', 'julieanna', 'reshma'],
   ['matt', 'asha', 'pamela', 'jackson'],
-  ['aaron', 'joel_kahn'],
+  ['aaron', 'joel_kahn', 'rick_weissinger', 'robert_ostfeld'],
+  ['sabina_vyas'],
 ];
