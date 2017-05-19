@@ -75,6 +75,7 @@ export const IMAGES = {
   rick_weissinger: require('./rick_weissinger_head.png'),
   robert_ostfeld: require('./robert_ostfeld_head.png'),
   sabina_vyas: require('./sabina_vyas_head.png'),
+  allan_kornberg: require('./allan_kornberg.png'),
 };
 
 export const BOARD_MEMBERS_KEYS = [
