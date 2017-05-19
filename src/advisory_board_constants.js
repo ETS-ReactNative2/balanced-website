@@ -14,7 +14,7 @@ export const BIOS = {
   michelle: `Michelle McMacken, MD, is a board-certified internal medicine physician and Assistant Professor of Medicine at NYU School of Medicine.  An honors graduate of Yale University and Columbia University College of Physicians and Surgeons, she practices primary care, directs a weight management program, and teaches medical students and doctors-in-training at Bellevue Hospital Center in New York City.
   In 2014, she received a two-year fellowship grant to develop an evidence-based nutrition curriculum for her faculty physician colleagues. Dr. McMacken has received the faculty ‘Teacher of the Year’ award three times and has been featured in several documentary films, in national academic nutrition conferences, and on popular nutrition-related websites and podcasts.
   She is a council member for the True Health Initiative, a coalition of health experts from around the world committed to educating on evidence-based, proven principles of lifestyle as medicine.`,
-  matt: 'Matt Ruscigno, MPH, RD is a Registered Dietitian with a nutritional science degree from Penn State University and a graduate degree in public health nutrition from Loma Linda University. Matt is the co-author of No Meat Athlete with Matt Frazier and Appetite for Reduction with Isa Moskowitz and is the past-Chair of the Vegetarian Group of the Academy of Nutrition and Dietetics. He lives in Los Angeles, CA where he operates Nutrinic, a plant-based nutrition center focused on CVD prevention.',
+  matt: `Matt Ruscigno, MPH, RD is a Registered Dietitian with a nutritional science degree from Penn State University and a graduate degree in public health nutrition from Loma Linda University. Matt is the co-author of No Meat Athlete with Matt Frazier and Appetite for Reduction with Isa Moskowitz and is the past-Chair of the Vegetarian Group of the Academy of Nutrition and Dietetics. He lives in Los Angeles, CA where he operates Nutrinic, a plant-based nutrition center focused on CVD prevention.`,
   julieanna: `Julieanna Hever, M.S., R.D., C.P.T. is a Registered Dietitian who has been in private practice in Los Angeles since 2005, specializing in weight management, disease prevention and management, and sports nutrition. Julieanna authored "A Physician’s Guide to Plant-Based Diets" in the Permanente Medical Journal, "The Vegiterranean Diet", and "The Complete Idiot’s Guide to Plant-Based Nutrition".
   She is the co-author of the cookbook, The Complete Idiot's Guide to Gluten-Free Vegan Cooking and is the nutrition columnist for VegNews Magazine. She is the host of the wellness talk show series What Would Julieanna Do? on Z Living Network, has given a TEDx talk, and was recently featured on The Dr. Oz Show, The Steve Harvey Show, Reluctantly Healthy, The Marie Osmond Show, and Issues with Jane Velez-Mitchell.`,
   reshma: `Dr. Reshma Shah, M.D. is a board-certified pediatric physician. She has over a decade of experience in primary care pediatrics and served as an assistant clinical professor at a Rainbow Babies and Children's Hospital in Cleveland, Ohio.
@@ -37,6 +37,9 @@ His professional interests include cardiovascular disease prevention, medical ed
   sabina_vyas: `Sabina Vyas is an independent Public Health Consultant focused on advancing chronic disease prevention through plant based nutrition. She is committed to improving population health by reducing barriers and increasing access and availability to health promoting foods, especially for vulnerable populations.
 She has worked extensively for leading public health agencies such as Kaiser Permanente, the Centers for Disease Control and Prevention (CDC), and ICF. Her roles have spanned over working directly with patients to providing training and technical assistance at the population level, addressing obesity prevention in schools, and chronic diseases prevention in communities through policy, systems, and environmental improvements.
 Some of her recent work includes consulting with the Plant Based Foods Association on improving access to the variety of plant based foods available to those in food service and retail. Sabina received her Master in Public Health degree from the University of Southern California and she is certified in Plant Based Nutrition by the T. Colin Campbell Center for Nutrition Studies & eCornell.`,
+allan_kornberg: `Allan E. Kornberg, MD, MBA is a pediatrician who has practiced both primary care and emergency pediatrics. He served as Vice-Chair and Associate Professor of Pediatrics, and Associate Professor of Emergency Medicine, at the University of Buffalo, and as Associate Professor of Pediatrics at Brown University.  He co-founded a pediatrics practice in Western New York and served as the Chief of Emergency Medicine at the Children's Hospital of Buffalo.   He advocated on behalf of survivors of child abuse and sexual assault, and was co-editor of a textbook 'Child Abuse and Neglect-a Medical Reference,' along with writing peer review articles on child abuse and emergency pediatrics.  He was Medical Director of the Western New York Poison Control Center.
+Allan served as medical director with managed care organizations, provider institutions, government, and advocacy groups, typically working with complicated populations both clinically and socioeconomically.  He served in Georgia, New York, Massachusetts and Rhode Island including as both Executive Director and Medical Director of the Physician Hospital Organization for the Children's Health System in Atlanta.  Allan was a Senior Medical Director at Harvard Pilgrim Health Care, Medicaid Medical Director for Rhode Island, and was Chief Medical Officer and subsequently appointed CEO for Network Health, a managed care organization that serves impoverished families in Massachusetts.  He was Senior Vice President/Chief Medical and Operations Officer for the National Initiative for Children's Healthcare Quality, leading national collaborative efforts on clinical and operational quality improvement.
+Allan received his B.S in Biology from MIT, M.D. from Mount Sinai School of Medicine, and M.B.A. from the University of Rochester.  He completed his residency including chief resident year in Pediatrics at the University of Buffalo/Women and Children's Hospital of Buffalo.`,
 };
 
 export const NAMES = {
@@ -47,6 +50,7 @@ export const NAMES = {
   matt: 'Matt Ruscigno, M.P.H. R.D.',
   julieanna: 'Julieanna Hever, M.S. R.D. C.P.T.',
   reshma: 'Dr. Reshma Shah, M.D.',
+  allan_kornberg: 'Allan E. Kornberg, M.D. M.B.A. BSc',
   pamela: 'Pamela Fergusson, R.D. PhD',
   jackson: 'Jackson Long',
   aaron: 'Aaron Stuber, R.N. B.S.N.',
@@ -71,6 +75,7 @@ export const IMAGES = {
   rick_weissinger: require('./rick_weissinger_head.png'),
   robert_ostfeld: require('./robert_ostfeld_head.png'),
   sabina_vyas: require('./sabina_vyas_head.png'),
+  allan_kornberg: require('./allan_kornberg.png'),
 };
 
 export const BOARD_MEMBERS_KEYS = [
@@ -88,11 +93,12 @@ export const BOARD_MEMBERS_KEYS = [
   'rick_weissinger',
   'robert_ostfeld',
   'sabina_vyas',
+  'allan_kornberg',
 ];
 
 export const ADVISORY_ROWS = [
   ['greger', 'michelle', 'julieanna', 'reshma'],
   ['matt', 'asha', 'pamela', 'jackson'],
   ['aaron', 'joel_kahn', 'rick_weissinger', 'robert_ostfeld'],
-  ['sabina_vyas'],
+  ['sabina_vyas', 'allan_kornberg'],
 ];
