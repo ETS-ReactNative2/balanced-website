@@ -61,7 +61,7 @@ export const NAMES = {
   rick_weissinger: 'Rick Weissinger, M.S, R.D.',
   robert_ostfeld: 'Robert Ostfeld, M.D., MSc.',
   sabina_vyas: 'Sabina Vyas, M.P.H.',
-  ruby_lathon: 'Ruby Lathon, PhD',
+  ruby_lathon: 'Dr. Ruby Lathon, PhD',
 };
 
 export const IMAGES = {
