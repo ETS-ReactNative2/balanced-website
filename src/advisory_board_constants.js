@@ -8,7 +8,8 @@ Nearing my fifties, I decided to make a change. I started eating more grains, be
 We all deserve to feel that good. We all deserve a life free of diet-related disease. But too often, it feels like major food corporations want to give us the opposite. That’s why I'm a part of Balanced:  I believe that together, we can hold corporations accountable and persuade them to put our health above their pockets. Because that’s the way it ought to be.`;
 
 export const BIOS = {
-  greger: 'Dr. Greger is a physician, New York Times bestselling author, and internationally recognized speaker on nutrition, food safety, and public health issues. A founding member and Fellow of the American College of Lifestyle Medicine, Dr. Greger is licensed as a general practitioner specializing in clinical nutrition. He is a graduate of the Cornell University School of Agriculture and Tufts University School of Medicine.',
+  greger:
+    'Dr. Greger is a physician, New York Times bestselling author, and internationally recognized speaker on nutrition, food safety, and public health issues. A founding member and Fellow of the American College of Lifestyle Medicine, Dr. Greger is licensed as a general practitioner specializing in clinical nutrition. He is a graduate of the Cornell University School of Agriculture and Tufts University School of Medicine.',
   asha: `Dr. Asha Subramanian received her B.A. and M.A. in psychology with Honors and Distinction from Stanford University; her combined M.D./Master of Public Health degree from Oregon Health and Science University School of Medicine; and completed her family medicine residency at the University of Pittsburgh St. Margaret Hospital. Dr. Subramanian also completed a fellowship in community health at Georgetown University Medical Center.
   Her professional interests include lifestyle medicine, health behavior change, and community health. Dr. Subramanian's philosophy of patient care emphasizes the benefits of plant-based nutrition, regular exercise, meditation, and stress reduction in healing. She is a clinical assistant professor of family medicine through Georgetown University Medical Center, and also enjoys teaching all levels of medical students.`,
   michelle: `Michelle McMacken, MD, is a board-certified internal medicine physician and Assistant Professor of Medicine at NYU School of Medicine.  An honors graduate of Yale University and Columbia University College of Physicians and Surgeons, she practices primary care, directs a weight management program, and teaches medical students and doctors-in-training at Bellevue Hospital Center in New York City.
@@ -37,9 +38,11 @@ His professional interests include cardiovascular disease prevention, medical ed
   sabina_vyas: `Sabina Vyas is an independent Public Health Consultant focused on advancing chronic disease prevention through plant based nutrition. She is committed to improving population health by reducing barriers and increasing access and availability to health promoting foods, especially for vulnerable populations.
 She has worked extensively for leading public health agencies such as Kaiser Permanente, the Centers for Disease Control and Prevention (CDC), and ICF. Her roles have spanned over working directly with patients to providing training and technical assistance at the population level, addressing obesity prevention in schools, and chronic diseases prevention in communities through policy, systems, and environmental improvements.
 Some of her recent work includes consulting with the Plant Based Foods Association on improving access to the variety of plant based foods available to those in food service and retail. Sabina received her Master in Public Health degree from the University of Southern California and she is certified in Plant Based Nutrition by the T. Colin Campbell Center for Nutrition Studies & eCornell.`,
-allan_kornberg: `Allan E. Kornberg, MD, MBA is a pediatrician who has practiced both primary care and emergency pediatrics. He served as Vice-Chair and Associate Professor of Pediatrics, and Associate Professor of Emergency Medicine, at the University of Buffalo, and as Associate Professor of Pediatrics at Brown University.  He co-founded a pediatrics practice in Western New York and served as the Chief of Emergency Medicine at the Children's Hospital of Buffalo.   He advocated on behalf of survivors of child abuse and sexual assault, and was co-editor of a textbook 'Child Abuse and Neglect-a Medical Reference,' along with writing peer review articles on child abuse and emergency pediatrics.  He was Medical Director of the Western New York Poison Control Center.
+  allan_kornberg: `Allan E. Kornberg, MD, MBA is a pediatrician who has practiced both primary care and emergency pediatrics. He served as Vice-Chair and Associate Professor of Pediatrics, and Associate Professor of Emergency Medicine, at the University of Buffalo, and as Associate Professor of Pediatrics at Brown University.  He co-founded a pediatrics practice in Western New York and served as the Chief of Emergency Medicine at the Children's Hospital of Buffalo.   He advocated on behalf of survivors of child abuse and sexual assault, and was co-editor of a textbook 'Child Abuse and Neglect-a Medical Reference,' along with writing peer review articles on child abuse and emergency pediatrics.  He was Medical Director of the Western New York Poison Control Center.
 Allan served as medical director with managed care organizations, provider institutions, government, and advocacy groups, typically working with complicated populations both clinically and socioeconomically.  He served in Georgia, New York, Massachusetts and Rhode Island including as both Executive Director and Medical Director of the Physician Hospital Organization for the Children's Health System in Atlanta.  Allan was a Senior Medical Director at Harvard Pilgrim Health Care, Medicaid Medical Director for Rhode Island, and was Chief Medical Officer and subsequently appointed CEO for Network Health, a managed care organization that serves impoverished families in Massachusetts.  He was Senior Vice President/Chief Medical and Operations Officer for the National Initiative for Children's Healthcare Quality, leading national collaborative efforts on clinical and operational quality improvement.
 Allan received his B.S in Biology from MIT, M.D. from Mount Sinai School of Medicine, and M.B.A. from the University of Rochester.  He completed his residency including chief resident year in Pediatrics at the University of Buffalo/Women and Children's Hospital of Buffalo.`,
+  ruby_lathon: `Dr. Ruby Lathon is a certified holistic nutritionist and advocate for plant-based nutrition. Dr. Ruby inspires with a powerful story of recovering from thyroid cancer through alternative treatment focused on a whole foods, plant-based diet. Dr. Ruby worked as a researcher and an award winning engineer, and now teaches others how to re-engineer their health and live disease free.
+Dr. Lathon, a graduate of the University of Alabama, served as Nutrition Policy Manager at the Physicians Committee for Responsible Medicine, where she developed and led a national grassroots campaign to advocate legislation for more healthful, plant-based meal options in the National School Lunch Program. Dr. Lathon is host of The Veggie Chest, an online, plant-based cooking show. Through her organization, Roadmap to Holistic Health, Dr. Lathon hosts health conferences, workshops and vegan cooking classes and provides customized nutritional consultations and coaching programs.`,
 };
 
 export const NAMES = {
@@ -58,6 +61,7 @@ export const NAMES = {
   rick_weissinger: 'Rick Weissinger, M.S, R.D.',
   robert_ostfeld: 'Robert Ostfeld, M.D., MSc.',
   sabina_vyas: 'Sabina Vyas, M.P.H.',
+  ruby_lathon: 'Ruby Lathon, PhD',
 };
 
 export const IMAGES = {
@@ -76,6 +80,7 @@ export const IMAGES = {
   robert_ostfeld: require('./robert_ostfeld_head.png'),
   sabina_vyas: require('./sabina_vyas_head.png'),
   allan_kornberg: require('./allan_kornberg.png'),
+  ruby_lathon: require('./ruby_lathon.png'),
 };
 
 export const BOARD_MEMBERS_KEYS = [
@@ -91,6 +96,7 @@ export const BOARD_MEMBERS_KEYS = [
   'aaron',
   'joel_kahn',
   'rick_weissinger',
+  'ruby_lathon',
   'robert_ostfeld',
   'sabina_vyas',
   'allan_kornberg',
@@ -99,6 +105,6 @@ export const BOARD_MEMBERS_KEYS = [
 export const ADVISORY_ROWS = [
   ['greger', 'michelle', 'julieanna', 'reshma'],
   ['matt', 'asha', 'pamela', 'jackson'],
-  ['aaron', 'joel_kahn', 'rick_weissinger', 'robert_ostfeld'],
-  ['sabina_vyas', 'allan_kornberg'],
+  ['aaron', 'joel_kahn', 'rick_weissinger', 'ruby_lathon'],
+  ['robert_ostfeld', 'sabina_vyas', 'allan_kornberg'],
 ];
