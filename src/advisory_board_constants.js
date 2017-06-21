@@ -53,7 +53,7 @@ export const NAMES = {
   matt: 'Matt Ruscigno, M.P.H. R.D.',
   julieanna: 'Julieanna Hever, M.S. R.D. C.P.T.',
   reshma: 'Dr. Reshma Shah, M.D.',
-  allan_kornberg: 'Allan E. Kornberg, M.D. M.B.A. BSc',
+  allan_kornberg: 'Allan E. Kornberg, M.D. M.B.A.',
   pamela: 'Pamela Fergusson, R.D. PhD',
   jackson: 'Jackson Long',
   aaron: 'Aaron Stuber, R.N. B.S.N.',
