@@ -43,6 +43,7 @@ Allan served as medical director with managed care organizations, provider insti
 Allan received his B.S in Biology from MIT, M.D. from Mount Sinai School of Medicine, and M.B.A. from the University of Rochester.  He completed his residency including chief resident year in Pediatrics at the University of Buffalo/Women and Children's Hospital of Buffalo.`,
   ruby_lathon: `Dr. Ruby Lathon is a certified holistic nutritionist and advocate for plant-based nutrition. Dr. Ruby inspires with a powerful story of recovering from thyroid cancer through alternative treatment focused on a whole foods, plant-based diet. Dr. Ruby worked as a researcher and an award winning engineer, and now teaches others how to re-engineer their health and live disease free.
 Dr. Lathon, a graduate of the University of Alabama, served as Nutrition Policy Manager at the Physicians Committee for Responsible Medicine, where she developed and led a national grassroots campaign to advocate legislation for more healthful, plant-based meal options in the National School Lunch Program. Dr. Lathon is host of The Veggie Chest, an online, plant-based cooking show. Through her organization, Roadmap to Holistic Health, Dr. Lathon hosts health conferences, workshops and vegan cooking classes and provides customized nutritional consultations and coaching programs.`,
+  marco_borges: `Marco Borges is an exercise physiologist, founder of 22 Days Nutrition, New York Times Best Selling author and plant-based living advocate. Passionate about guiding people to develop healthier lifestyles, he has spent the last 20 years as a lifestyle coach, touring the world empowering others with tools for ultimate wellness. He is the author of: "The 22-Day Revolution", "The 22-Day Revolution COOKBOOK" and "Power Moves: The Four Motions To Transform Your Body For Life". He lives in Miami with his wife and their children.`,
 };
 
 export const NAMES = {
@@ -62,6 +63,7 @@ export const NAMES = {
   robert_ostfeld: 'Robert Ostfeld, M.D., MSc.',
   sabina_vyas: 'Sabina Vyas, M.P.H.',
   ruby_lathon: 'Dr. Ruby Lathon, PhD',
+  marco_borges: 'Marco Borges',
 };
 
 export const IMAGES = {
@@ -77,6 +79,7 @@ export const IMAGES = {
   jackson: require('./jackson_head.png'),
   joel_kahn: require('./joel_kahn_head.png'),
   rick_weissinger: require('./rick_weissinger_head.png'),
+  marco_borges: require('./marco_borges.png'),
   robert_ostfeld: require('./robert_ostfeld_head.png'),
   sabina_vyas: require('./sabina_vyas_head.png'),
   allan_kornberg: require('./allan_kornberg.png'),
@@ -97,6 +100,7 @@ export const BOARD_MEMBERS_KEYS = [
   'joel_kahn',
   'rick_weissinger',
   'ruby_lathon',
+  'marco_borges',
   'robert_ostfeld',
   'sabina_vyas',
   'allan_kornberg',
@@ -106,5 +110,5 @@ export const ADVISORY_ROWS = [
   ['greger', 'michelle', 'julieanna', 'reshma'],
   ['matt', 'asha', 'pamela', 'jackson'],
   ['aaron', 'joel_kahn', 'rick_weissinger', 'ruby_lathon'],
-  ['robert_ostfeld', 'sabina_vyas', 'allan_kornberg'],
+  ['marco_borges', 'robert_ostfeld', 'sabina_vyas', 'allan_kornberg'],
 ];
