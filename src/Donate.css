@@ -1,7 +1,8 @@
 @media(min-width: 1024px) {
+
   #Donate_Container {
     color: #FFF;
-    background-image: url('./donate_background.jpg');
+    background-image: url('./donate_background1.jpg');
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,16 +13,20 @@
   }
 
   #Donate_InnerContainer {
-    width: 542px;
+    width: 1024px;
+    text-align: center;
+    border: solid 1px black;
   }
 
   #Donate_InnerContainer h1 {
-    font-size: 58.76px;
+    font-size: 90px;
   }
 
-  #Donate_InnerContainer p {
-    text-align: center;
-    font-size: 25px;
+  #Donate_InnerContainer h2 {
+    font-size: 47px;
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 0;
   }
 
   #Donate_DonationBox {
@@ -84,7 +89,7 @@
   #Donate_Container {
     max-height: 50vh;
     color: #FFF;
-    background-image: url('./donate_background.jpg');
+    background-image: url('./donate_background1.jpg');
     display: flex;
     flex-direction: column;
     align-items: center;

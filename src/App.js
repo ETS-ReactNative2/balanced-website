@@ -8,6 +8,7 @@ import Support from './Support';
 import OurStory from './OurStory';
 import AdvisoryBoard from './AdvisoryBoard';
 import Donate from './Donate';
+import DonationBox from './DonationBox';
 import OurTeam from './OurTeam';
 import Footer from './Footer';
 import MobileAdvisoryBoard from './MobileAdvisoryBoard';
@@ -46,6 +47,7 @@ class App extends Component {
         <OurStory />
         {isMobile ? <MobileAdvisoryBoard /> : <AdvisoryBoard />}
         <Donate />
+        <DonationBox />
         <OurTeam />
         <Footer />
       </div>

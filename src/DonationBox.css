@@ -1,0 +1,52 @@
+@media(min-width: 1024px) {
+  #DonationBox_Container {
+    display: flex;
+    align-items: center;
+  }
+
+  #DonationBox_Box{
+    align-items: center;
+    margin: auto;
+    margin-top: -50px;
+    border: 3.79px solid;
+    border-color: rgb(75, 153, 31);
+    border-radius: 12px;
+    width: 1007px;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+  }
+
+  #DonationBox_Progress{
+    background-color: rgb(75, 153, 31);
+    text-align: center;
+    color: white;
+  }
+
+  #DonationBox_Form{
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  }
+
+}
+
+@media(max-width: 1024px) {
+  #DonationBox_Container {
+    align-items: center;
+  }
+
+  #DonationBox_Box{
+    margin: auto;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 50%;
+    background-color: green;
+    text-align: center;
+  }
+
+}
