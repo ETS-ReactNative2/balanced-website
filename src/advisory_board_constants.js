@@ -22,7 +22,7 @@ export const BIOS = {
   She currently cares for patients at Santa Clara Valley Medical Center and is an affiliate clinical instructor at Stanford University School of Medicine. She obtained her undergraduate degree and a Masters in Public Health from Johns Hopkins University and her medical degree from Drexel University College of Medicine.
   In addition to clinical practice, Dr. Shah has a strong interest in family health and wellness, with a focus on plant-based nutrition. She enjoys working with medical students and residents to spread the word about plant based nutrition.`,
   robert: ROBERT_PROFILE_TEXT,
-  pamela: `Pamela Fergusson, R.D. PhD, runs a private practice in Toronto, where she promotes health and healing through a plant-based diet. She has been a dietitian since 2001, earned her PhD at the University of Liverpool and her Master’s in International Health at Sweden’s Uppsala University, and has worked in the nutrition field in North America, Europe, Asia and Africa.
+  pamela: `Pamela Fergusson, R.D., PhD runs a private practice in Toronto, where she promotes health and healing through a plant-based diet. She has been a dietitian since 2001, earned her PhD at the University of Liverpool and her Master’s in International Health at Sweden’s Uppsala University, and has worked in the nutrition field in North America, Europe, Asia and Africa.
   She has lectured in nutrition at the University of Chester (UK), Liverpool School of Tropical Medicine, and Ryerson University (Toronto). Dr. Fergusson has also worked for Food and Nutrition Technical Assistance (FANTA), providing training and support to USAID-funded nutrition projects in Africa and Asia. She is the author or co-author of nine nutrition-related papers in peer-reviewed journals, primarily dealing with the implications of nutritional status or malnutrition for care or survival of persons afflicted by human immunodeficiency virus. Dr. Fergusson is currently serving on the Dietitians of Canada Sustainable Diets Core Group.`,
   aaron: `In 2013, Aaron graduated from Oregon Health & Science University in Portland with a bachelors degree in nursing and now works as a Registered Nurse specializing in cardiovascular disease. He is also the co-owner and founder of Thought For Food Lifestyle, a podcast and social media platform dedicated to helping people adopt a healthy and adventurous plant-based lifestyle through an evidence-based and entertaining lens.
   In 2015, he graduated from the WellCoaches online program for Health and Wellness Coaches, a science-based program for professional Health Coaches. Aaron is a mountain endurance athlete, husband and father and has been passionate about nutrition science and plant-based lifestyles for over a decade.`,
@@ -44,6 +44,11 @@ Allan received his B.S in Biology from MIT, M.D. from Mount Sinai School of Medi
   ruby_lathon: `Dr. Ruby Lathon is a certified holistic nutritionist and advocate for plant-based nutrition. Dr. Ruby inspires with a powerful story of recovering from thyroid cancer through alternative treatment focused on a whole foods, plant-based diet. Dr. Ruby worked as a researcher and an award winning engineer, and now teaches others how to re-engineer their health and live disease free.
 Dr. Lathon, a graduate of the University of Alabama, served as Nutrition Policy Manager at the Physicians Committee for Responsible Medicine, where she developed and led a national grassroots campaign to advocate legislation for more healthful, plant-based meal options in the National School Lunch Program. Dr. Lathon is host of The Veggie Chest, an online, plant-based cooking show. Through her organization, Roadmap to Holistic Health, Dr. Lathon hosts health conferences, workshops and vegan cooking classes and provides customized nutritional consultations and coaching programs.`,
   marco_borges: `Marco Borges is an exercise physiologist, founder of 22 Days Nutrition, New York Times Best Selling author and plant-based living advocate. Passionate about guiding people to develop healthier lifestyles, he has spent the last 20 years as a lifestyle coach, touring the world empowering others with tools for ultimate wellness. He is the author of: "The 22-Day Revolution", "The 22-Day Revolution COOKBOOK" and "Power Moves: The Four Motions To Transform Your Body For Life". He lives in Miami with his wife and their children.`,
+  dreena_burton: `Dreena Burton has been vegan for over 20 years, in that time writing five bestselling cookbooks charting her journey as a plant-powered cook and at-home mom of three. Passionate about health, she creates recipes using whole foods and minimally processed ingredients. Dreena is one of the pioneering vegan cookbook authors, with a loyal following and reputation for reliable, wholesome recipes.
+  Dreena graduated with distinction, receiving a BBA degree from University of New Brunswick. After working in marketing management for several years, Dreena followed her true passion of writing recipes and cookbooks.
+The Everyday Vegan was her first project, following her father-in-law’s heart attack.  When the cardiologist strongly advised a low-fat plant-based diet to her husband’s parents to reverse heart disease, Dreena knew there was information needing to be shared – most importantly, how and what to eat as a vegan.`,
+  eliza_mellion: `Eliza Mellion, M.S., R.D.N. is a Registered Dietitian Nutritionist and Certified Preschool Teacher with a background in psychology and early childhood development. Eliza has witnessed the dire state of childhood nutrition in our country’s classrooms both firsthand and through her work studying the feeding practices of USDA-funded childcare programs. After seeing childcare menus use pepperoni pizzas, doughnuts, and toaster pastries to meet official nutritional guidelines one too many times, she firmly believes in the need to increase the availability, accessibility, and promotion of wholesome, plant-based foods in childcare and school settings.
+Eliza is the past Massachusetts State Coordinator for the Vegetarian Nutrition Group of the Academy of Nutrition and Dietetics, and served on the Executive Committee for Dietitians in Integrative and Functional Medicine. During her time in graduate school, Eliza developed a successful fruit and vegetable focused curriculum for Mills College Children’s School, and was instrumental in galvanizing the University of Massachusetts’ School of Public Health & Health Sciences to investigate the role of exclusively plant-based diets on health outcomes through a novel lecture series and the formation of multiple extracurricular student organizations.`,
 };
 
 export const NAMES = {
@@ -64,6 +69,8 @@ export const NAMES = {
   sabina_vyas: 'Sabina Vyas, M.P.H.',
   ruby_lathon: 'Dr. Ruby Lathon, PhD',
   marco_borges: 'Marco Borges',
+  eliza_mellion: 'Eliza Mellion',
+  dreena_burton: 'Dreena Burton',
 };
 
 export const IMAGES = {
@@ -84,6 +91,8 @@ export const IMAGES = {
   sabina_vyas: require('./sabina_vyas_head.png'),
   allan_kornberg: require('./allan_kornberg.png'),
   ruby_lathon: require('./ruby_lathon.png'),
+  eliza_mellion: require('./eliza_mellion.png'),
+  dreena_burton: require('./dreena_burton.png'),
 };
 
 export const BOARD_MEMBERS_KEYS = [
@@ -104,6 +113,8 @@ export const BOARD_MEMBERS_KEYS = [
   'robert_ostfeld',
   'sabina_vyas',
   'allan_kornberg',
+  'eliza_mellion',
+  'dreena_burton',
 ];
 
 export const ADVISORY_ROWS = [
@@ -111,4 +122,5 @@ export const ADVISORY_ROWS = [
   ['matt', 'asha', 'pamela', 'jackson'],
   ['aaron', 'joel_kahn', 'rick_weissinger', 'ruby_lathon'],
   ['marco_borges', 'robert_ostfeld', 'sabina_vyas', 'allan_kornberg'],
+  ['eliza_mellion', 'dreena_burton'],
 ];
