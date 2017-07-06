@@ -49,6 +49,7 @@ Dr. Lathon, a graduate of the University of Alabama, served as Nutrition Policy 
 The Everyday Vegan was her first project, following her father-in-law’s heart attack.  When the cardiologist strongly advised a low-fat plant-based diet to her husband’s parents to reverse heart disease, Dreena knew there was information needing to be shared – most importantly, how and what to eat as a vegan.`,
   eliza_mellion: `Eliza Mellion, M.S., R.D.N. is a Registered Dietitian Nutritionist and Certified Preschool Teacher with a background in psychology and early childhood development. Eliza has witnessed the dire state of childhood nutrition in our country’s classrooms both firsthand and through her work studying the feeding practices of USDA-funded childcare programs. After seeing childcare menus use pepperoni pizzas, doughnuts, and toaster pastries to meet official nutritional guidelines one too many times, she firmly believes in the need to increase the availability, accessibility, and promotion of wholesome, plant-based foods in childcare and school settings.
 Eliza is the past Massachusetts State Coordinator for the Vegetarian Nutrition Group of the Academy of Nutrition and Dietetics, and served on the Executive Committee for Dietitians in Integrative and Functional Medicine. During her time in graduate school, Eliza developed a successful fruit and vegetable focused curriculum for Mills College Children’s School, and was instrumental in galvanizing the University of Massachusetts’ School of Public Health & Health Sciences to investigate the role of exclusively plant-based diets on health outcomes through a novel lecture series and the formation of multiple extracurricular student organizations.`,
+  mauricio_gonzalez: `Dr. González, M.D. is an internal medicine physician with a strong passion for human nutrition. For the past 14 years, his primary mission has been to introduce a plant-based lifestyle to Latin America in order to counter the growing burden of chronic disease. Dr. González is an author, international speaker, and creator of the Human Restoration Program, an online medical consultation service providing preventive care to individuals with chronic disease. He has presented his research in Germany and is currently working on a quality improvement project using dietary changes to improve high blood pressure among Hispanic patients. He has also talked in very different plataforms; from festivals to the senate in Buenos Aires. At present, he is completing his internal medicine residency training at Metropolitan Hospital / New York Medical College.`,
 };
 
 export const NAMES = {
@@ -71,6 +72,7 @@ export const NAMES = {
   marco_borges: 'Marco Borges',
   eliza_mellion: 'Eliza Mellion, M.S., R.D.N.',
   dreena_burton: 'Dreena Burton',
+  mauricio_gonzalez: 'Dr. Mauricio González, M.D.',
 };
 
 export const IMAGES = {
@@ -93,6 +95,7 @@ export const IMAGES = {
   ruby_lathon: require('./ruby_lathon.png'),
   eliza_mellion: require('./eliza_mellion.png'),
   dreena_burton: require('./dreena_burton.png'),
+  mauricio_gonzalez: require('./mauricio_gonzalez.png'),
 };
 
 export const BOARD_MEMBERS_KEYS = [
@@ -115,6 +118,7 @@ export const BOARD_MEMBERS_KEYS = [
   'allan_kornberg',
   'eliza_mellion',
   'dreena_burton',
+  'mauricio_gonzalez',
 ];
 
 export const ADVISORY_ROWS = [
@@ -122,5 +126,5 @@ export const ADVISORY_ROWS = [
   ['matt', 'asha', 'pamela', 'jackson'],
   ['aaron', 'joel_kahn', 'rick_weissinger', 'ruby_lathon'],
   ['marco_borges', 'robert_ostfeld', 'sabina_vyas', 'allan_kornberg'],
-  ['eliza_mellion', 'dreena_burton'],
+  ['eliza_mellion', 'dreena_burton', 'mauricio_gonzalez'],
 ];
