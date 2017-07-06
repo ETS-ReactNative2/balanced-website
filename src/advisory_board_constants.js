@@ -69,7 +69,7 @@ export const NAMES = {
   sabina_vyas: 'Sabina Vyas, M.P.H.',
   ruby_lathon: 'Dr. Ruby Lathon, PhD',
   marco_borges: 'Marco Borges',
-  eliza_mellion: 'Eliza Mellion M.S., R.D.N.',
+  eliza_mellion: 'Eliza Mellion, M.S., R.D.N.',
   dreena_burton: 'Dreena Burton',
 };
 
