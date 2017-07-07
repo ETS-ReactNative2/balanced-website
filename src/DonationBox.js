@@ -10,7 +10,7 @@ export default () => (
     <ProgressBar />
 
 
-    <div id="Donate_DonationBox">
+    <div id="DonateForm_Container">
       Select an amount
        <form>
 
@@ -22,10 +22,15 @@ export default () => (
            <button type="button" className="Donate_Button">OTHER</button>
          </div>
 
-         <div id="Donate_DonationBoxInnerContainer">
-           <div id="Donate_Currency">$</div>
-           <input placeholder="45" type="text" id="Donate_Input" />
-         </div>
+         <div id="Donate_Checkbox">
+           <input type="checkbox" id="recurringDonation" name="recurringDonation" />
+             <label for="recurring">Yes! Show my support by making this a recurring donation</label>
+          </div>
+
+          <div id="NextButton">
+            <button type="button" className="Next_Button">NEXT</button>
+          </div>
+
 
        </form>
 
