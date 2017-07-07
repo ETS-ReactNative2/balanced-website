@@ -1,52 +1,74 @@
-@media(min-width: 1024px) {
-  #DonationBox_Container {
-    display: flex;
-    align-items: center;
-  }
+#DonationBox_Container {
+  margin: -80px auto auto auto;
+  width: 70%;
+  height: auto;
+}
 
-  #DonationBox_Box{
-    align-items: center;
-    margin: auto;
-    margin-top: -50px;
-    border: 3.79px solid;
-    border-color: rgb(75, 153, 31);
-    border-radius: 12px;
-    width: 1007px;
-    height: auto;
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-    font-size: 30px;
-  }
-
-  #DonationBox_Progress{
-    background-color: rgb(75, 153, 31);
-    text-align: center;
-    color: white;
-  }
-
-  #DonationBox_Form{
-  background-color: white;
-  color: black;
-  margin: 0;
-  padding: 0;
+#Donate_DonationBox {
+  display: flex;
+  border: solid 3px rgb(75, 153, 31);
+  flex-direction: column;
+  background-color: #e0e0e0;
+  padding: 39px 47px;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
-  }
-
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
 }
 
-@media(max-width: 1024px) {
-  #DonationBox_Container {
-    align-items: center;
-  }
-
-  #DonationBox_Box{
-    margin: auto;
-    border: 5px solid black;
-    border-radius: 10px;
-    width: 50%;
-    background-color: green;
-    text-align: center;
-  }
-
+.Donate_Button {
+  background-color: white;
+  border-radius: 4px;
+  border: solid 2px rgb(75, 153, 31);
+  font-family: "Roboto", sans-serif;
+  width: 100px;
+  line-height: 0px;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(75, 153, 31);
+  padding-bottom: 16px;
+  padding-top: 16px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 32px;
+  text-align: center;
 }
+
+.Donate_Button:hover {
+  cursor: pointer;
+  border-color: rgb(75, 153, 31, 0.8);
+}
+
+#Donate_ButtonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 20px;
+}
+
+ #Donate_Currency {
+   width: 60px;
+   height: 90px;
+   background-color: #fff;
+   color: #2b2b2b;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 45px;
+   font-family: "Open Sans", sans-serif;
+   font-weight: bold;
+ }
+
+ #Donate_Input {
+   background-color: #fff;
+   width: 385px;
+   padding: 0px;
+   margin-bottom: 49px;
+   height: 90px;
+   color: #2b2b2b;
+   font-family: "Open Sans", sans-serif;
+   font-size: 30px;
+   letter-spacing: normal;
+   text-align: left;
+   border: none;
+ }
