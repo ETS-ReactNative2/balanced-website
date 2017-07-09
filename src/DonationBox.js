@@ -2,44 +2,57 @@ import React from 'react';
 import Text from 'react';
 import './DonationBox.css';
 import ProgressBar from './donationcomponents/ProgressBar';
+import DonationForm1 from './donationcomponents/DonationForm1';
+import DonationForm2 from './donationcomponents/DonationForm2';
+import DonationForm3 from './donationcomponents/DonationForm3';
+import DonationForm4 from './donationcomponents/DonationForm4';
 import SectionHeader from './SectionHeader';
 import BodyText from './BodyText';
 
+function RenderForm(step) {
+    if (step===1) {
+      return <DonationForm1 />
+    }
+    else if (step===2) {
+      return <DonationForm2 />
+    }
+    else if (step===3) {
+      return <DonationForm3 />
+    }
+    else {
+      return <DonationForm4 />
+    }
+  };
+
+var step=1;
+
 export default () => (
+
   <div id="DonationBox_Container">
     <ProgressBar />
-
-
-    <div id="DonateForm_Container">
-      Select an amount
-       <form>
-
-         <div id="Donate_ButtonGroup">
-           <button type="button" className="Donate_Button">$10</button>
-           <button type="button" className="Donate_Button">$40</button>
-           <button type="button" className="Donate_Button">$100</button>
-           <button type="button" className="Donate_Button">$500</button>
-           <button type="button" className="Donate_Button">OTHER</button>
-         </div>
-
-         <div id="Donate_Checkbox">
-           <input type="checkbox" id="recurringDonation" name="recurringDonation" />
-             <label for="recurring">Yes! Show my support by making this a recurring donation</label>
-          </div>
-
-          <div id="NextButton">
-            <button type="button" className="Next_Button">NEXT</button>
-          </div>
-
-
-       </form>
-
-    </div>
+    {RenderForm(step)}
   </div>
 
 )
 
 /*
+
+function RenderForm {
+  if (step=1) {
+    return <DonationForm1 />
+  }
+  else if (step=2) {
+    return <DonationForm2 />
+  }
+  else if (step=3) {
+    return <DonationForm3 />
+  else {
+    return <DonationForm4 />
+}
+
+*/
+
+/* OLD FORM
 <div id="Donate_DonationBox">
    <form>
      <div id="Donate_DonationBoxInnerContainer">

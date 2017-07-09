@@ -1,0 +1,98 @@
+/* =================================
+  CONTAINERS AND GROUPS
+==================================== */
+
+#DonateForm_Container {
+  display: flex;
+  border: solid 3px rgb(75, 153, 31);
+  flex-direction: column;
+  padding: 39px 47px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.DonateForm_ButtonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: solid black 1px;
+}
+
+/* Centre "Back" and "Next" buttons */
+.DonateForm_Nav {
+  justify-content: center;
+}
+
+#DonateForm_Checkbox {
+  text-align: left;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+
+/* =================================
+  BUTTON STYLES
+==================================== */
+
+.DonateForm_Button {
+  background-color: white;
+  border-radius: 4px;
+  border: solid 2px rgb(75, 153, 31);
+  font-family: "Roboto", sans-serif;
+  width: 100px;
+  line-height: 0px;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(75, 153, 31);
+  padding-bottom: 16px;
+  padding-top: 16px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+  margin: 10px 10px;
+}
+
+/* Style changes for green "next" button */
+.Next_Button {
+  background-color: rgb(75, 153, 31);
+  color: white;
+  padding-bottom: 16px;
+  }
+
+.DonateForm_Button:hover {
+    cursor: pointer;
+    font-weight: 400;
+  }
+
+
+/* =================================
+  OTHER STUFF....
+==================================== */
+
+input[type=checkbox] {
+
+}
+
+.Hidden {
+  display: none;
+}
+
+
+ #Donate_Input {
+   background-color: #fff;
+   width: 385px;
+   padding: 0px;
+   margin-bottom: 49px;
+   height: 90px;
+   color: #2b2b2b;
+   font-family: "Open Sans", sans-serif;
+   font-size: 30px;
+   letter-spacing: normal;
+   text-align: left;
+   border: none;
+ }
