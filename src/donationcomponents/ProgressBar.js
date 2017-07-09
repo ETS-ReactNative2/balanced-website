@@ -10,21 +10,21 @@ export default () => (
   DONATE TODAY
   <div id="progressbar">
     <div id="steps">
-      <ProgressCircle />
+      <ProgressCircle active={true} label="1" />
       <p>
       Amount
       </p>
     </div>
 
     <div id="steps">
-      <ProgressCircle />
+      <ProgressCircle label="2"/>
       <p>
       Info
       </p>
     </div>
 
     <div id="steps">
-      <ProgressCircle />
+      <ProgressCircle label="3"/>
       <p>
       Payment
       </p>
