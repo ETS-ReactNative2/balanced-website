@@ -2,41 +2,69 @@
   CONTAINERS AND GROUPS
 ==================================== */
 
-#DonateForm_Container {
+.DonateForm_Container {
   display: flex;
   border: solid 3px rgb(75, 153, 31);
   flex-direction: column;
   padding: 39px 47px;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
-  font-family: "Roboto", sans-serif;
+}
+
+.DonateForm_Container h1 {
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
+
+}
+
+.DonateForm_Container h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-style:italic;
+  font-weight: normal;
+  text-align: center;
+
+}
+
+.DonateForm_Container p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px;
+
+}
+
+.DonateForm_InputContainer {
+  display: block;
+  max-width: 600px;
+  margin:auto;
+}
+
+.DonateForm_Checkbox {
+  display: block;
+  text-align: left;
+  padding: 15px 0;
+}
+
+.DonateForm_Checkbox label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
 }
 
 .DonateForm_ButtonGroup {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  justify-content: space-around;
   padding-top: 16px;
   padding-bottom: 16px;
-  border: solid black 1px;
-}
-
-/* Centre "Back" and "Next" buttons */
-.DonateForm_Nav {
   justify-content: center;
 }
 
-#DonateForm_Checkbox {
-  text-align: left;
-  padding: 15px 0;
-  font-size: 14px;
-}
+
 
 
 /* =================================
-  BUTTON STYLES
+  FORM BUTTON/BOX STYLES
 ==================================== */
 
 .DonateForm_Button {
@@ -69,9 +97,35 @@
     font-weight: 400;
   }
 
+.DonateForm_Input {
+    padding: 15px;
+    margin-bottom: 20px;
+    height: 20px;
+    width: 90%;
+    color: rgb(75, 153, 31);
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: normal;
+    text-align: left;
+    border: solid 2px rgb(75, 153, 31);
+    border-radius: 10px;
+
+  }
+
+.DonateForm_Input:focus {
+    color: black;
+  }
+
+.DonateForm_Input:required {
+
+}
+
+.DonateForm_Comment {
+    height: 120px;
+  }
 
 /* =================================
-  OTHER STUFF....
+  OTHER STUFF....I don't even know...
 ==================================== */
 
 input[type=checkbox] {
@@ -81,18 +135,3 @@ input[type=checkbox] {
 .Hidden {
   display: none;
 }
-
-
- #Donate_Input {
-   background-color: #fff;
-   width: 385px;
-   padding: 0px;
-   margin-bottom: 49px;
-   height: 90px;
-   color: #2b2b2b;
-   font-family: "Open Sans", sans-serif;
-   font-size: 30px;
-   letter-spacing: normal;
-   text-align: left;
-   border: none;
- }

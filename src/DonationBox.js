@@ -1,22 +1,19 @@
 import React from 'react';
-import Text from 'react';
 import './DonationBox.css';
 import ProgressBar from './donationcomponents/ProgressBar';
 import DonationForm1 from './donationcomponents/DonationForm1';
 import DonationForm2 from './donationcomponents/DonationForm2';
 import DonationForm3 from './donationcomponents/DonationForm3';
 import DonationForm4 from './donationcomponents/DonationForm4';
-import SectionHeader from './SectionHeader';
-import BodyText from './BodyText';
 
-function RenderForm(step) {
-    if (step===1) {
+function RenderForm() {
+    if (FormStep===1) {
       return <DonationForm1 />
     }
-    else if (step===2) {
+    else if (FormStep===2) {
       return <DonationForm2 />
     }
-    else if (step===3) {
+    else if (FormStep===3) {
       return <DonationForm3 />
     }
     else {
@@ -24,33 +21,19 @@ function RenderForm(step) {
     }
   };
 
-var step=1;
+var FormStep=1;
+
 
 export default () => (
 
   <div id="DonationBox_Container">
     <ProgressBar />
-    {RenderForm(step)}
+    {RenderForm()}
   </div>
 
 )
 
-/*
 
-function RenderForm {
-  if (step=1) {
-    return <DonationForm1 />
-  }
-  else if (step=2) {
-    return <DonationForm2 />
-  }
-  else if (step=3) {
-    return <DonationForm3 />
-  else {
-    return <DonationForm4 />
-}
-
-*/
 
 /* OLD FORM
 <div id="Donate_DonationBox">
