@@ -23,6 +23,10 @@ function RenderForm() {
 
 var FormStep=1;
 
+function stepForward() {
+  return FormStep=FormStep+1;
+  console.log(FormStep);
+}
 
 export default () => (
 
@@ -33,6 +37,27 @@ export default () => (
 
 )
 
+/*
+So what I’d do is turn `DonationBox` into a class. Have the state live there, plus two methods:
+
+nextStep()
+previousStep()
+
+Then pass nextStep() and previousStep() down to the `DonationForm` components. Then you can use the `prop` `onPress`
+
+class DonationBox {
+  someMethod() {
+    alert(‘hey’);
+}
+
+render () {
+  return <DonationForm onPress={() => this.someMethod()} />
+}}
+
+
+When you put a function inside of a class it becomes a `method`. A `method` has access to the `this` variable of its surrounding `class`
+This is important if you’re going to be using `this.state` or `this.setState`
+*/
 
 
 /* OLD FORM
