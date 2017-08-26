@@ -16,17 +16,17 @@ export default () =>
       <SectionHeader>WE ALREADY HAVE THE SUPPORT</SectionHeader>
       <BodyText>
         This common sense change is supported by an array of public health
-        organizations like the <strong>Obesity Action Coalition</strong><sup><a href="http://www.obesityaction.org/educational-resources/resource-articles-2/nutrition/rethink-your-plate">1</a></sup> and{' '}
-        <strong>The Defeat Diabetes Foundation</strong><sup><a href="https://www.defeatdiabetes.org/myplate/">2</a></sup>
+        organizations like the <strong>Obesity Action Coalition</strong><sup><a href="http://www.obesityaction.org/educational-resources/resource-articles-2/nutrition/rethink-your-plate" target="_blank">1</a></sup> and{' '}
+        <strong>The Defeat Diabetes Foundation</strong><sup><a href="https://www.defeatdiabetes.org/myplate/" target="_blank">2</a></sup>
         , and leading health care providers like{' '}
-        <strong>Kaiser Permanente</strong><sup><a href="https://share.kaiserpermanente.org/wp-content/uploads/2015/10/The-Plant-Based-Diet-booklet.pdf">3</a></sup> and <strong>The Mayo Clinic</strong><sup><a href="http://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/dietary-guidelines/art-20045584">4</a></sup>
+        <strong>Kaiser Permanente</strong><sup><a href="https://share.kaiserpermanente.org/wp-content/uploads/2015/10/The-Plant-Based-Diet-booklet.pdf" target="_blank">3</a></sup> and <strong>The Mayo Clinic</strong><sup><a href="http://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/dietary-guidelines/art-20045584" target="_blank">4</a></sup>
         .
       </BodyText>
       <div className="Support_logos">
-        <img src={OAC} />
-        <img src={DefeatDiabetes} />
-        <img src={Mayo} />
-        <img src={KaiserPermanente} />
+        <a href="http://www.obesityaction.org" target="_blank"><img src={OAC} /></a>
+        <a href="https://www.defeatdiabetes.org" target="_blank"><img src={DefeatDiabetes} /></a>
+        <a href="http://www.mayoclinic.org/" target="_blank"><img src={Mayo} /></a>
+        <a href="https://share.kaiserpermanente.org" target="_blank"><img src={KaiserPermanente} /></a>
       </div>
     </div>
   </div>;
