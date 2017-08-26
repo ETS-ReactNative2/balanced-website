@@ -1,3 +1,12 @@
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #bababa;
+}
+
 @media(min-width: 1024px) {
   #Support_OuterContainer {
     display: flex;
