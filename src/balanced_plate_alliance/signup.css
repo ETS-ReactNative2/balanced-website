@@ -1,0 +1,64 @@
+@media(max-width: 1024px) {
+  #Signup_Container {
+    display: flex;
+    padding: 32px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+  }
+
+  #Signup_Header {
+    font-size: 26px;
+    margin: 0px;
+    margin-bottom: 32px;
+  }
+
+  #Signup_Subheader {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+}
+
+@media(min-width: 1024px) {
+  #Signup_Header {
+    font-size: 40px;
+    margin: 0px;
+    margin-bottom: 14px;
+  }
+
+  #Signup_Container {
+    justify-content: center;
+    padding: 100px 0px;
+  }
+
+  #Signup_Subheader {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+}
+
+#Signup_Container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #4B991F;
+}
+
+#Signup_Header {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  letter-spacing: .13em;
+  text-align: center;
+}
+
+#Signup_Subheader {
+  max-width: 716px;
+  color: #fff;
+  font-family: Roboto;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}

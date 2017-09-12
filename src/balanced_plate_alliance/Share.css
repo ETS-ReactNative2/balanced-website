@@ -1,0 +1,32 @@
+#Share {
+  padding: 64px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#ShareIcons {
+  display: flex;
+  flex-direction: row;
+}
+
+#ShareIcons img {
+  padding: 0 16px;
+}
+
+#Share h1 {
+  color: #4b991f;
+  font-family: 'Roboto';
+  letter-spacing: 0.1em;
+  font-size: 24px;
+}
+
+#Share span {
+  color: #3e3e3e;
+  font-family: 'Roboto';
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  margin-bottom: 32px;
+}

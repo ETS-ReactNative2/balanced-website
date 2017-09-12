@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import NavBar from './NavBar';
 import Hero from './Hero';
 import Intro from './Intro';
@@ -11,6 +11,7 @@ import Donate from './Donate';
 import OurTeam from './OurTeam';
 import Footer from './Footer';
 import MobileAdvisoryBoard from './MobileAdvisoryBoard';
+import BPA from './balanced_plate_alliance';
 
 class App extends Component {
   setIsMobile() {
@@ -32,24 +33,25 @@ class App extends Component {
   }
 
   render() {
-    const {isMobile} = this.state;
-    return (
-      <div>
-        <div id="SuperContainer">
-          <NavBar />
-          <Hero />
-        </div>
-        <Intro />
-        <Signup />
-        <WhatWereAskingFor />
-        <Support />
-        <OurStory />
-        {isMobile ? <MobileAdvisoryBoard /> : <AdvisoryBoard />}
-        <Donate />
-        <OurTeam />
-        <Footer />
-      </div>
-    );
+    const { isMobile } = this.state;
+    return <BPA />;
+    // return (
+    //   <div>
+    //     <div id="SuperContainer">
+    //       <NavBar />
+    //       <Hero />
+    //     </div>
+    //     <Intro />
+    //     <Signup />
+    //     <WhatWereAskingFor />
+    //     <Support />
+    //     <OurStory />
+    //     {isMobile ? <MobileAdvisoryBoard /> : <AdvisoryBoard />}
+    //     <Donate />
+    //     <OurTeam />
+    //     <Footer />
+    //   </div>
+    // );
   }
 }
 

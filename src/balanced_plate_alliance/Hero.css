@@ -1,0 +1,18 @@
+#Hero {
+  background-image: url('./hero.png');
+  background-position: center;
+  background-size: cover;
+  min-height: 147px;
+}
+
+@media (min-width: 768px) {
+  #Hero {
+    min-height: 364px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Hero {
+    min-height: 576px;
+  }
+}

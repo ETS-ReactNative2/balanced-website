@@ -1,0 +1,46 @@
+#Intro {
+  color: #4b991f;
+  font-family: 'Roboto';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0px;
+  text-align: center;
+}
+
+#Intro h2 {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0;
+}
+
+#Intro h1 {
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  #Intro {
+    padding: 64px 0px;
+  }
+
+  #Intro h2 {
+    font-size: 40px;
+  }
+
+  #Intro h1 {
+    font-size: 56px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Intro h2 {
+    font-size: 56px;
+  }
+
+  #Intro h1 {
+    font-size: 70px;
+  }
+}
