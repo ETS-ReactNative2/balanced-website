@@ -6,10 +6,10 @@ import 'jquery.scrollto';
 const navigateTo = (anchorName, hideNavBar) => {
   hideNavBar();
   const element = document.getElementById(anchorName + '_Container');
-  $(window).scrollTo(element, {duration: 500});
+  $(window).scrollTo(element, { duration: 500 });
 };
 
-const NavMenu = ({onClick}) => (
+const NavMenu = ({ onClick }) => (
   <div id="NavBar_NavMenu">
     <ul>
       <li onClick={() => navigateTo('About', onClick)}>ABOUT</li>
@@ -18,8 +18,9 @@ const NavMenu = ({onClick}) => (
       <li onClick={() => navigateTo('AdvisoryBoard', onClick)}>
         ADVISORY BOARD
       </li>
-      <li onClick={() => navigateTo('Donate', onClick)}>
-        DONATE
+      <li onClick={() => navigateTo('Donate', onClick)}>DONATE</li>
+      <li onClick={() => (window.location = 'https://www.balanced.org/bpa')}>
+        BALANCED PLATE ALLIANCE
       </li>
     </ul>
   </div>
