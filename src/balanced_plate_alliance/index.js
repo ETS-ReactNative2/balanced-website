@@ -32,7 +32,6 @@ export default class extends Component {
     const { isMobile } = this.state;
     return (
       <div>
-        <NavBar />
         <Hero />
         <Intro />
         <Signup />
@@ -40,7 +39,6 @@ export default class extends Component {
         <Campaigns />
         <Share />
         <MakeAnImpact />
-        <Footer />
       </div>
     );
   }

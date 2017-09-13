@@ -13,6 +13,8 @@ import Footer from './Footer';
 import MobileAdvisoryBoard from './MobileAdvisoryBoard';
 import BPA from './balanced_plate_alliance';
 
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
 class App extends Component {
   setIsMobile() {
     this.setState({
@@ -34,25 +36,31 @@ class App extends Component {
 
   render() {
     const { isMobile } = this.state;
-    return <BPA />;
-    // return (
-    //   <div>
-    //     <div id="SuperContainer">
-    //       <NavBar />
-    //       <Hero />
-    //     </div>
-    //     <Intro />
-    //     <Signup />
-    //     <WhatWereAskingFor />
-    //     <Support />
-    //     <OurStory />
-    //     {isMobile ? <MobileAdvisoryBoard /> : <AdvisoryBoard />}
-    //     <Donate />
-    //     <OurTeam />
-    //     <Footer />
-    //   </div>
-    // );
+    return (
+      <div>
+        <div id="SuperContainer">
+          <Hero />
+        </div>
+        <Intro />
+        <Signup />
+        <WhatWereAskingFor />
+        <Support />
+        <OurStory />
+        {isMobile ? <MobileAdvisoryBoard /> : <AdvisoryBoard />}
+        <Donate />
+        <OurTeam />
+      </div>
+    );
   }
 }
 
-export default App;
+export default () => (
+  <Router>
+    <div>
+      <NavBar />
+      <Route exact path="/" component={App} />
+      <Route path="/bpa" component={BPA} />
+      <Footer />
+    </div>
+  </Router>
+);
