@@ -1,5 +1,5 @@
 import React from 'react';
-import {THEME_GREY, WHITE, LIGHT_GREY} from './colours';
+import { THEME_GREY, WHITE, LIGHT_GREY } from './colours';
 import './NavBar.css';
 import NavMenu from './NavMenu';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
@@ -15,20 +15,22 @@ class NavBar extends React.Component {
   }
 
   toggleShowOurStory() {
-    const {showNavMenu} = this.state;
+    const { showNavMenu } = this.state;
     this.setState({
       showNavMenu: !showNavMenu,
     });
   }
 
   render() {
-    const {showNavMenu} = this.state;
+    const { showNavMenu } = this.state;
 
     return (
       <div>
         <div id="NavBar_Container">
           <div className="NavBar_InnerContainer">
-            <img className="NavBar_Logo" alt="Balanced Logo" src={logo} />
+            <a href="https://www.balanced.org">
+              <img className="NavBar_Logo" alt="Balanced Logo" src={logo} />
+            </a>
           </div>
           <div className="NavBar_InnerContainer">
             <i

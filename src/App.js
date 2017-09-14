@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import NavBar from './NavBar';
 import Hero from './Hero';
 import Intro from './Intro';
@@ -11,6 +11,9 @@ import Donate from './Donate';
 import OurTeam from './OurTeam';
 import Footer from './Footer';
 import MobileAdvisoryBoard from './MobileAdvisoryBoard';
+import BPA from './balanced_plate_alliance';
+
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 class App extends Component {
   setIsMobile() {
@@ -32,11 +35,10 @@ class App extends Component {
   }
 
   render() {
-    const {isMobile} = this.state;
+    const { isMobile } = this.state;
     return (
       <div>
         <div id="SuperContainer">
-          <NavBar />
           <Hero />
         </div>
         <Intro />
@@ -47,10 +49,18 @@ class App extends Component {
         {isMobile ? <MobileAdvisoryBoard /> : <AdvisoryBoard />}
         <Donate />
         <OurTeam />
-        <Footer />
       </div>
     );
   }
 }
 
-export default App;
+export default () => (
+  <Router>
+    <div>
+      <NavBar />
+      <Route exact path="/" component={App} />
+      <Route path="/bpa" component={BPA} />
+      <Footer />
+    </div>
+  </Router>
+);
