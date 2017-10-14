@@ -1,6 +1,6 @@
 .BoardMemberBar_Container {
   height: 64px;
-  background-color: #4B991F;
+  background-color: #4b991f;
   padding: 4px;
   display: flex;
   align-items: center;
@@ -17,7 +17,7 @@
 }
 
 .BoardMemberBar_Name {
-  color: #FFF;
+  color: #fff;
   font-family: Roboto, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -38,6 +38,7 @@
 }
 
 .BoardMemberProfile_Picture {
+  height: 210px;
   width: 210px;
 }
 
@@ -53,7 +54,7 @@
 
 .BoardMemberProfile_Title {
   margin: 0px;
-  color: #4B991F;
+  color: #4b991f;
   font-family: Roboto, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
