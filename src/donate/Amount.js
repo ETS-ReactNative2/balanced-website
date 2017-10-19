@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const TOP_AMOUNTS = ["$10", "$40", "$100"];
 const BOTTOM_AMOUNTS = ["$500", "OTHER"];
@@ -56,6 +55,10 @@ export default ({
 
     <Recurring recurring={recurring} setRecurring={setRecurring} />
 
-    <Link to="/donate/info">NEXT</Link>
+    <div id="Donate_Next">
+      <div onClick={nextStep} id="Donate_NextButton">
+        NEXT
+      </div>
+    </div>
   </div>
 );

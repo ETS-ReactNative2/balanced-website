@@ -1,34 +1,41 @@
-import React from 'react';
-import DonationHeader from './DonationHeader';
-import DonationBody from './DonationBody';
+import React from "react";
+import DonationHeader from "./DonationHeader";
+import DonationBody from "./DonationBody";
 
 export default class extends React.Component {
   constructor() {
     super();
 
     this.state = {
-      currentStep: 1,
-      currentAmount: '$100',
-      recurring: false,
+      currentStep: 0,
+      currentAmount: "$100",
+      recurring: false
     };
   }
 
   selectAmount = amount => {
     this.setState({
-      currentAmount: amount,
+      currentAmount: amount
     });
   };
 
   setRecurring = () => {
     this.setState({
-      recurring: !this.state.recurring,
+      recurring: !this.state.recurring
     });
   };
 
   nextStep = () => {
     const currentStep = this.state.currentStep + 1;
     this.setState({
-      currentStep,
+      currentStep
+    });
+  };
+
+  previousStep = () => {
+    const currentStep = this.state.currentStep - 1;
+    this.setState({
+      currentStep
     });
   };
 
@@ -38,11 +45,13 @@ export default class extends React.Component {
       <div id="Donate_DonationBox">
         <DonationHeader currentStep={currentStep} />
         <DonationBody
+          currentStep={currentStep}
           currentAmount={currentAmount}
           recurring={recurring}
           selectAmount={this.selectAmount}
           setRecurring={this.setRecurring}
           nextStep={this.nextStep}
+          previousStep={this.previousStep}
         />
       </div>
     );

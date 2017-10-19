@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Info.css";
 
-const Info = () => (
+const Info = ({ nextStep, previousStep }) => (
   <div id="Donate_Info">
     <form>
       <h5>Contact Information</h5>
@@ -21,7 +20,14 @@ const Info = () => (
       <input name="country" type="text" placeholder="Country" />
     </form>
 
-    <Link to="/donate/payment">NEXT</Link>
+    <div id="Donate_Next">
+      <div onClick={previousStep} id="Donate_BackButton">
+        BACK
+      </div>
+      <div onClick={nextStep} id="Donate_NextButton">
+        NEXT
+      </div>
+    </div>
   </div>
 );
 
