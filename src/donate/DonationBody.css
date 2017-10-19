@@ -56,11 +56,14 @@
 }
 
 #Donate_Checkbox {
-  display: inline-block;
+  display: flex;
   height: 16px;
   width: 26px;
   border: 1.3px solid #4b991f;
+  color: #4b991f;
   margin-right: 16px;
+  align-items: center;
+  justify-content: center;
 }
 
 #Donate_Checkbox span {
@@ -75,6 +78,7 @@
 }
 
 #Donate_NextButton {
+  font-family: 'Roboto';
   display: flex;
   justify-content: center;
   align-items: center;
