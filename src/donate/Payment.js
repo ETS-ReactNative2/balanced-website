@@ -39,7 +39,7 @@ const Payment = ({ nextStep, previousStep }) => (
 
     <div id="Donate_FinalAmount">
       <span>Amount:</span>
-      <h5>TODO</h5>
+      <h5>$0.00</h5>
     </div>
 
     <div id="Donate_Next">

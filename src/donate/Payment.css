@@ -13,3 +13,24 @@
   flex: 0;
   width: 3em;
 }
+
+#Donate_FinalAmount {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#Donate_FinalAmount span {
+  color: #2b2b2b;
+  font-family: "Roboto";
+  font-size: 10pt;
+  letter-spacing: 1.5px;
+}
+
+#Donate_FinalAmount h5 {
+  margin-top: 4px;
+  font-weight: 700 !important;
+  margin-bottom: 16px;
+}

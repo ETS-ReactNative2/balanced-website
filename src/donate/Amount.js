@@ -1,5 +1,6 @@
 import React from "react";
 import Checkbox from "./Checkbox";
+import "./Amount.css";
 
 const TOP_AMOUNTS = ["$10", "$40", "$100"];
 const BOTTOM_AMOUNTS = ["$500", "OTHER"];
