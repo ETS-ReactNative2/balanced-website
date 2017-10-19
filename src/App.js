@@ -7,7 +7,7 @@ import WhatWereAskingFor from './WhatWereAskingFor';
 import Support from './Support';
 import OurStory from './OurStory';
 import AdvisoryBoard from './AdvisoryBoard';
-import Donate from './Donate';
+import Donate from './donate';
 import OurTeam from './OurTeam';
 import Footer from './Footer';
 import MobileAdvisoryBoard from './MobileAdvisoryBoard';
