@@ -8,17 +8,17 @@ export default class extends React.Component {
 
     this.state = {
       currentStep: 1,
-      amount: 100,
+      currentAmount: '$100',
       recurring: false,
     };
   }
 
   render() {
-    const { currentStep, amount, recurring } = this.state;
+    const { currentStep, currentAmount, recurring } = this.state;
     return (
       <div id="Donate_DonationBox">
         <DonationHeader currentStep={currentStep} />
-        <DonationBody amount={amount} />
+        <DonationBody currentAmount={currentAmount} recurring={recurring} />
       </div>
     );
   }
