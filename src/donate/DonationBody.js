@@ -1,10 +1,9 @@
 import React from "react";
 import { Switch, Route } from "react-router";
 import Amount from "./Amount";
+import Info from "./Info";
 
 import "./DonationBody.css";
-
-const Info = () => <span>fuck the police</span>;
 
 export default ({ currentAmount, recurring, selectAmount, setRecurring }) => (
   <div id="Donate_DonationBody">
