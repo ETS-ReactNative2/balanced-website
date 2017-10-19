@@ -1,5 +1,4 @@
 import React from "react";
-import "./Info.css";
 
 const Info = ({ nextStep, previousStep }) => (
   <div id="Donate_Info">

@@ -1,0 +1,15 @@
+.Donate_Month {
+  flex: 0;
+  width: 2em;
+  margin-right: 8px;
+}
+
+.Donate_Year {
+  flex: 0;
+  width: 4em;
+}
+
+.Donate_CVV {
+  flex: 0;
+  width: 3em;
+}
