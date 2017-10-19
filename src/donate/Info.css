@@ -1,0 +1,18 @@
+#Donate_Info form {
+  display: flex;
+  flex-direction: column;
+}
+
+#Donate_Info input {
+  flex: 1;
+  border: 1px solid green;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 12pt;
+}
+
+#Donate_Info h5 {
+  margin-bottom: 16px;
+}
