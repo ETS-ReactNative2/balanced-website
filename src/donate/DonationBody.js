@@ -1,30 +1,16 @@
-import React from 'react';
-import { Switch, Route } from 'react-router';
-import Amount from './Amount';
+import React from "react";
+import { Switch, Route } from "react-router";
+import Amount from "./Amount";
 
-import './DonationBody.css';
+import "./DonationBody.css";
 
-const Next = ({ nextStep }) => (
-  <div id="Donate_Next">
-    <div onClick={nextStep} id="Donate_NextButton">
-      NEXT
-    </div>
-  </div>
-);
+const Info = () => <span>fuck the police</span>;
 
-export default ({
-  currentAmount,
-  recurring,
-  selectAmount,
-  setRecurring,
-  nextStep,
-  history,
-}) => (
+export default ({ currentAmount, recurring, selectAmount, setRecurring }) => (
   <div id="Donate_DonationBody">
     <Switch>
+      <Route path="/donate/info" component={Info} />
       <Route path="/" component={Amount} />
     </Switch>
-
-    <Next nextStep={() => history.push('/2')} />
   </div>
 );

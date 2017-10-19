@@ -1,12 +1,13 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
-const TOP_AMOUNTS = ['$10', '$40', '$100'];
-const BOTTOM_AMOUNTS = ['$500', 'OTHER'];
+const TOP_AMOUNTS = ["$10", "$40", "$100"];
+const BOTTOM_AMOUNTS = ["$500", "OTHER"];
 
 const Amount = ({ amount, selected, selectAmount }) => (
   <div
     onClick={() => selectAmount(amount)}
-    className={`Donate_Amount ${selected ? 'Donate_AmountSelected' : ''}`}
+    className={`Donate_Amount ${selected ? "Donate_AmountSelected" : ""}`}
   >
     {amount}
   </div>
@@ -14,17 +15,17 @@ const Amount = ({ amount, selected, selectAmount }) => (
 
 const Recurring = ({ recurring, setRecurring }) => (
   <div onClick={setRecurring} id="Donate_Recurring">
-    <div id="Donate_Checkbox">{recurring && '✔'}</div>
+    <div id="Donate_Checkbox">{recurring && "✔"}</div>
     <span>Yes! Show my support by making this a recurring donation.</span>
   </div>
 );
 
-export default (
+export default ({
   currentAmount,
   recurring,
   selectAmount,
   setRecurring,
-  nextStep,
+  nextStep
 }) => (
   <div>
     <h5>Select an amount</h5>
@@ -34,7 +35,7 @@ export default (
         <Amount
           key={a}
           amount={a}
-          selected={currentAmount == a}
+          selected={currentAmount === a}
           selectAmount={selectAmount}
         />
       ))}
@@ -46,7 +47,7 @@ export default (
         <Amount
           key={a}
           amount={a}
-          selected={currentAmount == a}
+          selected={currentAmount === a}
           selectAmount={selectAmount}
         />
       ))}
@@ -54,5 +55,7 @@ export default (
     </div>
 
     <Recurring recurring={recurring} setRecurring={setRecurring} />
+
+    <Link to="/donate/info">NEXT</Link>
   </div>
 );
