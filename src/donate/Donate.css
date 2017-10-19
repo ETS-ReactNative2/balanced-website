@@ -1,13 +1,12 @@
 #Donate_Container {
   color: #fff;
-  background-image: url('./donate_background.jpg');
+  background-image: url("./donate_background_mobile.jpg");
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 128px;
-  background-size: cover;
-  background-position: 50% 50%;
+  background-size: contain;
   background-repeat: no-repeat;
   flex: 1;
 }
@@ -30,19 +29,21 @@
 }
 
 #Donate_SubHeader {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 15pt;
   text-align: center;
   font-style: italic;
   font-weight: medium;
   letter-spacing: 1.5px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 #Donate_Header {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 30pt;
   line-height: 30pt;
   text-align: center;
   font-weight: bold;
   letter-spacing: 4px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
