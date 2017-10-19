@@ -1,6 +1,5 @@
 import React from 'react';
 import './AdvisoryHead.css';
-import audrey_advisory_head from './audrey_advisory_head.jpg';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import { NAMES, IMAGES } from './advisory_board_constants';
 
@@ -11,7 +10,7 @@ export default ({ name, showOverlay, onClick }) => (
     className="AdvisoryHead_InnerContainer"
   >
     <div className="AdvisoryHead_ImageContainer">
-      <img src={IMAGES[name]} />
+      <img alt={name} src={IMAGES[name]} />
       <CSSTransitionGroup
         transitionName="AdvisoryHead_Overlay_Transition"
         transitionEnterTimeout={500}

@@ -13,7 +13,7 @@ import Footer from './Footer';
 import MobileAdvisoryBoard from './MobileAdvisoryBoard';
 import BPA from './balanced_plate_alliance';
 
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component {
   setIsMobile() {

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import NavBar from '../NavBar';
 import Hero from './Hero';
 import Intro from './Intro';
 import Signup from './Signup';
@@ -7,7 +6,6 @@ import About from './About';
 import Campaigns from './Campaigns';
 import Share from './Share';
 import MakeAnImpact from './MakeAnImpact';
-import Footer from '../Footer';
 
 export default class extends Component {
   setIsMobile() {
@@ -29,7 +27,6 @@ export default class extends Component {
   }
 
   render() {
-    const { isMobile } = this.state;
     return (
       <div>
         <Hero />

@@ -5,7 +5,7 @@ import check from './check.png';
 
 const Item = ({ children }) => (
   <div className="Item">
-    <img src={check} className="Check" />
+    <img alt="Check" src={check} className="Check" />
     <span>{children}</span>
   </div>
 );

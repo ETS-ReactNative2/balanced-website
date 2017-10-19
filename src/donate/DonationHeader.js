@@ -21,7 +21,7 @@ export default ({ currentStep }) => (
   <div id="Donate_DonationHeader">
     <h5>DONATE TODAY</h5>
     <div id="Donate_Steps">
-      {STEPS.map(s => <Step key={s} step={s} selected={currentStep == s} />)}
+      {STEPS.map(s => <Step key={s} step={s} selected={currentStep === s} />)}
     </div>
     <div id="Donate_Line" />
   </div>

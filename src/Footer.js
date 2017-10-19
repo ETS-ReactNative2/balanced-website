@@ -20,7 +20,7 @@ export default () => (
         style={{justifyContent: 'center'}}
         className="Footer_SectionContainer"
       >
-        <img src={footer_icon} />
+        <img alt="Footer Icon" src={footer_icon} />
       </div>
       <div
         className="Footer_SectionContainer"

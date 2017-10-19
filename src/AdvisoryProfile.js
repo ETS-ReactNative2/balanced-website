@@ -3,7 +3,6 @@ import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import BodyText from './BodyText';
 import ReadMore from './ReadMore';
 import robert from './robert.jpg';
-import $ from 'jquery';
 import 'jquery.scrollto';
 import './AdvisoryProfile.css';
 
@@ -37,7 +36,7 @@ class AdvisoryProfile extends React.Component {
     return (
       <div id="AdvisoryProfile_Container">
         <div id="AdvisoryProfile_ImageContainer">
-          <img className="AdvisoryProfile_Image" src={robert} />
+          <img alt="Robert" className="AdvisoryProfile_Image" src={robert} />
           <h1 id="AdvisoryProfile_Header">CAPTAIN ROBERT ATCHESON</h1>
           <h2 id="AdvisoryProfile_Subheader">BOARD OF ADVISORS</h2>
         </div>

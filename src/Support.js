@@ -4,7 +4,6 @@ import BodyText from './BodyText';
 
 import './Support.css';
 
-import AHA from './AHA.png';
 import OAC from './OAC.png';
 import DefeatDiabetes from './Defeat Diabetes.png';
 import Mayo from './Mayo.png';
@@ -23,10 +22,10 @@ export default () =>
         .
       </BodyText>
       <div className="Support_logos">
-        <a href="http://www.obesityaction.org" target="_blank"><img src={OAC} /></a>
-        <a href="https://www.defeatdiabetes.org" target="_blank"><img src={DefeatDiabetes} /></a>
-        <a href="http://www.mayoclinic.org/" target="_blank"><img src={Mayo} /></a>
-        <a href="https://share.kaiserpermanente.org" target="_blank"><img src={KaiserPermanente} /></a>
+        <a href="http://www.obesityaction.org" target="_blank"><img alt="OAC Logo" src={OAC} /></a>
+        <a href="https://www.defeatdiabetes.org" target="_blank"><img alt="Defeat Diabetes Logo" src={DefeatDiabetes} /></a>
+        <a href="http://www.mayoclinic.org/" target="_blank"><img alt="Mayo Clinic Logo" src={Mayo} /></a>
+        <a href="https://share.kaiserpermanente.org" target="_blank"><img alt="Kaiser Permente Logo" src={KaiserPermanente} /></a>
       </div>
     </div>
   </div>;
