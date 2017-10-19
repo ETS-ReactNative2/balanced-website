@@ -4,15 +4,34 @@
 }
 
 #Donate_Info input {
+  font-family: "Roboto";
+  letter-spacing: 1.5px;
   flex: 1;
-  border: 1px solid green;
+  border: 1px solid #4b991f;
   border-radius: 4px;
   padding: 8px;
   margin-top: 8px;
   margin-bottom: 8px;
-  font-size: 12pt;
+  font-size: 11pt;
 }
 
 #Donate_Info h5 {
   margin-bottom: 16px;
+}
+
+#Donate_Info ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #4b991f;
+}
+#Donate_Info ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #4b991f;
+}
+#Donate_Info ::-ms-input-placeholder {
+  /* IE 10+ */
+  color: #4b991f;
+}
+#Donate_Info ::-moz-placeholder {
+  /* Firefox 18- */
+  color: #4b991f;
 }
