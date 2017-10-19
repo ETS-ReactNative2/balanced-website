@@ -45,31 +45,6 @@
   border-color: #2f7e16;
 }
 
-#Donate_Recurring {
-  margin-top: 36px;
-  color: #2b2b2b;
-  font-size: 14px;
-  font-family: "Roboto";
-  font-weight: 400;
-  letter-spacing: 1.5px;
-  display: flex;
-}
-
-#Donate_Checkbox {
-  display: flex;
-  height: 16px;
-  width: 26px;
-  border: 1.3px solid #4b991f;
-  color: #4b991f;
-  margin-right: 16px;
-  align-items: center;
-  justify-content: center;
-}
-
-#Donate_Checkbox span {
-  flex: 1;
-}
-
 #Donate_Next {
   margin-top: 24px;
   display: flex;

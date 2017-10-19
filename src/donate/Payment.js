@@ -1,4 +1,5 @@
 import React from "react";
+import Checkbox from "./Checkbox";
 import "./Payment.css";
 
 const Payment = ({ nextStep, previousStep }) => (
@@ -30,7 +31,7 @@ const Payment = ({ nextStep, previousStep }) => (
       />
 
       <h5>Do you want to increase your impact?</h5>
-      <span>TODO</span>
+      <Checkbox>Yes! Add (TODO) to help offset bank fees.</Checkbox>
 
       <h5>Comment</h5>
       <textarea placeholder="Leave a note" rows={5} />
