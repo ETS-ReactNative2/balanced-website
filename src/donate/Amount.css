@@ -29,3 +29,20 @@
   background-color: #4b991f;
   border-color: #2f7e16;
 }
+
+#Donate_Currency {
+  margin: 0px 4px;
+  margin-top: 1px;
+}
+
+input#Donate_Other {
+  width: 40px !important;
+  height: 20px !important;
+  border-radius: 0px !important;
+  font-size: 13px !important;
+  font-family: "Roboto" !important;
+  letter-spacing: 2px !important;
+  padding: 0px !important;
+  margin: 0 !important;
+  border: none !important;
+}

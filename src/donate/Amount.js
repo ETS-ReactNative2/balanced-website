@@ -7,13 +7,27 @@ const BOTTOM_AMOUNTS = [500, "OTHER"];
 
 const parseAmount = amount => (amount === "OTHER" ? amount : `$${amount}`);
 
-const Amount = ({ amount, currentAmount, selectAmount }) => (
-  <div
-    onClick={() => selectAmount(amount)}
-    className={`Donate_Amount ${selected ? "Donate_AmountSelected" : ""}`}
-  >
-    {parseAmount(amount)}
-    {amount === "OTHER" && <input type="currency" />}
+const showOther = (amount, selected) => amount === "OTHER" && selected;
+
+const Other = () => (
+  <div className="Donate_Amount">
+    <span id="Donate_Currency">$</span>
+    <input id="Donate_Other" type="number" />
+  </div>
+);
+
+const Amount = ({ amount, selected, selectAmount }) => (
+  <div>
+    {showOther(amount, selected) ? (
+      <Other selectAmount={selectAmount} />
+    ) : (
+      <div
+        onClick={() => selectAmount(amount)}
+        className={`Donate_Amount ${selected ? "Donate_AmountSelected" : ""}`}
+      >
+        {parseAmount(amount)}
+      </div>
+    )}
   </div>
 );
 
@@ -32,7 +46,7 @@ export default ({
         <Amount
           key={a}
           amount={a}
-          currentAmount={currentAmount}
+          selected={currentAmount === a}
           selectAmount={selectAmount}
         />
       ))}
