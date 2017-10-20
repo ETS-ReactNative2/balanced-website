@@ -2,15 +2,18 @@ import React from "react";
 import Checkbox from "./Checkbox";
 import "./Amount.css";
 
-const TOP_AMOUNTS = ["$10", "$40", "$100"];
-const BOTTOM_AMOUNTS = ["$500", "OTHER"];
+const TOP_AMOUNTS = [10, 40, 100];
+const BOTTOM_AMOUNTS = [500, "OTHER"];
 
-const Amount = ({ amount, selected, selectAmount }) => (
+const parseAmount = amount => (amount === "OTHER" ? amount : `$${amount}`);
+
+const Amount = ({ amount, currentAmount, selectAmount }) => (
   <div
     onClick={() => selectAmount(amount)}
     className={`Donate_Amount ${selected ? "Donate_AmountSelected" : ""}`}
   >
-    {amount}
+    {parseAmount(amount)}
+    {amount === "OTHER" && <input type="currency" />}
   </div>
 );
 
@@ -29,7 +32,7 @@ export default ({
         <Amount
           key={a}
           amount={a}
-          selected={currentAmount === a}
+          currentAmount={currentAmount}
           selectAmount={selectAmount}
         />
       ))}

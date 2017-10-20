@@ -7,8 +7,8 @@ export default class extends React.Component {
     super();
 
     this.state = {
-      currentStep: 2,
-      currentAmount: "$100",
+      currentStep: 0,
+      currentAmount: 100,
       recurring: false
     };
   }
