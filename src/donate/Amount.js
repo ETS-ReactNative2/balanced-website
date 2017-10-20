@@ -9,12 +9,20 @@ const parseAmount = amount => (amount === "OTHER" ? amount : `$${amount}`);
 
 const showOther = (amount, selected) => amount === "OTHER" && selected;
 
-const Other = () => (
-  <div className="Donate_Amount">
-    <span id="Donate_Currency">$</span>
-    <input id="Donate_Other" type="number" />
-  </div>
-);
+class Other extends React.Component {
+  componentDidMount() {
+    this.input.focus();
+  }
+
+  render() {
+    return (
+      <div className="Donate_Amount">
+        <span id="Donate_Currency">$</span>
+        <input ref={i => (this.input = i)} id="Donate_Other" type="number" />
+      </div>
+    );
+  }
+}
 
 const Amount = ({ amount, selected, selectAmount }) => (
   <div>
