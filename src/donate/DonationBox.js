@@ -9,7 +9,8 @@ export default class extends React.Component {
     this.state = {
       currentStep: 0,
       currentAmount: 100,
-      recurring: false
+      recurring: false,
+      form: {}
     };
   }
 
@@ -39,6 +40,14 @@ export default class extends React.Component {
     });
   };
 
+  updateForm = name => e => {
+    const value = e.target.value;
+    const newValue = { [name]: value };
+    this.setState({
+      form: { ...this.state.form, newValue }
+    });
+  };
+
   render() {
     const { currentStep, currentAmount, recurring } = this.state;
     return (
@@ -52,6 +61,7 @@ export default class extends React.Component {
           setRecurring={this.setRecurring}
           nextStep={this.nextStep}
           previousStep={this.previousStep}
+          updateForm={this.updateForm}
         />
       </div>
     );
