@@ -3,8 +3,10 @@ import React from "react";
 import AmountButton from "./AmountButton";
 import AmountInput from "./AmountInput";
 
-const showInput = (amount, selected, currentAmount) => {
+const showInput = ({ amount, selected, getValue }) => {
   if (selected && amount === "OTHER") return true;
+
+  const currentAmount = getValue();
 
   if (
     amount === "OTHER" &&
@@ -17,13 +19,5 @@ const showInput = (amount, selected, currentAmount) => {
   }
 };
 
-export default ({ amount, selected, currentAmount, selectAmount }) =>
-  showInput(amount, selected, currentAmount) ? (
-    <AmountInput selectAmount={selectAmount} />
-  ) : (
-    <AmountButton
-      amount={amount}
-      selected={selected}
-      selectAmount={selectAmount}
-    />
-  );
+export default props =>
+  showInput(props) ? <AmountInput {...props} /> : <AmountButton {...props} />;

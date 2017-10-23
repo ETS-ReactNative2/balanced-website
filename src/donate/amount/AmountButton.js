@@ -2,9 +2,9 @@ import React from "react";
 
 const parseAmount = amount => (amount === "OTHER" ? amount : `$${amount}`);
 
-export default ({ selectAmount, selected, amount }) => (
+export default ({ setValue, amount, selected }) => (
   <div
-    onClick={() => selectAmount(amount)}
+    onClick={() => setValue(amount)}
     className={`Donate_Amount ${selected ? "Donate_AmountSelected" : ""}`}
   >
     {parseAmount(amount)}
