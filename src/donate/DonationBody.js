@@ -2,7 +2,7 @@ import React from "react";
 import { Form } from "react-form";
 
 import Amount from "./amount";
-import Info from "./Info";
+import Info from "./info";
 import Payment from "./Payment";
 
 import "./DonationBody.css";

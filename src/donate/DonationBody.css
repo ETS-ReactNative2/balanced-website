@@ -52,7 +52,7 @@
 }
 
 #Donate_DonationBody input,
-textarea {
+#Donate_DonationBody textarea {
   font-family: "Roboto";
   letter-spacing: 1.5px;
   flex: 1;

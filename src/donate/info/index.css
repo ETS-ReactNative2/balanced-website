@@ -1,0 +1,4 @@
+#Donate_Info div {
+  display: flex;
+  flex-direction: row;
+}
