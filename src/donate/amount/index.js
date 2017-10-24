@@ -12,7 +12,7 @@ export default ({
   setRecurring,
   nextStep
 }) => (
-  <Form onSubmit={nextStep}>
+  <Form defaultValues={{ amount: 100, recurring: false }} onSubmit={nextStep}>
     {({ submitForm }) => {
       return (
         <form onSubmit={submitForm}>
