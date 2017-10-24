@@ -3,7 +3,7 @@ import { Form } from "react-form";
 
 import Amount from "./amount";
 import Info from "./info";
-import Payment from "./Payment";
+import Payment from "./payment";
 
 import "./DonationBody.css";
 

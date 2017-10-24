@@ -1,3 +1,7 @@
+#Donate_Payment div {
+  display: flex;
+}
+
 .Donate_Month {
   flex: 0;
   width: 2em;
@@ -7,6 +11,7 @@
 .Donate_Year {
   flex: 0;
   width: 4em;
+  margin-right: 8px;
 }
 
 .Donate_CVV {
@@ -33,4 +38,9 @@
   margin-top: 4px;
   font-weight: 700 !important;
   margin-bottom: 16px;
+}
+
+#Donate_SmallFields {
+  display: flex;
+  flex-direction: row;
 }
