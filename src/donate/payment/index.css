@@ -2,21 +2,24 @@
   display: flex;
 }
 
-.Donate_Month {
+#Donate_Month {
+  margin-right: 1em !important;
   flex: 0;
-  width: 2em;
+  max-width: 2em !important;
   margin-right: 8px;
 }
 
-.Donate_Year {
+#Donate_Year {
   flex: 0;
-  width: 4em;
+  max-width: 4em !important;
   margin-right: 8px;
+  margin-right: 1em !important;
 }
 
-.Donate_CVV {
+#Donate_CVV {
   flex: 0;
-  width: 3em;
+  max-width: 3em !important;
+  margin-right: 1em !important;
 }
 
 #Donate_FinalAmount {
@@ -43,4 +46,29 @@
 #Donate_SmallFields {
   display: flex;
   flex-direction: row;
+}
+
+@media (min-width: 1024px) {
+  #Donate_Month {
+    margin-right: 1em !important;
+    flex: 0;
+    min-width: 4em !important;
+    max-width: 4em !important;
+    margin-right: 8px;
+  }
+
+  #Donate_Year {
+    flex: 0;
+    min-width: 4em !important;
+    max-width: 4em !important;
+    margin-right: 8px;
+    margin-right: 1em !important;
+  }
+
+  #Donate_CVV {
+    flex: 0;
+    min-width: 4em !important;
+    max-width: 4em !important;
+    margin-right: 1em !important;
+  }
 }

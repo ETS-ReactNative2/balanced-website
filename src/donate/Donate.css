@@ -52,6 +52,8 @@
 @media (min-width: 1024px) {
   #Donate_Container {
     background-image: url("./donate_background_desktop.jpg");
+    background-size: contain;
+    min-height: 1220px;
   }
   #Donate_Header {
     font-size: 92px !important;

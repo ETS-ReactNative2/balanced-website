@@ -1,0 +1,26 @@
+.Donate_TextInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.Donate_TextInput_Error {
+  color: #e53935;
+  border: 1px solid #e53935 !important;
+}
+
+.Donate_TextInput_Error::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #e53935 !important;
+}
+.Donate_TextInput_Error::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #e53935 !important;
+}
+.Donate_TextInput_Error::-ms-input-placeholder {
+  /* IE 10+ */
+  color: #e53935 !important;
+}
+.Donate_TextInput_Error::-moz-placeholder {
+  /* Firefox 18- */
+  color: #e53935 !important;
+}

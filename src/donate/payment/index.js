@@ -1,9 +1,11 @@
 import React from "react";
-import { NestedForm, Form, Text, TextArea } from "react-form";
+import { NestedForm, Form, TextArea } from "react-form";
 
 import validations from "./validations";
 import Checkbox from "../Checkbox";
 import Error from "../Error";
+import TextInput from "../TextInput";
+
 import "./index.css";
 
 const getAmount = ({ amount }) =>
@@ -23,31 +25,34 @@ const Payment = ({ previousStep, amount, values }) => (
         return (
           <form id="Donate_Payment" onSubmit={submitForm}>
             <h5>Payment Information</h5>
-            <Text field="name" placeholder="Name on card" />
-            <Error errors={errors} touched={touched} fieldName={"name"} />
 
-            <Text field="card_number" placeholder="Card Number" />
-            <Error
-              errors={errors}
-              touched={touched}
-              fieldName={"card_number"}
-            />
+            <div className="Donate_FormGroup">
+              <TextInput field="name" placeholder="Name on card" />
+              <Error errors={errors} touched={touched} fieldName={"name"} />
 
-            <div id="Donate_SmallFields">
-              <Text
-                className="Donate_Month"
+              <TextInput field="card_number" placeholder="Card Number" />
+              <Error
+                errors={errors}
+                touched={touched}
+                fieldName={"card_number"}
+              />
+            </div>
+
+            <div className="Donate_SmallFields">
+              <TextInput
+                id="Donate_Month"
                 field="month"
                 type="number"
                 placeholder="MM"
               />
-              <Text
-                className="Donate_Year"
+              <TextInput
+                id="Donate_Year"
                 field="year"
                 type="number"
                 placeholder="YYYY"
               />
-              <Text
-                className="Donate_CVV"
+              <TextInput
+                id="Donate_CVV"
                 field="cvv"
                 type="number"
                 placeholder="CVV"

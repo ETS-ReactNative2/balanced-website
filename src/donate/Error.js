@@ -1,13 +1,10 @@
 import React from "react";
 import "./Error.css";
 
-const Error = ({ errors, fieldName, touched }) => {
-  const errorMessage = errors && errors[fieldName];
-  const isTouched = touched && touched[fieldName];
+const Error = ({ error, touched }) => {
+  if (!error || !touched) return null;
 
-  if (!errorMessage || !isTouched) return null;
-
-  return <span className="Donate_Error">{errorMessage}.</span>;
+  return <span className="Donate_Error">{error}.</span>;
 };
 
 export default Error;

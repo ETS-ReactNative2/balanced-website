@@ -101,4 +101,9 @@ button.Donate_Back {
     flex: 0;
     margin-right: 70px;
   }
+
+  #Donate_DonationBody {
+    padding-bottom: 64px;
+    box-sizing: border-box;
+  }
 }

@@ -1,8 +1,8 @@
 import React from "react";
-import { NestedForm, Form, Text } from "react-form";
+import { NestedForm, Form } from "react-form";
 import validations from "./validations";
 import "./index.css";
-import Error from "../Error";
+import TextInput from "../TextInput";
 
 const Info = ({ previousStep, nextStep, values }) => (
   <NestedForm field="info">
@@ -12,32 +12,27 @@ const Info = ({ previousStep, nextStep, values }) => (
           <form id="Donate_Info" onSubmit={submitForm}>
             <h5>Contact Information</h5>
             <div className="Donate_FormGroup">
-              <Text field="first_name" placeholder="First name" />
-              <Text field="last_name" placeholder="Last name" />
-              <Text field="email" placeholder="Email" />
-              <Text field="phone" placeholder="Phone" />
+              <TextInput field="first_name" placeholder="First name" />
+              <TextInput field="last_name" placeholder="Last name" />
+              <TextInput field="email" placeholder="Email" />
+              <TextInput field="phone" placeholder="Phone" />
             </div>
 
             <h5>Billing Information</h5>
             <div className="Donate_FormGroup">
-              <Text field="address" placeholder="Address" />
-              <Error errors={errors} touched={touched} fieldName={"address"} />
+              <TextInput field="address" placeholder="Address" />
 
-              <Text field="address_2" placeholder="Address 2" />
+              <TextInput field="address_2" placeholder="Address 2" />
 
-              <Text field="address_3" placeholder="Address 3" />
+              <TextInput field="address_3" placeholder="Address 3" />
 
-              <Text field="city" placeholder="City" />
-              <Error errors={errors} touched={touched} fieldName={"city"} />
+              <TextInput field="city" placeholder="City" />
 
-              <Text field="state" placeholder="State" />
-              <Error errors={errors} touched={touched} fieldName={"state"} />
+              <TextInput field="state" placeholder="State" />
 
-              <Text field="zip" placeholder="Zip Code" />
-              <Error errors={errors} touched={touched} fieldName={"zip"} />
+              <TextInput field="zip" placeholder="Zip Code" />
 
-              <Text field="country" placeholder="Country" />
-              <Error errors={errors} touched={touched} fieldName={"country"} />
+              <TextInput field="country" placeholder="Country" />
             </div>
 
             <span className="Donate_Encouragement">Almost done!</span>
