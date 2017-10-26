@@ -1,8 +1,9 @@
-.Donate_AmountRow {
+#Donate_Amounts {
   display: flex;
   flex: 1;
   justify-content: space-between;
   margin-bottom: 16px;
+  flex-direction: column;
 }
 
 .Donate_Space {
@@ -17,11 +18,15 @@
   background-color: #fff;
   border: 1.3px solid #4b991f;
   width: 70px;
-  height: 20px;
+  height: 30px;
   color: #4b991f;
   font-size: 13px;
   font-family: "Roboto";
   letter-spacing: 2px;
+  border-radius: 4px;
+  flex: 1;
+  width: 100%;
+  margin: 4px 0px;
 }
 
 .Donate_AmountSelected {
@@ -31,7 +36,7 @@
 }
 
 #Donate_Currency {
-  margin-left: 4px;
+  margin-left: 8px;
   margin-right: 2px;
   margin-top: 1px;
 }
@@ -47,4 +52,14 @@ input#Donate_Other {
   margin: 0 !important;
   border: none !important;
   color: #4b991f;
+}
+
+@media (min-width: 1024px) {
+  #Donate_Amounts {
+    flex-direction: row;
+  }
+
+  .Donate_Amount {
+    margin: 0px 8px;
+  }
 }

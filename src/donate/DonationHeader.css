@@ -5,6 +5,7 @@
   border-radius: 16px 16px 0 0;
   padding: 24px;
   display: flex;
+  align-items: center;
 }
 
 #Donate_DonationHeader h5 {
@@ -19,13 +20,14 @@
 }
 
 #Donate_Steps {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex: 1 0;
   padding: 0px 24px;
   justify-content: space-between;
   margin-top: -12px;
-  max-width: 960px;
+  max-width: 650px;
 }
 
 #Donate_Titles {
@@ -70,6 +72,8 @@
 }
 
 #Donate_Line {
+  width: 100%;
+  max-width: 600px;
   margin: 0px 48px;
   height: 1px;
   background-color: #fff;

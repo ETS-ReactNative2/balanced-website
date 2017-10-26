@@ -18,14 +18,8 @@
   padding: 16px;
 }
 
-#Donate_InnerContainer h1 {
-  margin-bottom: 16px;
-  font-size: 30px;
-}
-
-#Donate_InnerContainer p {
-  margin-bottom: 32px;
-  font-size: 18px;
+#Donate_InnerContainer {
+  max-width: 1024px;
 }
 
 #Donate_SubHeader {
@@ -45,5 +39,21 @@
   text-align: center;
   font-weight: bold;
   letter-spacing: 4px;
-  text-shadow: 1px 1px 4a rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 1024px) {
+  #Donate_Container {
+    background-image: url("./donate_background_desktop.jpg");
+  }
+  #Donate_Header {
+    font-size: 92px !important;
+    line-height: 112px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2) !important;
+  }
+
+  #Donate_SubHeader {
+    font-size: 56px !important;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2) !important;
+  }
 }
