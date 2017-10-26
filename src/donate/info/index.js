@@ -1,12 +1,23 @@
 import React from "react";
-import { NestedForm, Form } from "react-form";
+import { NestedForm, Form, Select } from "react-form";
 import validations from "./validations";
 import "./index.css";
 import TextInput from "../TextInput";
+import countries from "country-list";
+
+const codes = countries().getCodeList();
+const OPTIONS = Object.keys(codes).map(code => ({
+  value: code,
+  label: codes[code]
+}));
 
 const Info = ({ previousStep, nextStep, values }) => (
   <NestedForm field="info">
-    <Form validateError={validations} onSubmit={nextStep}>
+    <Form
+      validateError={validations}
+      onSubmit={nextStep}
+      defaultValues={{ country: "us" }}
+    >
       {({ submitForm, errors, touched }) => {
         return (
           <form id="Donate_Info" onSubmit={submitForm}>
@@ -32,7 +43,7 @@ const Info = ({ previousStep, nextStep, values }) => (
 
               <TextInput field="zip" placeholder="Zip Code" />
 
-              <TextInput field="country" placeholder="Country" />
+              <Select field="country" placeholder="Country" options={OPTIONS} />
             </div>
 
             <span className="Donate_Encouragement">Almost done!</span>

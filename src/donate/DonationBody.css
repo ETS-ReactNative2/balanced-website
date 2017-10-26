@@ -47,6 +47,7 @@ button.Donate_Back {
 }
 
 #Donate_DonationBody input,
+#Donate_DonationBody select,
 #Donate_DonationBody textarea {
   font-family: "Roboto";
   letter-spacing: 1.5px;
@@ -57,6 +58,12 @@ button.Donate_Back {
   margin-top: 8px;
   margin-bottom: 8px;
   font-size: 11pt;
+}
+
+#Donate_DonationBody select {
+  min-width: 360px !important;
+  height: 36px;
+  margin-right: 0 !important;
 }
 
 #Donate_DonationBody form h5 {
@@ -96,7 +103,8 @@ button.Donate_Back {
 }
 
 @media (min-width: 1024px) {
-  #Donate_DonationBody input {
+  #Donate_DonationBody input,
+  #Donate_DonationBody select {
     min-width: 345px;
     flex: 0;
     margin-right: 70px;
