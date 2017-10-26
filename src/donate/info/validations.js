@@ -3,5 +3,5 @@ export default ({ address, city, state, zip, country }) => ({
   city: city ? null : "Please enter your city",
   state: state ? null : "Please enter your state",
   zip: zip ? null : "Please enter your ZIP code",
-  country: country ? null : "Please select your countryAc"
+  country: country ? null : "Please select your country"
 });

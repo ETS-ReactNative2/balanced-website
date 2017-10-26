@@ -37,7 +37,11 @@ const Info = ({ previousStep, nextStep, values }) => (
             <Error errors={errors} touched={touched} fieldName={"country"} />
 
             <div id="Donate_Next">
-              <button onClick={previousStep} id="Donate_BackButton">
+              <button
+                type="button"
+                onClick={previousStep}
+                id="Donate_BackButton"
+              >
                 BACK
               </button>
               <button type="submit" id="Donate_NextButton">

@@ -1,4 +1,5 @@
 import React from "react";
+import "./Error.css";
 
 const Error = ({ errors, fieldName, touched }) => {
   const errorMessage = errors && errors[fieldName];
@@ -6,11 +7,7 @@ const Error = ({ errors, fieldName, touched }) => {
 
   if (!errorMessage || !isTouched) return null;
 
-  return (
-    <div>
-      <h5>{errorMessage}</h5>
-    </div>
-  );
+  return <span className="Donate_Error">{errorMessage}.</span>;
 };
 
 export default Error;

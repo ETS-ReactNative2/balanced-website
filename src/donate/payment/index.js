@@ -1,24 +1,38 @@
 import React from "react";
 import { NestedForm, Form, Text, TextArea } from "react-form";
 
+import validations from "./validations";
 import Checkbox from "../Checkbox";
+import Error from "../Error";
 import "./index.css";
 
-const getAmount = values => {
-  const { amount } = values;
-  const r = amount && amount.amount.toFixed(2);
-  return r;
-};
+const getAmount = ({ amount }) =>
+  amount &&
+  amount.amount &&
+  Number.isInteger(amount.amount) &&
+  amount.amount.toFixed(2);
 
-const Payment = ({ nextStep, previousStep, amount, values }) => (
+const Payment = ({ previousStep, amount, values }) => (
   <NestedForm field="payment">
-    <Form onSubmit={nextStep} defaultValues={{ offset: false }}>
-      {({ submitForm }) => {
+    <Form
+      validateError={validations}
+      onSubmit={() => console.log(values)}
+      defaultValues={{ offset: false }}
+    >
+      {({ submitForm, errors, touched }) => {
         return (
-          <form id="Donate_Payment">
+          <form id="Donate_Payment" onSubmit={submitForm}>
             <h5>Payment Information</h5>
-            <Text field="first_name" placeholder="Name on card" />
+            <Text field="name" placeholder="Name on card" />
+            <Error errors={errors} touched={touched} fieldName={"name"} />
+
             <Text field="card_number" placeholder="Card Number" />
+            <Error
+              errors={errors}
+              touched={touched}
+              fieldName={"card_number"}
+            />
+
             <div id="Donate_SmallFields">
               <Text
                 className="Donate_Month"
@@ -46,7 +60,7 @@ const Payment = ({ nextStep, previousStep, amount, values }) => (
             </Checkbox>
 
             <h5>Comment</h5>
-            <TextArea field="name" placeholder="Leave a note" rows={5} />
+            <TextArea field="note" placeholder="Leave a note" rows={5} />
 
             {getAmount(values) && (
               <div id="Donate_FinalAmount">
@@ -56,12 +70,16 @@ const Payment = ({ nextStep, previousStep, amount, values }) => (
             )}
 
             <div id="Donate_Next">
-              <div onClick={previousStep} id="Donate_BackButton">
+              <button
+                type="button"
+                onClick={previousStep}
+                id="Donate_BackButton"
+              >
                 BACK
-              </div>
-              <div onClick={nextStep} id="Donate_NextButton">
+              </button>
+              <button type="submit" id="Donate_NextButton">
                 NEXT
-              </div>
+              </button>
             </div>
           </form>
         );

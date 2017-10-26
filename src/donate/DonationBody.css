@@ -86,5 +86,6 @@
 }
 
 .Donate_Hide {
-  display: none !important;
+  visibility: hidden !important;
+  position: absolute;
 }

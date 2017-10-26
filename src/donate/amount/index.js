@@ -20,12 +20,12 @@ export default ({
       defaultValues={{ amount: 100, recurring: false }}
       onSubmit={nextStep}
     >
-      {({ submitForm, errors }) => {
+      {({ submitForm, errors, touched }) => {
         return (
           <form onSubmit={submitForm}>
             <h5>Select an amount:</h5>
             <AmountSelector value={100} />
-            <Error errors={errors} fieldName={"amount"} />
+            <Error errors={errors} touched={touched} fieldName={"amount"} />
             <br />
 
             <Checkbox fieldName="recurring" toggle={setRecurring}>
