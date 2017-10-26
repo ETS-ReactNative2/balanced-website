@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 128px;
+  padding-top: 96px;
   background-size: contain;
   background-repeat: no-repeat;
   flex: 1;
@@ -23,8 +23,10 @@
 }
 
 #Donate_SubHeader {
+  margin-top: 0px;
   font-family: "Roboto";
   font-size: 15pt;
+  font-weight: 300;
   text-align: center;
   font-style: italic;
   font-weight: medium;
@@ -34,8 +36,8 @@
 
 #Donate_Header {
   font-family: "Roboto";
-  font-size: 30pt;
-  line-height: 30pt;
+  font-size: 30px;
+  line-height: 35px;
   text-align: center;
   font-weight: bold;
   letter-spacing: 4px;
