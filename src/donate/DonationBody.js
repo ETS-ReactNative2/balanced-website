@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, NestedForm } from "react-form";
+import { Form } from "react-form";
 
 import Amount from "./amount";
 import Info from "./info";
@@ -19,14 +19,14 @@ export default ({ currentStep, ...props }) => (
     {({ values }) => {
       return (
         <div id="Donate_DonationBody">
-          <h5>{JSON.stringify(values)}</h5>
           {COMPONENTS.map((Component, id) => (
-            <Component
-              key={id}
-              values={values}
-              className={getClass(id, currentStep)}
-              {...props}
-            />
+            <div key={id} className={getClass(id, currentStep)}>
+              <Component
+                values={values}
+                className={getClass(id, currentStep)}
+                {...props}
+              />
+            </div>
           ))}
         </div>
       );

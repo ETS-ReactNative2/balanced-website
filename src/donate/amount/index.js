@@ -10,14 +10,13 @@ export default ({
   selectAmount,
   setRecurring,
   nextStep,
-  values,
-  className
+  values
 }) => (
   <NestedForm field="amount">
     <Form defaultValues={{ amount: 100, recurring: false }} onSubmit={nextStep}>
       {({ submitForm }) => {
         return (
-          <form className={className} onSubmit={submitForm}>
+          <form onSubmit={submitForm}>
             <h5>Select an amount:</h5>
             <AmountSelector value={100} />
             <br />
@@ -25,7 +24,6 @@ export default ({
             <Checkbox fieldName="recurring" toggle={setRecurring}>
               Yes! Show my support by making this a recurring donation.
             </Checkbox>
-            <h5>{JSON.stringify(values)}</h5>
 
             <div id="Donate_Next">
               <button type="submit" id="Donate_NextButton">

@@ -6,12 +6,12 @@ import "./index.css";
 
 const getAmount = ({ Amount }) => (Amount && Amount.amount) || 100;
 
-const Payment = ({ nextStep, previousStep, amount, values, className }) => (
+const Payment = ({ nextStep, previousStep, amount, values }) => (
   <NestedForm field="payment">
     <Form onSubmit={nextStep} values={{ offset: false }}>
       {({ submitForm }) => {
         return (
-          <form id="Donate_Payment" className={className}>
+          <form id="Donate_Payment">
             <h5>Payment Information</h5>
             <Text field="first_name" placeholder="Name on card" />
             <Text field="last_name" placeholder="Card Type" />
