@@ -1,6 +1,7 @@
 import React from "react";
 import { Form, NestedForm } from "react-form";
 
+import validations from "./validations";
 import Checkbox from "../Checkbox";
 import AmountSelector from "./AmountSelector";
 import "./index.css";
@@ -13,7 +14,11 @@ export default ({
   values
 }) => (
   <NestedForm field="amount">
-    <Form defaultValues={{ amount: 100, recurring: false }} onSubmit={nextStep}>
+    <Form
+      validateError={validations}
+      defaultValues={{ amount: 100, recurring: false }}
+      onSubmit={nextStep}
+    >
       {({ submitForm }) => {
         return (
           <form onSubmit={submitForm}>

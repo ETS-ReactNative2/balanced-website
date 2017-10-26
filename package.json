@@ -13,7 +13,8 @@
     "react-dom": "^15.5.4",
     "react-form": "^2.0.0",
     "react-router-dom": "^4.2.2",
-    "react-transition-group": "^1.1.1"
+    "react-transition-group": "^1.1.1",
+    "validator": "^9.1.1"
   },
   "scripts": {
     "start": "react-scripts start",

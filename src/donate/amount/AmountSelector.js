@@ -7,31 +7,25 @@ const BOTTOM_AMOUNTS = [500, "OTHER"];
 
 const AmountSelector = ({ fieldApi, ...rest }) => {
   const props = { ...fieldApi, rest };
+  const { getValue, getError } = fieldApi;
+  const error = getError();
   return (
     <div>
       <div className="Donate_AmountRow">
         {TOP_AMOUNTS.map(a => (
-          <Amount
-            key={a}
-            amount={a}
-            selected={fieldApi.getValue() === a}
-            {...props}
-          />
+          <Amount key={a} amount={a} selected={getValue() === a} {...props} />
         ))}
       </div>
 
       <div className="Donate_AmountRow">
         <div className="Donate_Space" />
         {BOTTOM_AMOUNTS.map(a => (
-          <Amount
-            amount={a}
-            key={a}
-            selected={fieldApi.getValue() === a}
-            {...props}
-          />
+          <Amount amount={a} key={a} selected={getValue() === a} {...props} />
         ))}
         <div className="Donate_Space" />
       </div>
+
+      <h5>{error}</h5>
     </div>
   );
 };
