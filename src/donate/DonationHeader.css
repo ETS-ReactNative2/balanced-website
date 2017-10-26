@@ -72,12 +72,12 @@
 }
 
 #Donate_Line {
-  width: 100%;
+  width: 85%;
   max-width: 600px;
-  margin: 0px 48px;
   height: 1px;
   background-color: #fff;
-  position: relative;
   z-index: 0;
   flex: 1;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
