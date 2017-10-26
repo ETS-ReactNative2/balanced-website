@@ -1,7 +1,6 @@
 import React from "react";
 import "./DonationHeader.css";
 
-const STEPS = [1, 2, 3];
 const TITLES = ["", "Amount", "Info", "Payment"];
 
 const Step = ({ step, selected }) => (
@@ -20,11 +19,11 @@ const Step = ({ step, selected }) => (
 export default ({ currentStep }) => (
   <div id="Donate_DonationHeader">
     <h5>DONATE TODAY</h5>
-    <div id="Donate_Steps">
-      {STEPS.map(s => (
-        <Step key={s} step={s} selected={currentStep + 1 === s} />
-      ))}
-    </div>
     <div id="Donate_Line" />
+    <div id="Donate_Steps">
+      <Step step={1} selected={currentStep + 1 === 1} />
+      <Step step={2} selected={currentStep + 1 === 2} />
+      <Step step={3} selected={currentStep + 1 === 3} />
+    </div>
   </div>
 );
