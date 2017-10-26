@@ -56,6 +56,7 @@ input#Donate_Other {
 
 @media (min-width: 1024px) {
   #Donate_Amounts {
+    margin: 8px -8px;
     flex-direction: row;
   }
 
