@@ -13,14 +13,15 @@
   letter-spacing: 2px;
 }
 
-#Donate_Next {
+.Donate_ButtonGroup {
   margin-top: 24px;
   display: flex;
   flex: 1;
   justify-content: center;
 }
 
-#Donate_NextButton {
+.Donate_ButtonGroup button {
+  font-size: 16px;
   font-family: "Roboto";
   display: flex;
   justify-content: center;
@@ -31,19 +32,13 @@
   background-color: #4b991f;
   border: 1.3px solid #4b991f;
   margin: 0px 8x;
+  border-radius: 4px;
 }
 
-#Donate_BackButton {
-  font-family: "Roboto";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
-  height: 30px;
+button.Donate_Back {
   background-color: #fff;
   color: #4b991f;
-  border: 1.3px solid #4b991f;
-  margin: 0px 8px;
+  margin-right: 8px;
 }
 
 #Donate_DonationBody form {

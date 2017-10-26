@@ -69,11 +69,11 @@ const Payment = ({ previousStep, amount, values }) => (
               </div>
             )}
 
-            <div id="Donate_Next">
+            <div className="Donate_ButtonGroup">
               <button
                 type="button"
                 onClick={previousStep}
-                id="Donate_BackButton"
+                className="Donate_Back"
               >
                 BACK
               </button>

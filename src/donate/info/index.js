@@ -36,17 +36,15 @@ const Info = ({ previousStep, nextStep, values }) => (
             <Text field="country" placeholder="Country" />
             <Error errors={errors} touched={touched} fieldName={"country"} />
 
-            <div id="Donate_Next">
+            <div className="Donate_ButtonGroup">
               <button
                 type="button"
                 onClick={previousStep}
-                id="Donate_BackButton"
+                className="Donate_Back"
               >
                 BACK
               </button>
-              <button type="submit" id="Donate_NextButton">
-                NEXT
-              </button>
+              <button type="submit">NEXT</button>
             </div>
           </form>
         );

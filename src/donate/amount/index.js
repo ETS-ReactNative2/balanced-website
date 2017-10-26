@@ -32,10 +32,8 @@ export default ({
               Yes! Show my support by making this a recurring donation.
             </Checkbox>
 
-            <div id="Donate_Next">
-              <button type="submit" id="Donate_NextButton">
-                NEXT
-              </button>
+            <div className="Donate_ButtonGroup">
+              <button type="submit">NEXT</button>
             </div>
           </form>
         );
