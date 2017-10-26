@@ -4,6 +4,7 @@ import { Form, NestedForm } from "react-form";
 import validations from "./validations";
 import Checkbox from "../Checkbox";
 import AmountSelector from "./AmountSelector";
+import Error from "../Error";
 import "./index.css";
 
 export default ({
@@ -19,11 +20,12 @@ export default ({
       defaultValues={{ amount: 100, recurring: false }}
       onSubmit={nextStep}
     >
-      {({ submitForm }) => {
+      {({ submitForm, errors }) => {
         return (
           <form onSubmit={submitForm}>
             <h5>Select an amount:</h5>
             <AmountSelector value={100} />
+            <Error errors={errors} fieldName={"amount"} />
             <br />
 
             <Checkbox fieldName="recurring" toggle={setRecurring}>

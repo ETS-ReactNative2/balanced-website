@@ -7,8 +7,7 @@ const BOTTOM_AMOUNTS = [500, "OTHER"];
 
 const AmountSelector = ({ fieldApi, ...rest }) => {
   const props = { ...fieldApi, rest };
-  const { getValue, getError } = fieldApi;
-  const error = getError();
+  const { getValue } = fieldApi;
   return (
     <div>
       <div className="Donate_AmountRow">
@@ -24,8 +23,6 @@ const AmountSelector = ({ fieldApi, ...rest }) => {
         ))}
         <div className="Donate_Space" />
       </div>
-
-      <h5>{error}</h5>
     </div>
   );
 };
