@@ -2,7 +2,7 @@ import React from "react";
 import { NestedForm, Form, Text } from "react-form";
 import "./index.css";
 
-const Info = ({ nextStep, previousStep }) => (
+const Info = ({ nextStep, previousStep, values }) => (
   <NestedForm field="info">
     <Form onSubmit={nextStep}>
       {({ submitForm }) => {
