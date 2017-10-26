@@ -7,7 +7,7 @@ export default class extends React.Component {
     super();
 
     this.state = {
-      currentStep: 2
+      currentStep: 0
     };
   }
 

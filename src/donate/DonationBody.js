@@ -1,5 +1,5 @@
 import React from "react";
-import { Form } from "react-form";
+import { Form, NestedForm } from "react-form";
 
 import Amount from "./amount";
 import Info from "./info";
@@ -9,8 +9,27 @@ import "./DonationBody.css";
 
 const COMPONENTS = [Amount, Info, Payment];
 
-export default props => (
+const getClass = (id, currentStep) => {
+  const result = id === currentStep ? "" : "Donate_Hide";
+  return result;
+};
+
+export default ({ currentStep, ...props }) => (
   <Form>
-    <div id="Donate_DonationBody">{COMPONENTS[props.currentStep](props)}</div>
+    {({ values }) => {
+      return (
+        <div id="Donate_DonationBody">
+          <h5>{JSON.stringify(values)}</h5>
+          {COMPONENTS.map((Component, id) => (
+            <Component
+              key={id}
+              values={values}
+              className={getClass(id, currentStep)}
+              {...props}
+            />
+          ))}
+        </div>
+      );
+    }}
   </Form>
 );

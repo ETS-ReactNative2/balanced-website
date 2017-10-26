@@ -84,3 +84,7 @@
   /* Firefox 18- */
   color: #4b991f;
 }
+
+.Donate_Hide {
+  display: none !important;
+}

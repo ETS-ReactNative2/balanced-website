@@ -1,9 +1,9 @@
 import React from "react";
-import { FormInput } from "react-form";
+import { FormField } from "react-form";
 
 import "./Checkbox.css";
 
-const Checkbox = ({ getValue, setValue, children }) => {
+const Checkbox = ({ fieldApi: { getValue, setValue }, children }) => {
   const checked = getValue();
   const toggle = () => setValue(!checked);
 
@@ -15,10 +15,8 @@ const Checkbox = ({ getValue, setValue, children }) => {
   );
 };
 
-const createCheckbox = (value, props) => formProps => (
-  <Checkbox value={value} {...props} {...formProps} />
-);
-
-export default ({ value, ...props }) => (
-  <FormInput field="recurring">{createCheckbox(value, props)}</FormInput>
+export default ({ fieldName, ...props }) => (
+  <FormField field={fieldName}>
+    <Checkbox {...props} {...props} />
+  </FormField>
 );
