@@ -5,6 +5,7 @@ import validations from "./validations";
 import Checkbox from "../Checkbox";
 import Error from "../Error";
 import TextInput from "../TextInput";
+import handleDonation from "../handleDonation";
 
 import "./index.css";
 
@@ -18,7 +19,11 @@ const Payment = ({ previousStep, amount, values }) => (
   <NestedForm field="payment">
     <Form
       validateError={validations}
-      onSubmit={() => console.log(values)}
+      onSubmit={() => {
+        const go = handleDonation;
+        console.log(values);
+        debugger;
+      }}
       defaultValues={{ offset: false }}
     >
       {({ submitForm, errors, touched }) => {

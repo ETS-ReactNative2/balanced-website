@@ -1,5 +1,8 @@
-const Stripe = {};
-var jQuery, accounting;
+/* global Stripe */
+
+import jQuery from "jquery";
+
+var accounting;
 
 const Bloomerang = {
   version: "1.0",
@@ -500,7 +503,8 @@ const Bloomerang = {
         data["PAYMENT_TYPE"] = "CREDIT";
         data["AMOUNT"] = isRecurring ? 0 : Bloomerang.Data.Donation.Amount;
         data["CC_NUM"] = Bloomerang.Data.CreditCard.Number;
-        data["CC_EXPIRES_MONTH"] = ("0" + Bloomerang.Data.CreditCard.ExpMonth
+        data["CC_EXPIRES_MONTH"] = (
+          "0" + Bloomerang.Data.CreditCard.ExpMonth
         ).slice(-2);
         data["CC_EXPIRES_YEAR"] = Bloomerang.Data.CreditCard.ExpYear.slice(-2);
 
@@ -659,8 +663,7 @@ const Bloomerang = {
                        So we instead replace them with blank data. This will error out in the API and send
                        them an email. Same with EFT. */
         if (Bloomerang.Data.CreditCard && Bloomerang.Data.CreditCard.Number) {
-          Bloomerang.CreditCard
-            .number("0000000000000000")
+          Bloomerang.CreditCard.number("0000000000000000")
             .expirationMonth("01")
             .expirationYear("01")
             .securityCode("000");
@@ -710,20 +713,7 @@ const Bloomerang = {
     Key: "",
     Processor: "",
     ProcessorKey: "",
-    Uri:
-      window.location.href.indexOf("starwars") >= 0
-        ? "https://starwars.bloomerang.co:8443/"
-        : window.location.href.indexOf("production") >= 0
-          ? "https://api.bloomerang.co/"
-          : window.location.href.indexOf("localhost") >= 0
-            ? "http://localhost:55386/"
-            : /qa[0-9]*\.bloomerang\.co/i.test(window.location.href)
-              ? "https://qa" +
-                /qa([0-9]*)\.bloomerang\.co/i.exec(window.location.href)[1] +
-                "-api.bloomerang.co:8443/"
-              : window.location.href.indexOf("file://") >= 0
-                ? "http://localhost:55386/" // keep as last check!!
-                : "https://api.bloomerang.co/",
+    Uri: "https://api.bloomerang.co/",
 
     // Make an online donation
     donate: function() {
