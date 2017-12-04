@@ -60,6 +60,10 @@ button.Donate_Back {
   font-size: 11pt;
 }
 
+#Donate_DonationBody input {
+  max-height: 20px;
+}
+
 #Donate_DonationBody form h5 {
   margin-bottom: 16px;
 }

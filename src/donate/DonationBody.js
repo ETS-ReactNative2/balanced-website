@@ -4,10 +4,11 @@ import { Form } from "react-form";
 import Amount from "./amount";
 import Info from "./info";
 import Payment from "./payment";
+import Thankyou from "./thankyou";
 
 import "./DonationBody.css";
 
-const COMPONENTS = [Amount, Info, Payment];
+const COMPONENTS = [Amount, Info, Payment, Thankyou];
 
 const getClass = (id, currentStep) => {
   const result = id === currentStep ? "" : "Donate_Hide";

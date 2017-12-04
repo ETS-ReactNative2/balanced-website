@@ -6,9 +6,9 @@ const TITLES = ["", "Amount", "Info", "Payment"];
 const Step = ({ step, selected }) => (
   <div className="Donate_Step">
     <div
-      className={`Donate_StepNumber ${selected
-        ? "Donate_StepNumberSelected"
-        : ""}`}
+      className={`Donate_StepNumber ${
+        selected ? "Donate_StepNumberSelected" : ""
+      }`}
     >
       {step}
     </div>
@@ -16,7 +16,14 @@ const Step = ({ step, selected }) => (
   </div>
 );
 
-export default ({ currentStep }) => (
+const ThankyouHeader = () => (
+  <div id="Donate_DonationHeader">
+    <h2>THANK YOU!</h2>
+    <span>Your support is greatly appreciated.</span>
+  </div>
+);
+
+const StepHeader = ({ currentStep }) => (
   <div id="Donate_DonationHeader">
     <h5>DONATE TODAY</h5>
     <div id="Donate_Line" />
@@ -27,3 +34,6 @@ export default ({ currentStep }) => (
     </div>
   </div>
 );
+
+export default props =>
+  props.currentStep === 3 ? <ThankyouHeader /> : <StepHeader {...props} />;
