@@ -11,6 +11,8 @@ export default ({ amount, info, payment }) => {
     true
   );
 
+  const { recurring } = amount;
+
   Bloomerang.Api.OnSubmit = args => {
     // Info details
     const {
@@ -40,7 +42,6 @@ export default ({ amount, info, payment }) => {
 
     // Amount details
     const donationAmount = amount.amount;
-    const { recurring } = amount;
 
     // Build a single or recurring donation based on the checkbox
     const transaction = recurring
@@ -58,6 +59,10 @@ export default ({ amount, info, payment }) => {
     Bloomerang.Api.OnError = reject;
 
     // Begin handling the donation.
-    Bloomerang.Api.donate();
+    if (recurring) {
+      Bloomerang.Api.recurringDonate();
+    } else {
+      Bloomerang.Api.donate();
+    }
   });
 };

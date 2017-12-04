@@ -6,6 +6,7 @@ import validations from "./validations";
 import Checkbox from "../Checkbox";
 import TextInput from "../TextInput";
 import handleDonation from "../handleDonation";
+import Error from "../Error";
 
 import "./index.css";
 
@@ -15,14 +16,11 @@ const getStripeFees = amount => {
   const percentageFee = 0.029;
   const totalCharge = (donationAmount + fixedFee) / (1 - percentageFee);
 
-  console.log("in fees", amount, totalCharge);
-
   return totalCharge - donationAmount;
 };
 
 const getAmount = (donationAmount, isOffset) => {
   if (!Number.isInteger(donationAmount)) return;
-  console.log("in getamount", isOffset);
 
   if (!isOffset) {
     return donationAmount.toFixed(2);
@@ -61,18 +59,32 @@ class Payment extends Component {
     super(props);
     this.state = {
       loading: false,
-      errorMessage: undefined
+      error: undefined
     };
   }
 
-  donate = () => {
-    console.log("Going");
-    const go = new Promise((resolve, reject) => {
-      setTimeout(resolve, 5000);
+  donate = (a, b, api) => {
+    this.setError = api.setError;
+    this.setState({
+      error: undefined
     });
+    const { values } = this.props;
+    const { amount, payment } = values;
+    const donationAmount = getAmount(amount.amount, payment.offset);
+    console.log("Amount", donationAmount);
 
-    // handleDonation(this.values)
-    go.then(this.successfulDonation).catch(this.failedDonation);
+    const donationValues = {
+      ...values,
+      amount: {
+        ...amount,
+        amount: donationAmount,
+        test: "something"
+      }
+    };
+
+    handleDonation(donationValues)
+      .then(this.successfulDonation)
+      .catch(this.failedDonation);
   };
 
   successfulDonation = () => {
@@ -82,10 +94,8 @@ class Payment extends Component {
   };
 
   failedDonation = error => {
-    this.setState({
-      error,
-      loading: false
-    });
+    console.log("Got an error", error);
+    this.setError("payment", "Error processing payment: " + error.Message);
   };
 
   render() {
@@ -100,9 +110,16 @@ class Payment extends Component {
           onSubmit={this.donate}
           defaultValues={{ offset: false }}
         >
-          {({ submitForm, errors, touched, submitted }) => {
+          {({ submitForm, getError, setError, touched, submitted }) => {
+            const paymentError = getError("payment");
             return (
-              <form id="Donate_Payment" onSubmit={submitForm}>
+              <form
+                id="Donate_Payment"
+                onSubmit={e => {
+                  setError("payment", null);
+                  submitForm(e);
+                }}
+              >
                 <h5>Payment Information</h5>
 
                 <div className="Donate_FormGroup">
@@ -146,6 +163,8 @@ class Payment extends Component {
                   <h5>${getAmount(donationAmount, isOffset)}</h5>
                 </div>
 
+                <Error error={paymentError} touched={true} />
+
                 <div className="Donate_ButtonGroup">
                   <button
                     type="button"
@@ -154,7 +173,7 @@ class Payment extends Component {
                   >
                     BACK
                   </button>
-                  <DonateButton loading={submitted} />
+                  <DonateButton loading={!paymentError && submitted} />
                 </div>
               </form>
             );

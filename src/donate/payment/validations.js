@@ -7,15 +7,15 @@ export default ({ name, card_number, month, year, cvv }) => ({
       ? null
       : "Please enter the number on your credit card correctly",
   month:
-    month && validator.isLength(month, { max: 2 })
+    month && validator.isLength(month, { min: 2, max: 2 })
       ? null
       : "Please enter your expiry month as MM",
   year:
-    year && validator.isLength(year, { max: 4 })
+    year && validator.isLength(year, { min: 4, max: 4 })
       ? null
       : "Please enter your expiry year as YYYY",
   cvv:
-    year && validator.isLength(cvv, { max: 4 })
+    cvv && validator.isLength(cvv, { min: 3, max: 4 })
       ? null
       : "Please enter your CVV correctly"
 });
