@@ -77,8 +77,7 @@ class Payment extends Component {
       ...values,
       amount: {
         ...amount,
-        amount: donationAmount,
-        test: "something"
+        amount: donationAmount
       }
     };
 

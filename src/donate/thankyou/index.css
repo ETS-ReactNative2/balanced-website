@@ -16,7 +16,8 @@
 }
 
 #Donate_Thankyou_Inner h2 {
-  font-weight: 300;
+  font-size: 14px;
+  font-weight: 400;
   font-style: italic;
   letter-spacing: 2px;
 }
@@ -24,6 +25,7 @@
 #Donate_Thankyou_Inner p {
   text-align: center;
   letter-spacing: 1.5px;
+  font-size: 13px;
 }
 
 #Donate_Thankyou_Inner button {
@@ -39,4 +41,14 @@
   margin: 0px 8x;
   border-radius: 4px;
   padding: 0px 16px;
+}
+
+@media (min-width: 1024px) {
+  #Donate_Thankyou_Inner h2 {
+    font-weight: 300;
+    font-size: 30px;
+  }
+  #Donate_Thankyou_Inner p {
+    font-size: 16px;
+  }
 }

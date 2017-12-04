@@ -23,7 +23,7 @@
   margin-top: 8px;
   color: #fff;
   font-family: "Roboto";
-  font-size: 32pt;
+  font-size: 24pt;
   font-weight: 300;
   letter-spacing: 3px;
   text-align: center;
@@ -31,6 +31,7 @@
 }
 
 #Donate_DonationHeader span {
+  font-size: 14px;
   letter-spacing: 1.5px;
   font-weight: 300;
 }
@@ -96,4 +97,14 @@
   flex: 1;
   margin: 0 auto;
   box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+  #Donate_DonationHeader h2 {
+    font-size: 32pt;
+  }
+
+  #Donate_DonationHeader span {
+    font-size: 16px;
+  }
 }
