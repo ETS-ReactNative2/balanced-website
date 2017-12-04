@@ -9,11 +9,29 @@ import handleDonation from "../handleDonation";
 
 import "./index.css";
 
-const getAmount = ({ amount }) =>
-  amount &&
-  amount.amount &&
-  Number.isInteger(amount.amount) &&
-  amount.amount.toFixed(2);
+const getStripeFees = amount => {
+  const donationAmount = amount || 100;
+  const fixedFee = 0.3;
+  const percentageFee = 0.029;
+  const totalCharge = (donationAmount + fixedFee) / (1 - percentageFee);
+
+  console.log("in fees", amount, totalCharge);
+
+  return totalCharge - donationAmount;
+};
+
+const getAmount = (donationAmount, isOffset) => {
+  if (!Number.isInteger(donationAmount)) return;
+  console.log("in getamount", isOffset);
+
+  if (!isOffset) {
+    return donationAmount.toFixed(2);
+  }
+
+  const total = donationAmount + getStripeFees(donationAmount);
+
+  return total.toFixed(2);
+};
 
 const loadingStyle = {
   marginTop: "-4px",
@@ -27,9 +45,8 @@ const loadingStyle = {
   justifyContent: "center"
 };
 
-const DonateButton = ({ loading }) => {
-  console.log("donate", loading);
-  return loading ? (
+const DonateButton = ({ loading }) =>
+  loading ? (
     <div style={loadingStyle}>
       <Halogen.ClipLoader color="#4B991F" />
     </div>
@@ -38,7 +55,6 @@ const DonateButton = ({ loading }) => {
       NEXT
     </button>
   );
-};
 
 class Payment extends Component {
   constructor(props) {
@@ -74,6 +90,8 @@ class Payment extends Component {
 
   render() {
     const { previousStep, values } = this.props;
+    const donationAmount = values && values.amount && values.amount.amount;
+    const isOffset = values && values.payment && values.payment.offset;
 
     return (
       <NestedForm field="payment">
@@ -83,7 +101,6 @@ class Payment extends Component {
           defaultValues={{ offset: false }}
         >
           {({ submitForm, errors, touched, submitted }) => {
-            console.log("loading", submitted);
             return (
               <form id="Donate_Payment" onSubmit={submitForm}>
                 <h5>Payment Information</h5>
@@ -117,18 +134,17 @@ class Payment extends Component {
 
                 <h5>Do you want to increase your impact?</h5>
                 <Checkbox fieldName="offset">
-                  Yes! Add (TODO) to help offset bank fees.
+                  Yes! Add ${getStripeFees(donationAmount).toFixed(2)} to help
+                  offset bank fees.
                 </Checkbox>
 
                 <h5>Comment</h5>
                 <TextArea field="note" placeholder="Leave a note" rows={5} />
 
-                {getAmount(values) && (
-                  <div id="Donate_FinalAmount">
-                    <span>Amount:</span>
-                    <h5>${getAmount(values)}</h5>
-                  </div>
-                )}
+                <div id="Donate_FinalAmount">
+                  <span>Amount:</span>
+                  <h5>${getAmount(donationAmount, isOffset)}</h5>
+                </div>
 
                 <div className="Donate_ButtonGroup">
                   <button
