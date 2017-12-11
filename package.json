@@ -9,6 +9,7 @@
     "babel-polyfill": "^6.26.0",
     "country-list": "^1.1.0",
     "halogen": "^0.2.0",
+    "jquery": "^3.2.1",
     "jquery.scrollto": "^2.1.2",
     "normalize.css": "^6.0.0",
     "react": "^15.5.4",

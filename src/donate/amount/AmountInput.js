@@ -7,7 +7,7 @@ export default class extends React.Component {
 
   handleChange = e => {
     const value = e.target.value;
-    this.props.setValue(value);
+    this.props.setValue(parseInt(value, 10));
   };
 
   render() {
