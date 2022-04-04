@@ -6,7 +6,7 @@ import './BoardMember.css';
 
 const BoardMemberBar = ({name, picture, onClick}) => (
   <div className="BoardMemberBar_Container" onClick={onClick}>
-    <img src={picture} className="BoardMemberBar_Picture" />
+    <img alt={name} src={picture} className="BoardMemberBar_Picture" />
     <span className="BoardMemberBar_Name">{name}</span>
   </div>
 );
@@ -24,7 +24,7 @@ class BoardMemberProfile extends React.Component {
 
     return (
       <div className="BoardMemberProfile_Container">
-        <img src={picture} className="BoardMemberProfile_Picture" />
+        <img alt={name} src={picture} className="BoardMemberProfile_Picture" />
         <h1 className="BoardMemberProfile_Name">{name}</h1>
         <h2 className="BoardMemberProfile_Title">ADVISORY BOARD MEMBER</h2>
 

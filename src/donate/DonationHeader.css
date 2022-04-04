@@ -1,0 +1,110 @@
+#Donate_DonationHeader {
+  background-color: #4b991f;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 16px 16px 0 0;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+}
+
+#Donate_DonationHeader h5 {
+  margin-top: 0px;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 14pt;
+  font-weight: regular;
+  letter-spacing: 2px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+#Donate_DonationHeader h2 {
+  margin-top: 8px;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 24pt;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+#Donate_DonationHeader span {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  font-weight: 300;
+}
+
+#Donate_Steps {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 0;
+  padding: 0px 24px;
+  justify-content: space-between;
+  margin-top: -12px;
+  max-width: 650px;
+}
+
+#Donate_Titles {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.Donate_Step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  z-index: 1;
+}
+
+.Donate_StepNumber {
+  min-height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  background-color: #4b991f;
+  color: #fff;
+}
+
+.Donate_StepNumberSelected {
+  background-color: #fff;
+  color: #4b991f;
+}
+
+.Donate_StepTitle {
+  padding-top: 10px;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+#Donate_Line {
+  width: 85%;
+  max-width: 600px;
+  height: 1px;
+  background-color: #fff;
+  z-index: 0;
+  flex: 1;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+  #Donate_DonationHeader h2 {
+    font-size: 32pt;
+  }
+
+  #Donate_DonationHeader span {
+    font-size: 16px;
+  }
+}

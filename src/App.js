@@ -1,24 +1,24 @@
-import React, { Component } from 'react';
-import NavBar from './NavBar';
-import Hero from './Hero';
-import Intro from './Intro';
-import Signup from './Signup';
-import WhatWereAskingFor from './WhatWereAskingFor';
-import Support from './Support';
-import OurStory from './OurStory';
-import AdvisoryBoard from './AdvisoryBoard';
-import Donate from './Donate';
-import OurTeam from './OurTeam';
-import Footer from './Footer';
-import MobileAdvisoryBoard from './MobileAdvisoryBoard';
-import BPA from './balanced_plate_alliance';
+import React, { Component } from "react";
+import NavBar from "./NavBar";
+import Hero from "./Hero";
+import Intro from "./Intro";
+import Signup from "./Signup";
+import WhatWereAskingFor from "./WhatWereAskingFor";
+import Support from "./Support";
+import OurStory from "./OurStory";
+import AdvisoryBoard from "./AdvisoryBoard";
+import Donate from "./donate";
+import OurTeam from "./OurTeam";
+import Footer from "./Footer";
+import MobileAdvisoryBoard from "./MobileAdvisoryBoard";
+import BPA from "./balanced_plate_alliance";
 
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends Component {
   setIsMobile() {
     this.setState({
-      isMobile: window.innerWidth <= 1024,
+      isMobile: window.innerWidth <= 1024
     });
   }
 
@@ -27,11 +27,11 @@ class App extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener('resize', this.setIsMobile.bind(this));
+    window.addEventListener("resize", this.setIsMobile.bind(this));
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.setIsMobile);
+    window.removeEventListener("resize", this.setIsMobile);
   }
 
   render() {
@@ -58,8 +58,10 @@ export default () => (
   <Router>
     <div>
       <NavBar />
-      <Route exact path="/" component={App} />
-      <Route path="/bpa" component={BPA} />
+      <Switch>
+        <Route path="/bpa" component={BPA} />
+        <Route path="/" component={App} />
+      </Switch>
       <Footer />
     </div>
   </Router>

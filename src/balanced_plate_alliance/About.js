@@ -1,17 +1,15 @@
-import React from 'react';
-import './About.css';
+import React from "react";
+import "./About.css";
 
-import what from './what.png';
-import why from './why.png';
-import how from './how.png';
+import what from "./what.png";
+import why from "./why.png";
+import how from "./how.png";
 
 const ICONS = {
   what,
   why,
-  how,
+  how
 };
-
-console.log(ICONS);
 
 const AboutItem = ({ icon, header, text }) => (
   <div className="AboutItem">

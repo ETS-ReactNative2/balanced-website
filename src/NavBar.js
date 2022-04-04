@@ -1,5 +1,4 @@
 import React from 'react';
-import { THEME_GREY, WHITE, LIGHT_GREY } from './colours';
 import './NavBar.css';
 import NavMenu from './NavMenu';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';

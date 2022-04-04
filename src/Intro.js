@@ -1,5 +1,4 @@
 import React from 'react';
-import {THEME_GREEN} from './colours';
 import './Intro.css';
 
 export default () => (

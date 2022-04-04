@@ -1,0 +1,73 @@
+#Donate_Container {
+  color: #fff;
+  background-image: url("./donate_background_mobile.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 96px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex: 1;
+  font-family: "Roboto";
+}
+
+#Donate_DonationBox {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 16px;
+}
+
+#Donate_InnerContainer {
+  max-width: 1024px;
+}
+
+#Donate_SubHeader {
+  margin-top: 0px;
+  font-family: "Roboto";
+  font-size: 15pt;
+  font-weight: 300;
+  text-align: center;
+  font-style: italic;
+  font-weight: medium;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+#Donate_Header {
+  font-family: "Roboto";
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Donate_FormGroup {
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  #Donate_Container {
+    background-image: url("./donate_background_desktop.jpg");
+    background-size: contain;
+    min-height: 1220px;
+  }
+  #Donate_Header {
+    font-size: 92px !important;
+    line-height: 112px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2) !important;
+  }
+
+  #Donate_SubHeader {
+    font-size: 56px !important;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2) !important;
+  }
+
+  .Donate_FormGroup {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

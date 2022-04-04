@@ -1,0 +1,128 @@
+#Donate_DonationBody {
+  background-color: #fff;
+  border: 2px solid #4b991f;
+  border-radius: 0 0 16px 16px;
+  padding: 16px 32px;
+}
+
+#Donate_DonationBody h5 {
+  color: #2b2b2b;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.Donate_ButtonGroup {
+  margin-top: 24px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.Donate_ButtonGroup button {
+  font-size: 16px;
+  font-family: "Roboto";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 30px;
+  color: #fff;
+  background-color: #4b991f;
+  border: 1.3px solid #4b991f;
+  margin: 0px 8x;
+  border-radius: 4px;
+}
+
+button.Donate_Back {
+  background-color: #fff;
+  color: #4b991f;
+  margin-right: 8px;
+}
+
+#Donate_DonationBody form {
+  display: flex;
+  flex-direction: column;
+}
+
+#Donate_DonationBody input,
+#Donate_DonationBody select,
+#Donate_DonationBody textarea {
+  font-family: "Roboto";
+  letter-spacing: 1.5px;
+  flex: 1;
+  border: 1px solid #4b991f;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 11pt;
+}
+
+#Donate_DonationBody input {
+  max-height: 20px;
+}
+
+#Donate_DonationBody form h5 {
+  margin-bottom: 16px;
+}
+
+#Donate_DonationBody ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #4b991f;
+}
+#Donate_DonationBody ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #4b991f;
+}
+#Donate_DonationBody ::-ms-input-placeholder {
+  /* IE 10+ */
+  color: #4b991f;
+}
+#Donate_DonationBody ::-moz-placeholder {
+  /* Firefox 18- */
+  color: #4b991f;
+}
+
+.Donate_Hide {
+  visibility: hidden !important;
+  position: absolute;
+}
+
+#Donate_DonationBody select {
+  height: 36px;
+  margin-right: 0 !important;
+  max-width: 100%;
+  width: 100%;
+}
+
+.Donate_Encouragement {
+  margin: 24px 0px;
+  color: #2b2b22;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+@media (min-width: 1024px) {
+  #Donate_DonationBody select {
+    min-width: 360px !important;
+    height: 36px;
+    margin-right: 0 !important;
+  }
+
+  #Donate_DonationBody input,
+  #Donate_DonationBody select {
+    min-width: 345px;
+    flex: 0;
+    margin-right: 70px;
+  }
+
+  #Donate_DonationBody {
+    padding-bottom: 64px;
+    box-sizing: border-box;
+  }
+}
